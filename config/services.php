@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'amadeus' => [
+        'key' => env('AMADEUS_API_KEY'),
+        'secret' => env('AMADEUS_API_SECRET'),
+    ],
+
 ];
