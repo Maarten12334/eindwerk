@@ -47,7 +47,6 @@ class AmadeusService
                 'departureDate' => $departureDate,
                 'adults' => 1,
                 'max' => 10,
-                'sort' => 'PRICE'
             ],
         ]);
 
