@@ -41,12 +41,12 @@ Route::middleware(['auth'])->group(function () {
 
     // Notifications
     Route::get('/notifications', function () {
-        // Assuming you have a notifications controller and view
+
         return view('notifications');
     })->name('notifications');
 
     Route::get('/flights', [TravelController::class, 'searchFlights']);
 
-    Route::get('/hotels', [HotelController::class, 'showSearchForm'])->name('hotels.form');
-    Route::get('/hotels-list', [HotelController::class, 'listHotelsByCity'])->name('hotels.search');
+    Route::get('/hotels', [HotelController::class, 'showSearchForm'])->name('hotels.search');
+    Route::get('/hotels/results', [HotelController::class, 'listHotelsByCity'])->name('hotels.results');
 });
