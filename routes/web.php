@@ -4,6 +4,7 @@ use App\Http\Controllers\FlightController;
 use App\Http\Controllers\ItineraryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TravelController;
+use App\Http\Controllers\HotelController;
 
 // Home
 Route::get('/', function () {
@@ -45,4 +46,7 @@ Route::middleware(['auth'])->group(function () {
     })->name('notifications');
 
     Route::get('/flights', [TravelController::class, 'searchFlights']);
+
+    Route::get('/hotels', [HotelController::class, 'showSearchForm'])->name('hotels.form');
+    Route::get('/hotels-list', [HotelController::class, 'listHotelsByCity'])->name('hotels.search');
 });

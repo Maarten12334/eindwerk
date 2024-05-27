@@ -38,6 +38,7 @@ return [
     'amadeus' => [
         'key' => env('AMADEUS_API_KEY'),
         'secret' => env('AMADEUS_API_SECRET'),
+        'url' => env('AMADEUS_API_URL', 'https://test.api.amadeus.com'),
     ],
 
 ];

@@ -3,14 +3,17 @@
 namespace App\Services;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\RequestException;
 
 class AmadeusService
 {
     protected $client;
+    protected $baseUri;
 
     public function __construct()
     {
         $this->client = new Client();
+        $this->baseUri = config('services.amadeus.url', 'https://test.api.amadeus.com');
     }
 
     public function getAccessToken()
@@ -18,7 +21,7 @@ class AmadeusService
         $apiKey = config('services.amadeus.key');
         $apiSecret = config('services.amadeus.secret');
 
-        $response = $this->client->post('https://test.api.amadeus.com/v1/security/oauth2/token', [
+        $response = $this->client->post($this->baseUri . '/v1/security/oauth2/token', [
             'form_params' => [
                 'grant_type' => 'client_credentials',
                 'client_id' => $apiKey,
@@ -34,7 +37,7 @@ class AmadeusService
     {
         $accessToken = $this->getAccessToken();
 
-        $response = $this->client->get('https://test.api.amadeus.com/v2/shopping/flight-offers', [
+        $response = $this->client->get($this->baseUri . '/v2/shopping/flight-offers', [
             'headers' => [
                 'Authorization' => 'Bearer ' . $accessToken,
             ],
@@ -43,6 +46,27 @@ class AmadeusService
                 'destinationLocationCode' => $destination,
                 'departureDate' => $departureDate,
                 'adults' => 1,
+                'max' => 10,
+                'sort' => 'PRICE'
+            ],
+        ]);
+
+        return json_decode($response->getBody()->getContents(), true);
+    }
+
+    public function searchHotelsByCity($cityCode, $radius, $radiusUnit, $hotelSource)
+    {
+        $accessToken = $this->getAccessToken();
+
+        $response = $this->client->get($this->baseUri . '/v1/reference-data/locations/hotels/by-city', [
+            'headers' => [
+                'Authorization' => 'Bearer ' . $accessToken,
+            ],
+            'query' => [
+                'cityCode' => $cityCode,
+                'radius' => $radius,
+                'radiusUnit' => $radiusUnit,
+                'hotelSource' => $hotelSource
             ],
         ]);
 
