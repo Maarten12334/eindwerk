@@ -12,6 +12,7 @@ class CreateItineraryItemsTable extends Migration
             $table->id();
             $table->foreignId('itinerary_id')->constrained()->onDelete('cascade');
             $table->string('type');
+            $table->dateTime('date');
             $table->timestamps();
         });
     }
