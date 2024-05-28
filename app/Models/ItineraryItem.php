@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class ItineraryItem extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'itinerary_id',
+        'date',
+        'description',
+    ];
+
+    public function itinerary()
+    {
+        return $this->belongsTo(Itinerary::class);
+    }
 }

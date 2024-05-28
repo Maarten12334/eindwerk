@@ -40,7 +40,9 @@ class ItineraryController extends Controller
         $start_date = Carbon::parse($itinerary->departure);
         $end_date = Carbon::parse($itinerary->return);
 
-        return view('itineraries.show', compact('itinerary', 'start_date', 'end_date'));
+        $items_by_date = $itinerary->items()->orderBy('date')->get()->groupBy('date');
+
+        return view('itineraries.show', compact('itinerary', 'start_date', 'end_date', 'items_by_date'));
     }
 
     public function edit($id)

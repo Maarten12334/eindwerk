@@ -20,8 +20,16 @@
                     @while ($current_date->lte($end_date))
                     <div class="mb-6 {{ $counter % 2 == 0 ? 'col-start-1 text-center' : 'col-start-2 text-center' }}">
                         <h5 class="text-lg font-semibold">{{ $current_date->format('Y-m-d') }}</h5>
-                        <!-- Add content for this day here -->
-                        <p>Details for {{ $current_date->format('Y-m-d') }}</p>
+
+                        @if ($items_by_date->has($current_date->format('Y-m-d')))
+                        <ul class="list-disc list-inside">
+                            @foreach ($items_by_date[$current_date->format('Y-m-d')] as $item)
+                            <li>{{ $item->description }}</li>
+                            @endforeach
+                        </ul>
+                        @else
+                        <p>No items for this date</p>
+                        @endif
                     </div>
                     @php
                     $current_date->addDay();
