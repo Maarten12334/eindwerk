@@ -20,9 +20,15 @@ class ItineraryController extends Controller
 
     public function store(Request $request)
     {
-        $itinerary = new Itinerary($request->all());
-        $itinerary->user_id = auth()->id();
-        $itinerary->save();
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'departure' => 'required|date',
+            'return' => 'required|date|after_or_equal:departure',
+            'flight_id' => 'nullable|string|max:255',
+        ]);
+
+        $validated['user_id'] = auth()->id();
+        Itinerary::create($validated);
 
         return redirect()->route('itineraries.index');
     }
@@ -41,8 +47,15 @@ class ItineraryController extends Controller
 
     public function update(Request $request, $id)
     {
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'departure' => 'required|date',
+            'return' => 'required|date|after_or_equal:departure',
+            'flight_id' => 'nullable|string|max:255',
+        ]);
+
         $itinerary = Itinerary::findOrFail($id);
-        $itinerary->update($request->all());
+        $itinerary->update($validated);
 
         return redirect()->route('itineraries.index');
     }
