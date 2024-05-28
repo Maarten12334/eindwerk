@@ -5,6 +5,8 @@ use App\Http\Controllers\ItineraryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TravelController;
 use App\Http\Controllers\HotelController;
+use App\Http\Controllers\CityController;
+
 
 // Home
 Route::get('/', function () {
@@ -23,6 +25,7 @@ Route::middleware(['auth'])->group(function () {
     // Flight Search
     Route::get('/flights/search', [FlightController::class, 'search'])->name('flights.search');
     Route::get('/flights/results', [FlightController::class, 'results'])->name('flights.results');
+    Route::get('/flights', [TravelController::class, 'searchFlights']);
 
     // Itineraries
     Route::get('/itineraries', [ItineraryController::class, 'index'])->name('itineraries.index');
@@ -45,8 +48,9 @@ Route::middleware(['auth'])->group(function () {
         return view('notifications');
     })->name('notifications');
 
-    Route::get('/flights', [TravelController::class, 'searchFlights']);
-
+    
+    //Hotels
     Route::get('/hotels', [HotelController::class, 'showSearchForm'])->name('hotels.search');
     Route::get('/hotels/results', [HotelController::class, 'listHotelsByCity'])->name('hotels.results');
+
 });

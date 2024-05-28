@@ -11,7 +11,6 @@ class CreateItineraryItemsTable extends Migration
         Schema::create('itinerary_items', function (Blueprint $table) {
             $table->id();
             $table->foreignId('itinerary_id')->constrained()->onDelete('cascade');
-            $table->foreignId('flight_id')->nullable()->constrained()->onDelete('cascade');
             $table->string('type');
             $table->timestamps();
         });
