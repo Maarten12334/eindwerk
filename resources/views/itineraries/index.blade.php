@@ -8,6 +8,6 @@
 
 @section('content')
 <div class="container mx-auto p-4 px-8"> <!-- Added px-8 for side margins -->
-    @if(isset($itineraries))
+    <p>This is the itinerary page</p>
 </div>
 @endsection
