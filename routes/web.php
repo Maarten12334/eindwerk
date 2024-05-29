@@ -48,9 +48,8 @@ Route::middleware(['auth'])->group(function () {
         return view('notifications');
     })->name('notifications');
 
-    
+
     //Hotels
     Route::get('/hotels', [HotelController::class, 'showSearchForm'])->name('hotels.search');
     Route::get('/hotels/results', [HotelController::class, 'listHotelsByCity'])->name('hotels.results');
-
 });
