@@ -16,4 +16,9 @@ class Itinerary extends Model
         'flight_id',
         'user_id',
     ];
+
+    public function items()
+    {
+        return $this->hasMany(ItineraryItem::class);
+    }
 }

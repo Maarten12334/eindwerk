@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Itinerary;
+use Carbon\Carbon;
+
 
 class ItineraryController extends Controller
 {
@@ -36,7 +38,12 @@ class ItineraryController extends Controller
     public function show($id)
     {
         $itinerary = Itinerary::findOrFail($id);
-        return view('itineraries.show', compact('itinerary'));
+        $start_date = Carbon::parse($itinerary->departure);
+        $end_date = Carbon::parse($itinerary->return);
+
+        $items_by_date = $itinerary->items()->orderBy('date')->get()->groupBy('date');
+
+        return view('itineraries.show', compact('itinerary', 'start_date', 'end_date', 'items_by_date'));
     }
 
     public function edit($id)
