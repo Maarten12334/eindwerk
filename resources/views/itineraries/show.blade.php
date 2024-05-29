@@ -20,7 +20,7 @@
                     @while ($current_date->lte($end_date))
                     <div class="w-full md:w-1/2 px-4 mb-6 {{ $counter % 2 == 0 ? 'md:self-start' : 'md:self-end' }}">
                         <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md">
-                            <h5 class="text-lg font-semibold">{{ $current_date->format('d-m') }}</h5>
+                            <h5 class="text-lg font-semibold mb-2">{{ $current_date->format('d-m') }}</h5>
                             @if ($items_by_date->has($current_date->format('Y-m-d')))
                             <ul class="list-disc list-inside">
                                 @foreach ($items_by_date[$current_date->format('Y-m-d')] as $item)
@@ -30,6 +30,7 @@
                             @else
                             <p>No items for this date</p>
                             @endif
+                            @livewire('AddItemsToItinerary', ['current_date' => $current_date])
                         </div>
                     </div>
                     @php
