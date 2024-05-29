@@ -12,6 +12,7 @@ class ItineraryItem extends Model
     protected $fillable = [
         'itinerary_id',
         'date',
+        'type',
         'description',
     ];
 

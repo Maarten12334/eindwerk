@@ -30,7 +30,7 @@
                             @else
                             <p>No items for this date</p>
                             @endif
-                            @livewire('AddItemsToItinerary', ['current_date' => $current_date])
+                            @livewire('AddItemsToItinerary', ['current_date' => $current_date, 'itinerary_id' => $itinerary->id])
                         </div>
                     </div>
                     @php
