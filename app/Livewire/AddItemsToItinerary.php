@@ -4,12 +4,14 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\ItineraryItem;
+use Carbon\Carbon;
 
 class AddItemsToItinerary extends Component
 {
     public $current_date;
     public $itinerary_id;
     public $newItem;
+    public $newTime;
     public $buttonClicked = false;
     public $editItem;
     public $message = 'Add Item';
@@ -25,17 +27,17 @@ class AddItemsToItinerary extends Component
     {
         $this->validate([
             'newItem' => 'required|string|max:255',
+            'newTime' => 'required|date_format:H:i',
         ]);
 
         ItineraryItem::create([
             'itinerary_id' => $this->itinerary_id,
-            'date' => $this->current_date,
+            'date' => Carbon::parse($this->current_date),
+            'time' => $this->newTime,
             'type' => $this->newItem,
-            'description' => '',
         ]);
 
         $this->resetInput();
-        $this->emit('refreshComponent');
     }
 
     public function editItem($itemId)
@@ -43,6 +45,7 @@ class AddItemsToItinerary extends Component
         $item = ItineraryItem::findOrFail($itemId);
         $this->editItem = $item;
         $this->newItem = $item->type;
+        $this->newTime = $item->time;
         $this->buttonClicked = true;
         $this->message = 'Edit Item';
     }
@@ -51,15 +54,17 @@ class AddItemsToItinerary extends Component
     {
         $this->validate([
             'newItem' => 'required|string|max:255',
+            'newTime' => 'required|date_format:H:i',
         ]);
 
         if ($this->editItem) {
             $item = ItineraryItem::findOrFail($this->editItem->id);
             $item->update([
                 'type' => $this->newItem,
+                'date' => Carbon::parse($this->current_date),
+                'time' => $this->newTime,
             ]);
             $this->resetInput();
-            $this->emit('refreshComponent');
         }
     }
 
@@ -73,6 +78,7 @@ class AddItemsToItinerary extends Component
     private function resetInput()
     {
         $this->newItem = '';
+        $this->newTime = '';
         $this->buttonClicked = false;
         $this->editItem = null;
         $this->message = 'Add Item';

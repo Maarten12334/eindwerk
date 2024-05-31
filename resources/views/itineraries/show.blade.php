@@ -31,7 +31,7 @@
                                 @foreach ($items as $item)
                                 <div class="p-2 bg-gray-100 dark:bg-gray-600 rounded border border-gray-200 dark:border-gray-500 text-gray-700 dark:text-gray-300 flex justify-between items-center">
                                     <li>
-                                        {{ $item->type }}
+                                        {{ $item->type }} {{$item->time}}
                                     </li>
                                     <div class="ml-4 flex items-center space-x-2">
                                         <button wire:click="editItem({{ $item->id }})" class="text-blue-500 hover:text-blue-700">
@@ -52,7 +52,7 @@
                             <ul class="space-y-2">
                                 @foreach ($items as $item)
                                 <li class="p-2 bg-gray-100 dark:bg-gray-600 rounded border border-gray-200 dark:border-gray-500 text-gray-700 dark:text-gray-300 flex justify-between items-center">
-                                    <span>{{ $item->type }}</span>
+                                    <span>{{ $item->type }} {{$item->time}}</span>
                                     <div class="ml-4 flex items-center space-x-2">
                                         <button wire:click="editItem({{ $item->id }})" class="text-blue-500 hover:text-blue-700">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
