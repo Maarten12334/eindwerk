@@ -13,7 +13,7 @@ class ItineraryItem extends Model
         'itinerary_id',
         'date',
         'type',
-        'description',
+        'time',
     ];
 
     public function itinerary()
