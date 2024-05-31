@@ -31,11 +31,9 @@ class AddItemsToItinerary extends Component
             'itinerary_id' => $this->itinerary_id,
             'date' => $this->current_date,
             'type' => $this->newItem,
-            'description' => '',
         ]);
 
         $this->resetInput();
-        $this->emit('refreshComponent');
     }
 
     public function editItem($itemId)
