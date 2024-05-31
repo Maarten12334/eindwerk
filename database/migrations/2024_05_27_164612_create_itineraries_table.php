@@ -10,7 +10,7 @@ class CreateItinerariesTable extends Migration
     {
         Schema::create('itineraries', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('flight_id')->nullable();
+            $table->string('flight_id')->nullable();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('name');
             $table->date('departure');
