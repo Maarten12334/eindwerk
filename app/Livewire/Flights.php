@@ -8,6 +8,7 @@ use App\Services\AmadeusService;
 class Flights extends Component
 {
     public $flightSchedule;
+    public $airlineNames;
 
     protected $amadeusService;
 

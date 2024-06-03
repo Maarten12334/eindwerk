@@ -30,7 +30,9 @@ class FlightController extends Controller
         }
         $departureFlightsData = $departureFlights['data'];
 
-        return view('flights.results', compact('returnFlightsData', 'departureFlightsData'));
+        $airlineNames = $departureFlights['dictionaries']['carriers'];
+
+        return view('flights.results', compact('returnFlightsData', 'departureFlightsData', 'airlineNames'));
     }
 
     public Function flightsApiCall($origin, $destination, $departureDate){

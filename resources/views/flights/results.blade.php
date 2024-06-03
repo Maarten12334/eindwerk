@@ -14,18 +14,18 @@
                 @if($returnFlightsData)
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="md:pr-3">
-                            <h2 class="text-xl font-bold mb-4 sticky top-0 bg-white dark:bg-gray-800 z-10">Departure Flights</h2>
+                            <h2 class="text-xl font-bold mb-4 sticky top-0 bg-white dark:bg-gray-800 z-10 p-2">Departure Flights</h2>
                             @foreach($departureFlightsData as $flightSchedule)
                             <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md mb-6">
-                                @livewire('flights', ['flightSchedule' => $flightSchedule])
+                                @livewire('flights', ['flightSchedule' => $flightSchedule, 'airlineNames' => $airlineNames])
                             </div>
                             @endforeach
                         </div>
                         <div class="md:pl-3">
-                            <h2 class="text-xl font-bold mb-4 sticky top-0 bg-white dark:bg-gray-800 z-10">Return Flights</h2>
+                            <h2 class="text-xl font-bold mb-4 sticky top-0 bg-white dark:bg-gray-800 z-10 p-2">Return Flights</h2>
                             @foreach($returnFlightsData as $flightSchedule)
                             <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md mb-6">
-                                @livewire('flights', ['flightSchedule' => $flightSchedule])
+                                @livewire('flights', ['flightSchedule' => $flightSchedule, 'airlineNames' => $airlineNames])
                             </div>
                             @endforeach
                         </div>
@@ -33,10 +33,10 @@
                 @else
                     <div class="grid grid-cols-1 justify-center">
                         <div class="md:mx-auto">
-                            <h2 class="text-xl font-bold mb-4 sticky top-0 bg-white dark:bg-gray-800 z-10">Departure Flights</h2>
+                            <h2 class="text-xl font-bold mb-4 sticky top-0 bg-white dark:bg-gray-800 z-10 p-2">Departure Flights</h2>
                             @foreach($departureFlightsData as $flightSchedule)
                             <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md mb-6">
-                                @livewire('flights', ['flightSchedule' => $flightSchedule])
+                                @livewire('flights', ['flightSchedule' => $flightSchedule, 'airlineNames' => $airlineNames])
                             </div>
                             @endforeach
                         </div>
