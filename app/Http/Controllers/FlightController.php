@@ -20,6 +20,7 @@ class FlightController extends Controller
         $destination = $request->input('destination', 'NYC');
         $departureDate = $request->input('departureDate', '2024-12-25');
         $returnDate = $request->input('returnDate', '2024-12-25');
+        $nonstop = $request->input('nonStop');
 
         $departureFlights = $this->flightsApiCall($origin, $destination, $departureDate);
         if(isset($returnDate)){
@@ -32,7 +33,7 @@ class FlightController extends Controller
 
         $airlineNames = $departureFlights['dictionaries']['carriers'];
 
-        return view('flights.results', compact('returnFlightsData', 'departureFlightsData', 'airlineNames'));
+        return view('flights.results', compact('returnFlightsData', 'departureFlightsData', 'airlineNames', 'nonstop'));
     }
 
     public Function flightsApiCall($origin, $destination, $departureDate){
