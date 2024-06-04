@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="flex items-center ml-4">
-                    <input type="checkbox" name="nonStop" id="nonStop" class="form-checkbox h-4 w-4 text-blue-600 transition duration-150 ease-in-out">
+                    <input type="checkbox" name="nonStop" id="nonStop" value= "1" class="form-checkbox h-4 w-4 text-blue-600 transition duration-150 ease-in-out">
                     <label for="nonStop" class="ml-2 dark:text-white">Non-stop flights only</label>
                 </div>
             </div>

@@ -8,6 +8,9 @@
     <title>Flights</title>
 </head>
 <body>
+    @php
+    dd($nonStop);
+    @endphp
     <h1>Available Flights</h1>
     <table>
         <thead>

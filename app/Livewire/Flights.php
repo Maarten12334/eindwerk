@@ -10,6 +10,7 @@ class Flights extends Component
     public $flightSchedule;
     public $airlineNames;
 
+
     protected $amadeusService;
 
     public function render()
