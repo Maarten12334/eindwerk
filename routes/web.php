@@ -5,7 +5,7 @@ use App\Http\Controllers\ItineraryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TravelController;
 use App\Http\Controllers\HotelController;
-use App\Http\Controllers\CityController;
+
 
 
 // Home
@@ -22,7 +22,7 @@ Route::middleware(['auth'])->group(function () {
         return view('dashboard');
     })->name('dashboard');
 
-    // Flight Search
+    // Flights
     Route::get('/flights/search', [FlightController::class, 'search'])->name('flights.search');
     Route::get('/flights/results', [FlightController::class, 'results'])->name('flights.results');
     Route::get('/flights', [TravelController::class, 'searchFlights']);
@@ -47,7 +47,6 @@ Route::middleware(['auth'])->group(function () {
 
         return view('notifications');
     })->name('notifications');
-
 
     //Hotels
     Route::get('/hotels', [HotelController::class, 'showSearchForm'])->name('hotels.search');
