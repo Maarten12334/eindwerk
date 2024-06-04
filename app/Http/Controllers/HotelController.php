@@ -3,52 +3,53 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Services\AmadeusService;
-use Illuminate\Pagination\LengthAwarePaginator;
+use App\Services\GooglePlacesService;
+use Illuminate\Support\Facades\File;
 
 class HotelController extends Controller
 {
-    protected $amadeusService;
+    protected $googlePlaces;
 
-    public function __construct(AmadeusService $amadeusService)
+    public function __construct(GooglePlacesService $googlePlaces)
     {
-        $this->amadeusService = $amadeusService;
+        $this->googlePlaces = $googlePlaces;
     }
 
-    public function listHotelsByCity(Request $request)
-    {
-        $cityCode = $request->input('cityCode');
-        $radius = $request->input('radius', 5);
-        $radiusUnit = $request->input('radiusUnit', 'KM');
-        $hotelSource = $request->input('hotelSource', 'ALL');
-
-        $hotels = $this->amadeusService->searchHotelsByCity($cityCode, $radius, $radiusUnit, $hotelSource);
-
-        if (isset($hotels['error'])) {
-            // Handle the error gracefully in the view
-            return view('hotels.results', ['error' => $hotels['message']]);
-        }
-
-        // Manually paginate the results
-        $currentPage = LengthAwarePaginator::resolveCurrentPage();
-        $perPage = 10;
-        $currentItems = array_slice($hotels['data'], ($currentPage - 1) * $perPage, $perPage);
-        $paginatedHotels = new LengthAwarePaginator($currentItems, count($hotels['data']), $perPage, $currentPage, [
-            'path' => LengthAwarePaginator::resolveCurrentPath(),
-            'query' => $request->query(), // Keep query parameters for pagination links
-        ]);
-
-        return view('hotels.results', [
-            'hotels' => $paginatedHotels,
-            'cityCode' => $cityCode,
-            'radius' => $radius,
-            'radiusUnit' => $radiusUnit,
-            'hotelSource' => $hotelSource
-        ]);
-    }
-
-    public function showSearchForm()
+    public function search()
     {
         return view('hotels.search');
+    }
+
+    public function apiRequest(Request $request)
+    {
+        $city = $request->input('city');
+        $radius = $request->input('radius', 5000);
+        $type = 'hotel';
+
+        $coordinates = $this->googlePlaces->getCoordinatesFromCity($city);
+        if ($coordinates) {
+            $places = $this->googlePlaces->searchPlaces($type, $coordinates, $radius);
+            return response()->json($places);
+        } else {
+            return response()->json(['error' => 'Unable to get coordinates.'], 400);
+        }
+    }
+
+    public function returnTestJson(Request $request)
+    {
+        $path = storage_path('testingHotels.json');
+        if (File::exists($path)) {
+            $content = File::get($path);
+            $data = json_decode($content, true);
+            return response()->json($data);
+        } else {
+            return response()->json(['error' => 'File not found.'], 404);
+        }
+    }
+
+    public function details(Request $request, $placeId)
+    {
+        $placeDetails = $this->googlePlaces->getPlaceDetails($placeId);
+        return response()->json($placeDetails);
     }
 }

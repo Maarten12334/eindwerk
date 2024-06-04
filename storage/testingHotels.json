@@ -1,0 +1,938 @@
+[
+    {
+        "geometry": {
+            "location": {
+                "lat": 51.5072178,
+                "lng": -0.1275862
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.672343248987,
+                    "lng": 0.14827103356112
+                },
+                "southwest": {
+                    "lat": 51.384940124291,
+                    "lng": -0.351468338421815
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+        "icon_background_color": "#7B9EB0",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+        "name": "London",
+        "photos": [
+            {
+                "height": 480,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/102888766378357381706\"\u003ESANJIB Das\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZne_4yyF7nAHm9TYBRK57uFb0v5HSfs2nCub-5fWE2dlM_5MBn8-U-cx71XELslVwftIFQhw9XPH0zKc_Esx8pvEQj6Uk-RleB6B7SkgJ1WvUzRaW0p8GViXYeuh-tgHsgfntrrV_yMc33MbtiK3_XPiINoV748DdVBCqUCtbmBijVS",
+                "width": 639
+            }
+        ],
+        "place_id": "ChIJdd4hrwug2EcRmSrV3Vo6llI",
+        "reference": "ChIJdd4hrwug2EcRmSrV3Vo6llI",
+        "scope": "GOOGLE",
+        "types": ["locality", "political"],
+        "vicinity": "London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5084092,
+                "lng": -0.124743
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5096389302915,
+                    "lng": -0.123722819708498
+                },
+                "southwest": {
+                    "lat": 51.5069409697085,
+                    "lng": -0.126420780291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "The Clermont London, Charing Cross",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 5665,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/115691370904015137174\"\u003EThe Clermont Hotel, Charing Cross\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZlkGqBtvNvK8SbLhWJxLkXEADpRUSqiGzgQ0V0jLoZ8tuAM92yqacJE29qlANXJ7wYo9VNaBtuVg0klMtJWxaBwRY4WNqyNFsuecOyEvVrPN-drJU6c4jXs8jzC-WW9jWPreCAjlf7IQeD6m545bpZTeIWDiD7nqYKMr60Svl8TgIoR",
+                "width": 8497
+            }
+        ],
+        "place_id": "ChIJZf2Jlc4EdkgRklHks51KYBo",
+        "plus_code": {
+            "compound_code": "GV5G+94 London, UK",
+            "global_code": "9C3XGV5G+94"
+        },
+        "rating": 4.5,
+        "reference": "ChIJZf2Jlc4EdkgRklHks51KYBo",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "lodging",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 2560,
+        "vicinity": "Strand, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5064603,
+                "lng": -0.1243126
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5077216802915,
+                    "lng": -0.122957269708498
+                },
+                "southwest": {
+                    "lat": 51.5050237197085,
+                    "lng": -0.125655230291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "Corinthia London",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 1181,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/110803740545314797141\"\u003ECorinthia London\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZmN73J9mJ5_0SznnCY7aB8Jvv5xrOyRMGKM00rSvXhjyk1PZaz2w1mpx1j6oQYtXOYQHF44IlRic2OGu_Yw_TMzPvPEkh3VoNDWVnoRYfTmyEVtHtrEGisiv2nuPBiuVfD1fjDKtIRwFlVuF-QeJyOjmyk-rzm3oARfG2hr5R_ECF1C",
+                "width": 1692
+            }
+        ],
+        "place_id": "ChIJ0dU6L88EdkgRSRva6TI0lsY",
+        "plus_code": {
+            "compound_code": "GV4G+H7 London, UK",
+            "global_code": "9C3XGV4G+H7"
+        },
+        "rating": 4.7,
+        "reference": "ChIJ0dU6L88EdkgRSRva6TI0lsY",
+        "scope": "GOOGLE",
+        "types": ["lodging", "point_of_interest", "establishment"],
+        "user_ratings_total": 3283,
+        "vicinity": "Whitehall Place, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5060478,
+                "lng": -0.1241368
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5074082302915,
+                    "lng": -0.122889819708498
+                },
+                "southwest": {
+                    "lat": 51.5047102697085,
+                    "lng": -0.125587780291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "The Royal Horseguards Hotel & One Whitehall Place, London",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 1245,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/104982377979790317981\"\u003EThe Royal Horseguards Hotel &amp; One Whitehall Place, London\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZk7UUM2EcYnwPL0NrGgG-rgrQnsFKz_iOS6CQUmZWPHwhFWjQEV-Iz4gsQ7YM90Vn8e_wZkCht5V4Ac0v9wywL4UjmUoZ0C_atDq-XDNGy-DnRFCRwpaDBNllmQuwYDdl7EC2KtHaHk1ivhJaJf98L-kNXrGZZmz025nvTXov-ePkxf",
+                "width": 1920
+            }
+        ],
+        "place_id": "ChIJc9zIO88EdkgRtiF_0UhDLZk",
+        "plus_code": {
+            "compound_code": "GV4G+C8 London, UK",
+            "global_code": "9C3XGV4G+C8"
+        },
+        "rating": 4.4,
+        "reference": "ChIJc9zIO88EdkgRtiF_0UhDLZk",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "lodging",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 2467,
+        "vicinity": "2 Whitehall Court, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5098669,
+                "lng": -0.1297669
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5113083802915,
+                    "lng": -0.128818869708498
+                },
+                "southwest": {
+                    "lat": 51.5086104197085,
+                    "lng": -0.131516830291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "Radisson Blu Hampshire Hotel, London",
+        "photos": [
+            {
+                "height": 1365,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/103398050898135161305\"\u003ERadisson Blu Edwardian Hampshire Hotel, London\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZmVmeenPDanKzpX649jcTgxDboDaF-8E6mtKNzWSQ9Hgs669JXbpnADYJOyROuJG4PXLUXjXM6E5CinvBOA0KuboJV5VhsYnrSKNblM4nOY4mdESOcYMBNCqQKD4lPQiZNxaNahbltVLUk7hyX2NcKsn2f5xuiuUJ9E88QTtgYMua_-",
+                "width": 2048
+            }
+        ],
+        "place_id": "ChIJF-WCA9IEdkgRnhW704RFvCI",
+        "plus_code": {
+            "compound_code": "GV5C+W3 London, UK",
+            "global_code": "9C3XGV5C+W3"
+        },
+        "rating": 4.3,
+        "reference": "ChIJF-WCA9IEdkgRnhW704RFvCI",
+        "scope": "GOOGLE",
+        "types": ["lodging", "point_of_interest", "establishment"],
+        "user_ratings_total": 1051,
+        "vicinity": "31-36 Leicester Square, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5110378,
+                "lng": -0.1302996
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5126366302915,
+                    "lng": -0.128925019708498
+                },
+                "southwest": {
+                    "lat": 51.5099386697085,
+                    "lng": -0.131622980291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "Premier Inn London Leicester Square hotel",
+        "photos": [
+            {
+                "height": 2848,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/100671543744203745509\"\u003EPremier Inn London Leicester Square hotel\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZknd3vZht1drmf5B_JdHdeiaCyHN5Uf69HCItY8gkyxDtAGzAEK41Ofs675k9HwyelTlEs248-NcI0XowjTpgp_t-YWX9UfY96-Eew83DFjHAXoiUGthUANKis51XBD3qNbubWebyzopP2Mm4qjVEzLS1MBeFArPiRGlSmZ4oeVT6Im",
+                "width": 4288
+            }
+        ],
+        "place_id": "ChIJJUyxFNIEdkgRajb-0tlYT_0",
+        "plus_code": {
+            "compound_code": "GV69+CV London, UK",
+            "global_code": "9C3XGV69+CV"
+        },
+        "rating": 4.1,
+        "reference": "ChIJJUyxFNIEdkgRajb-0tlYT_0",
+        "scope": "GOOGLE",
+        "types": [
+            "lodging",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 974,
+        "vicinity": "Queens House, 1 Leicester Square, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.510843,
+                "lng": -0.1314287
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5121739802915,
+                    "lng": -0.130212369708498
+                },
+                "southwest": {
+                    "lat": 51.5094760197085,
+                    "lng": -0.132910330291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "W London",
+        "photos": [
+            {
+                "height": 320,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/111582798710869861421\"\u003EW London\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZlDf_Zf6XdJ2XSR-MbYBREAsONYojAjm4GATjVhRdCzZT_2imHhg_Ut4UgPZN0PdcGnuXDvYKgMswwsIfx5lIaI9tw17kxdO0DtwEfMmWktFqhL9nBuS2s8NrnMTwCkJ9c7_ro9ujtsnxBtywczooHYuhJy4vDVYoH2-a08JmV0rg49",
+                "width": 480
+            }
+        ],
+        "place_id": "ChIJ24-dOtIEdkgRUdpPyAD1PmI",
+        "plus_code": {
+            "compound_code": "GV69+8C London, UK",
+            "global_code": "9C3XGV69+8C"
+        },
+        "rating": 4.2,
+        "reference": "ChIJ24-dOtIEdkgRUdpPyAD1PmI",
+        "scope": "GOOGLE",
+        "types": ["lodging", "point_of_interest", "establishment"],
+        "user_ratings_total": 1495,
+        "vicinity": "10 Wardour Street, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5101494,
+                "lng": -0.1205205
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5115776802915,
+                    "lng": -0.119289319708498
+                },
+                "southwest": {
+                    "lat": 51.5088797197085,
+                    "lng": -0.121987280291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "The Savoy",
+        "photos": [
+            {
+                "height": 600,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/111756005236800162016\"\u003EThe Savoy\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZkCIhQLRTfNAf66w7L038FabiJEvJC9ilAX39OSAMzo_rgPP0CMaSDQ_OmKR7D2kXP7kgHU-cS-2eu-olKSAoM_aZpeLPoX8xpxRnsS9rJhRAvuBuS2aVDwYU6Op6dDTTrJ_oOwUnnP90RMtZVo_3yghmt0o8JZX1G6n08kz0zmT8U",
+                "width": 975
+            }
+        ],
+        "place_id": "ChIJTVquz8sEdkgRKdz7pP3v9BU",
+        "plus_code": {
+            "compound_code": "GV6H+3Q London, UK",
+            "global_code": "9C3XGV6H+3Q"
+        },
+        "rating": 4.7,
+        "reference": "ChIJTVquz8sEdkgRKdz7pP3v9BU",
+        "scope": "GOOGLE",
+        "types": ["lodging", "point_of_interest", "establishment"],
+        "user_ratings_total": 9192,
+        "vicinity": "Strand, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5108923,
+                "lng": -0.120843
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5122259302915,
+                    "lng": -0.119740069708498
+                },
+                "southwest": {
+                    "lat": 51.5095279697085,
+                    "lng": -0.122438030291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "Strand Palace",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 3755,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/106211313699521269653\"\u003EStrand Palace\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZmxksR-5Lyg7FUeS_hHYuTzezhHLdv3UkzZFijNFw43K5rFqHRr13arfpPbPK7pN5MqjyP7_biVI8xuurXl-nIkqqs8-w1lX5qTRk_LHp-MFofudSQ6pPouQ2uV0ICqvLOxtqgNhBBtBIUbjr5UU2Jxmu1LHwMe8qCUneUoHlYARh_I",
+                "width": 5632
+            }
+        ],
+        "place_id": "ChIJa7MYyssEdkgRW0GxGFyDvWw",
+        "plus_code": {
+            "compound_code": "GV6H+9M London, UK",
+            "global_code": "9C3XGV6H+9M"
+        },
+        "rating": 4,
+        "reference": "ChIJa7MYyssEdkgRW0GxGFyDvWw",
+        "scope": "GOOGLE",
+        "types": ["lodging", "point_of_interest", "establishment"],
+        "user_ratings_total": 6671,
+        "vicinity": "372 Strand, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5078655,
+                "lng": -0.1378338
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5092068802915,
+                    "lng": -0.136649569708498
+                },
+                "southwest": {
+                    "lat": 51.5065089197085,
+                    "lng": -0.139347530291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "The Cavendish London Hotel",
+        "photos": [
+            {
+                "height": 3780,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/100763868416974300458\"\u003EThe Cavendish London Hotel\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZmZgZUduWVlU1PCC5hmAoj7TUxLPKkFPlJfm48CrzhPxZ4jm7WFS1sxxMKnZ5un6kHLtugTc2dziHv8Kk5LUA2-rPwYGSp2fTTSseFQftXhBhEveVkqH9fM_sa09gKrg3gZCRj8rjcMtINUE6QdjSI0AMxTWNlgADd2MO9M-tXgTdmh",
+                "width": 6720
+            }
+        ],
+        "place_id": "ChIJ_S_nWNYEdkgRbwBTLQTISZM",
+        "plus_code": {
+            "compound_code": "GV56+4V London, UK",
+            "global_code": "9C3XGV56+4V"
+        },
+        "rating": 4.4,
+        "reference": "ChIJ_S_nWNYEdkgRbwBTLQTISZM",
+        "scope": "GOOGLE",
+        "types": [
+            "city_hall",
+            "local_government_office",
+            "lodging",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1093,
+        "vicinity": "81 Jermyn Street, St. James's, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5117908,
+                "lng": -0.11934
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5131305302915,
+                    "lng": -0.117821119708498
+                },
+                "southwest": {
+                    "lat": 51.5104325697085,
+                    "lng": -0.120519080291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "One Aldwych",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 3375,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/102856272130151011790\"\u003EOne Aldwych Hotel\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZnQaSEDKV7TIyFYjHuhMFtYHIAfErD2h-e2oAyo1xqjxLgvmfYMhKAbPiFDTujyty6ncJodbRr34YHHXOl7OFurCHorqLr_vHiFstbQ2Cr6QIJITPYSDx1OWwY7AL7-bTVhFwl1cWoRGS8zvItaQ8IQkL_3Jzb3-x3rHoST9QomjLh9",
+                "width": 5315
+            }
+        ],
+        "place_id": "ChIJq5XIW8oEdkgRqmg5RAC_ih8",
+        "plus_code": {
+            "compound_code": "GV6J+P7 London, UK",
+            "global_code": "9C3XGV6J+P7"
+        },
+        "rating": 4.6,
+        "reference": "ChIJq5XIW8oEdkgRqmg5RAC_ih8",
+        "scope": "GOOGLE",
+        "types": [
+            "bar",
+            "spa",
+            "lodging",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1365,
+        "vicinity": "1 Aldwych, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5145658,
+                "lng": -0.1271199
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5158971802915,
+                    "lng": -0.125652269708498
+                },
+                "southwest": {
+                    "lat": 51.5131992197085,
+                    "lng": -0.128350230291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "Covent Garden Hotel",
+        "photos": [
+            {
+                "height": 5131,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/103596128011107335827\"\u003ECovent Garden Hotel\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZl83BpZiznLu1NcXRKYuEkPIHdm7QjFWzcoRcKJ-qXH8zPFs5peMEE_cq2HplaZmb4JxeCUrqUBb6vE8g3aCya_ZVKpN5OxF88OWv65xX36T2UlTJONItoehB0b3ckTUXg6xVpwvx9aczk6mTCjNkZmAp6o9LlcfqgKtVO7tvI8E-lg",
+                "width": 5783
+            }
+        ],
+        "place_id": "ChIJe0XrMc0EdkgR73cT3U4ghp4",
+        "plus_code": {
+            "compound_code": "GV7F+R5 London, UK",
+            "global_code": "9C3XGV7F+R5"
+        },
+        "rating": 4.6,
+        "reference": "ChIJe0XrMc0EdkgR73cT3U4ghp4",
+        "scope": "GOOGLE",
+        "types": [
+            "lodging",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 645,
+        "vicinity": "10 Monmouth Street, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5024997,
+                "lng": -0.1180709
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5038297302915,
+                    "lng": -0.116590819708498
+                },
+                "southwest": {
+                    "lat": 51.5011317697085,
+                    "lng": -0.119288780291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "Premier Inn London County Hall hotel",
+        "photos": [
+            {
+                "height": 1000,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/108449864746154231104\"\u003EPremier Inn London County Hall hotel\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZlVG19P77EmBGSI4CuHqhhmkGIz1fx1fh-qtdWVRL3GLQ8ZVJtxlpk57aS29H52683tOVfXgV09Iv_87oTPJklqxotddby7N2OWvILBRHK-DR6ftzF7pmaqKwH-L-hxYdUQIGD4Bu_cKWaDI2G7PMEeL5ELGye2Kze8TnhDd4Tr_hlV",
+                "width": 1500
+            }
+        ],
+        "place_id": "ChIJLTMzFXqv2EcRJVvr2rP600M",
+        "plus_code": {
+            "compound_code": "GV2J+XQ London, UK",
+            "global_code": "9C3XGV2J+XQ"
+        },
+        "rating": 4.3,
+        "reference": "ChIJLTMzFXqv2EcRJVvr2rP600M",
+        "scope": "GOOGLE",
+        "types": [
+            "lodging",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 2977,
+        "vicinity": "County Hall, Belvedere Road, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5125403,
+                "lng": -0.1189807
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5138443802915,
+                    "lng": -0.117512569708498
+                },
+                "southwest": {
+                    "lat": 51.5111464197085,
+                    "lng": -0.120210530291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "The Waldorf Hilton, London",
+        "photos": [
+            {
+                "height": 1282,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/115819569792734675405\"\u003EThe Waldorf Hilton, London\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZmaQoSK-nUXTzZ0YczTujDmBHy1sGJG6iNR8dmO7fH_xO1Y1vqEP6L2hmXeDhQlDN01TdncNjVLC_jmvXfnj9MWEeMq7yqGEFHT-DFSGmpUy73dQdsTHeJvRvgbQ73R4YWUQj5ekIIWa8DkgLtXd4BnV9dmBVBoF_cO5CmgHKrMFPCF",
+                "width": 1920
+            }
+        ],
+        "place_id": "ChIJQ1OI9coEdkgR33-hA4sRcks",
+        "plus_code": {
+            "compound_code": "GV7J+2C London, UK",
+            "global_code": "9C3XGV7J+2C"
+        },
+        "rating": 4.3,
+        "reference": "ChIJQ1OI9coEdkgR33-hA4sRcks",
+        "scope": "GOOGLE",
+        "types": ["lodging", "point_of_interest", "establishment"],
+        "user_ratings_total": 3598,
+        "vicinity": "Aldwych, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5139885,
+                "lng": -0.1337476
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5153895802915,
+                    "lng": -0.132342419708498
+                },
+                "southwest": {
+                    "lat": 51.5126916197085,
+                    "lng": -0.135040380291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "The Soho Hotel",
+        "photos": [
+            {
+                "height": 1159,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/112906293084975037529\"\u003EThe Soho Hotel\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZnywSEKEYuKRDFxWeIdntTsAP6OdsTEbYvbNy30fD0iH8vfvDiUs46vOeQUenK6kVt0ZhHFyYDWozXZfXezE_FB5SYG4g5ieg-4d8fdj8tWgc2gJvGC-1P0xfegh4UUc6gvQsURBHzG8lOh9UPBhpEiw2x6exy_zsc_QGH-nstthbsr",
+                "width": 2000
+            }
+        ],
+        "place_id": "ChIJE4E1QdMEdkgRSpJ-bmPNffY",
+        "plus_code": {
+            "compound_code": "GV78+HG London, UK",
+            "global_code": "9C3XGV78+HG"
+        },
+        "rating": 4.6,
+        "reference": "ChIJE4E1QdMEdkgRSpJ-bmPNffY",
+        "scope": "GOOGLE",
+        "types": ["lodging", "point_of_interest", "establishment"],
+        "user_ratings_total": 1427,
+        "vicinity": "Soho Hotel, 4 Richmond Mews, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5010534,
+                "lng": -0.119174
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.50359965,
+                    "lng": -0.11734505
+                },
+                "southwest": {
+                    "lat": 51.50003745,
+                    "lng": -0.12024165
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "London Marriott Hotel County Hall",
+        "photos": [
+            {
+                "height": 320,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/117527725709759346469\"\u003ELondon Marriott Hotel County Hall\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZk5JU_2hyteiBPjO1Y6ozCfzNjaSbRSF6hKvOPfhZuWAPwF0Jf_o7f7ToBR1DyNGIEe0rzEw_d3mpGY_-j_MmsxFuLSg-cd92mT5HryTLWPHRpnlTaRiWJGbLNMk8pDwdCSJuOHVRecVH9SFfNm8XUGrJ6z1Ie_3m5Y3fGS2WGQUX52",
+                "width": 480
+            }
+        ],
+        "place_id": "ChIJLTMzFXqv2EcRVvwDkIeNh6k",
+        "plus_code": {
+            "compound_code": "GV2J+C8 London, UK",
+            "global_code": "9C3XGV2J+C8"
+        },
+        "rating": 4.4,
+        "reference": "ChIJLTMzFXqv2EcRVvwDkIeNh6k",
+        "scope": "GOOGLE",
+        "types": ["lodging", "point_of_interest", "establishment"],
+        "user_ratings_total": 1498,
+        "vicinity": "County Hall, Westminster Bridge Road, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5118147,
+                "lng": -0.1186952
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5130754302915,
+                    "lng": -0.117453019708498
+                },
+                "southwest": {
+                    "lat": 51.5103774697085,
+                    "lng": -0.120150980291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "ME London",
+        "opening_hours": {
+            "open_now": true
+        },
+        "photos": [
+            {
+                "height": 533,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/112269094023473963434\"\u003EME London\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZn6QjcigI3USRnC9mZCRZ-7m2EjiodeNDmfxRbd4sY1am_Pl4ZWPvMt3F5u491dqzjoFK7ahS7Oao-GtA8OsAOUklb4sGJhTSgeeiELA7UnCxNqY8yGsTpyzUiWYkI3D1InDGQvEibhkGEc96GuiL6nTOwF6hMYz05tjIHewEgsnG0X",
+                "width": 800
+            }
+        ],
+        "place_id": "ChIJ1YZwStYPbUgRZJyqw-hh_Vk",
+        "plus_code": {
+            "compound_code": "GV6J+PG London, UK",
+            "global_code": "9C3XGV6J+PG"
+        },
+        "rating": 4.4,
+        "reference": "ChIJ1YZwStYPbUgRZJyqw-hh_Vk",
+        "scope": "GOOGLE",
+        "types": ["lodging", "point_of_interest", "establishment"],
+        "user_ratings_total": 1815,
+        "vicinity": "Strand, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.4991371,
+                "lng": -0.1344175
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5003094302915,
+                    "lng": -0.133015919708498
+                },
+                "southwest": {
+                    "lat": 51.4976114697085,
+                    "lng": -0.135713880291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "St. Ermin's Hotel, Autograph Collection",
+        "photos": [
+            {
+                "height": 320,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/103436890858950792463\"\u003ESt. Ermin&#39;s Hotel, Autograph Collection\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZkZEtcOM2Tnlcm5AlgDSBMSOOjiRAOcFfxQ8wMsvI92VpyMXfYjfWj1qvxcY84CQWjZ--7whjIxZB-QGB6PcWEFDY-GSwmc9PYkKknvrfkZUMpy7NgcZCqduEOwvuXTJUdf5K31rvvQ8TdqLrvbs9rJ-KeG6l7aoYtrjL5XKNdPoVw",
+                "width": 480
+            }
+        ],
+        "place_id": "ChIJ_RmXqN4EdkgRzKAQ29aPpfo",
+        "plus_code": {
+            "compound_code": "FVX8+M6 London, UK",
+            "global_code": "9C3XFVX8+M6"
+        },
+        "rating": 4.6,
+        "reference": "ChIJ_RmXqN4EdkgRzKAQ29aPpfo",
+        "scope": "GOOGLE",
+        "types": ["lodging", "point_of_interest", "establishment"],
+        "user_ratings_total": 2195,
+        "vicinity": "2 Caxton Street, London"
+    },
+    {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+            "location": {
+                "lat": 51.5018864,
+                "lng": -0.1165677
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5032581802915,
+                    "lng": -0.115315869708498
+                },
+                "southwest": {
+                    "lat": 51.5005602197085,
+                    "lng": -0.118013830291502
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "icon_background_color": "#909CE1",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+        "name": "Premier Inn London Waterloo (Westminster Bridge) hotel",
+        "photos": [
+            {
+                "height": 2848,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/112781498275979817258\"\u003EPremier Inn London Waterloo (Westminster Bridge) hotel\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZnc7Xp7hcyQKDkFxR3EDskdCkyxHvHO3b9G_yEdbgeoSWKyLjLmguazZmq-CLGB2gPZwiq8jjdu01YCar8A0E49SbxakDfR0cJRV_ng8hgEr_Qu7M0aQjHqoN3zHa-I2v8AYpvn1B6Jpx3_NGGUxRNrblvtBg9SXur75NWQMHiQAMXw",
+                "width": 4288
+            }
+        ],
+        "place_id": "ChIJ_75-fbgEdkgRp4ql6Rq76ao",
+        "plus_code": {
+            "compound_code": "GV2M+Q9 London, UK",
+            "global_code": "9C3XGV2M+Q9"
+        },
+        "rating": 4.1,
+        "reference": "ChIJ_75-fbgEdkgRp4ql6Rq76ao",
+        "scope": "GOOGLE",
+        "types": [
+            "lodging",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+        ],
+        "user_ratings_total": 1998,
+        "vicinity": "85 York Road, London"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 51.4935082,
+                "lng": -0.1178424
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 51.5098445100814,
+                    "lng": -0.0900331980916214
+                },
+                "southwest": {
+                    "lat": 51.4109846514487,
+                    "lng": -0.151240054532604
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+        "icon_background_color": "#7B9EB0",
+        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+        "name": "Lambeth",
+        "photos": [
+            {
+                "height": 3274,
+                "html_attributions": [
+                    "\u003Ca href=\"https://maps.google.com/maps/contrib/101829428569930477661\"\u003ETony\u003C/a\u003E"
+                ],
+                "photo_reference": "AUGGfZkT9mwSwVDZj8oV-dvUEcOALXf1pDrdAdnsSWSBpb9zQOjGaSA4hQQ5uMyism98WGdckdnbJ1Cowcilzyz21t70sBGXkFHXqiajynQpue17s5LGA5HUZRjnztE9FiTTClTIh_OTe4bRKnj8vTQywtlrCW7qXE2Yb0V04jj206KE9peC",
+                "width": 2403
+            }
+        ],
+        "place_id": "ChIJHSzWIr8EdkgRcmFNv46Ix90",
+        "reference": "ChIJHSzWIr8EdkgRcmFNv46Ix90",
+        "scope": "GOOGLE",
+        "types": ["sublocality_level_1", "sublocality", "political"],
+        "vicinity": "Lambeth"
+    }
+]

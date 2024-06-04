@@ -52,23 +52,4 @@ class AmadeusService
 
         return json_decode($response->getBody()->getContents(), true);
     }
-
-    public function searchHotelsByCity($cityCode, $radius, $radiusUnit, $hotelSource)
-    {
-        $accessToken = $this->getAccessToken();
-
-        $response = $this->client->get($this->baseUri . '/v1/reference-data/locations/hotels/by-city', [
-            'headers' => [
-                'Authorization' => 'Bearer ' . $accessToken,
-            ],
-            'query' => [
-                'cityCode' => $cityCode,
-                'radius' => $radius,
-                'radiusUnit' => $radiusUnit,
-                'hotelSource' => $hotelSource
-            ],
-        ]);
-
-        return json_decode($response->getBody()->getContents(), true);
-    }
 }
