@@ -7,6 +7,8 @@
 @endsection
 
 @section('content')
-
-
+@php
+//dd($images);
+@endphp
+<img src={{ $images->getContent() }} alt="">
 @endsection

@@ -1,938 +1,1346 @@
-[
-    {
-        "geometry": {
-            "location": {
-                "lat": 51.5072178,
-                "lng": -0.1275862
+{
+    "places": [
+        {
+            "id": "ChIJpXvRWo29oRQRfWnibJmlLs4",
+            "formattedAddress": "Leof. Andrea Siggrou 115, Athina 117 45, Greece",
+            "rating": 4.4,
+            "websiteUri": "https://www.hyatt.com/grand-hyatt/en-US/athgh-grand-hyatt-athens/?src=corp_lclb_gmb_seo_athgh",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 4253,
+            "displayName": {
+                "text": "Grand Hyatt Athens",
+                "languageCode": "en"
             },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.672343248987,
-                    "lng": 0.14827103356112
+            "photos": [
+                {
+                    "name": "places/ChIJpXvRWo29oRQRfWnibJmlLs4/photos/AUGGfZlBWhbBivc5haOvTomy9Q-WZHXGvP98FhMwhon9P7Afef3knuFwfBxUh_W89CdNjnCrTusbJXSLHLz33Zcxk1_qiXikrDJ_FX6WAHa4VZtxMCHWXMFpSwf0OA1ysKZZSib5eikpK3DwNMsEyWdlZre4PJesKoKq0KcD",
+                    "widthPx": 6680,
+                    "heightPx": 4453,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Grand Hyatt Athens",
+                            "uri": "//maps.google.com/maps/contrib/107328422014445016193",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjU-hEV12c1fnkpThX6DcryLobLcy0un_-8wz9aJm6XcIwX51Uw=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.384940124291,
-                    "lng": -0.351468338421815
+                {
+                    "name": "places/ChIJpXvRWo29oRQRfWnibJmlLs4/photos/AUGGfZnKk4PEMG0QcHIl1AxYti1TUSVGEaba89b5iBHm9nebjnf2jUje7zNgSZEs78r_8sQW4vRJTlGQzoR5Xlzo3vR6f5P-zXUSgX97nGmuYZzo_SSJoTHZrBiLuzXP_fgir_SmYIvV-0g80bR0aWWgkcQFqP6LWYj_n9J6",
+                    "widthPx": 4000,
+                    "heightPx": 3000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Marcus Durr",
+                            "uri": "//maps.google.com/maps/contrib/103507126009831625561",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXOquaKJ4mojAX0xVkWM87fszsuhUhO1SuSy_SAKXcaa-M2DS1Abg=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpXvRWo29oRQRfWnibJmlLs4/photos/AUGGfZm3891TPJ1V-adKpgxH1xNHCHhJev-hUeskaUMLBRiesg7ckSE2YAz8xxtyROtf8x5TU88QyD-eFOokPJfvm5eBqEPLr9CjfwvuCO05Go7pcQlMbGTHR4PPbbR4BAOlltIYwyPHuWdxPa8j8JF7IISz6Kt-cSMy7Y9J",
+                    "widthPx": 4032,
+                    "heightPx": 2268,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Diane Chau",
+                            "uri": "//maps.google.com/maps/contrib/108384295392644426961",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocICDNo3k-yhjZIo_ry-7UpFdRbB2rcaOeTFZyhPlmOz_NoPgmjI=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpXvRWo29oRQRfWnibJmlLs4/photos/AUGGfZl1VdsJfmck-987r2umUZh4j6qggLKz3a4Dc9NPUVKF5pad8FEotK9JDcodBwWFVMGSO0Rk7_RGZcJXjGWrP9svcMHwGvEkdQgq_sXg_O_JQzA1WK86Cs1HCR4KKclJtKyTgpsFmN4CcevfRVGu5mPLtni3Jho3-KHM",
+                    "widthPx": 3000,
+                    "heightPx": 4000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "HB K",
+                            "uri": "//maps.google.com/maps/contrib/110531948650134442145",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWkv8Mv--FGEoYgO4Z9_Uu8QRJsWCNUO1yN1UGr5BaKc4H6q2hD=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpXvRWo29oRQRfWnibJmlLs4/photos/AUGGfZm5gmMQyqhGmZrkaRcdi5mTfyVpAy9rKt1T2Lsl7MB2wdsXqB8f1vI-NyoSmCaAc31isTHWsBHLQZnuEELrfu-dIAjCE-IXknkITkjUyzyxBH9-re3PLDFSpKxnfKnZO2Tbv93QvifIJmhG62hXsYKTReKVobMCqKv2",
+                    "widthPx": 8736,
+                    "heightPx": 5824,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Grand Hyatt Athens",
+                            "uri": "//maps.google.com/maps/contrib/107328422014445016193",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjU-hEV12c1fnkpThX6DcryLobLcy0un_-8wz9aJm6XcIwX51Uw=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpXvRWo29oRQRfWnibJmlLs4/photos/AUGGfZmKYDz0B0gumMZLLESoSEP_Q7nzGbC6fOhgfNt3OXb60HHeE0YiRTPsijMQbP-3ngpwpTZEYDo9cq-MboKjGLs3a1X0ISBlDypnlioFQPyfTsW_NZtTdUK7wi_vOERTP5fcdSi7tCoN21X-Ns1FggNMCxLf_rl8VviB",
+                    "widthPx": 1024,
+                    "heightPx": 774,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Grand Hyatt Athens",
+                            "uri": "//maps.google.com/maps/contrib/107328422014445016193",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjU-hEV12c1fnkpThX6DcryLobLcy0un_-8wz9aJm6XcIwX51Uw=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpXvRWo29oRQRfWnibJmlLs4/photos/AUGGfZmuwnN30RUr0OdufJP2hgwez5Di9BYFxtaK_Ze__fmwjhICpKTagrGUeCPvNp4MXuk0Nopgt4XQqOnGqLSUkavjW2-3u3JFXuHhbqzr_oi3epWUKSRTVE-9ynrH34GR1ldcZgKAywCv8s9heoEqnWoJKDNQCGkPQ7f7",
+                    "widthPx": 7500,
+                    "heightPx": 5000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Grand Hyatt Athens",
+                            "uri": "//maps.google.com/maps/contrib/107328422014445016193",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjU-hEV12c1fnkpThX6DcryLobLcy0un_-8wz9aJm6XcIwX51Uw=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpXvRWo29oRQRfWnibJmlLs4/photos/AUGGfZkeHd7ouSqfn7vQnIIgXzR7RBcneYSDK_Rhn2yAP9WFUmizwOG-jcuCD_xLvMOQ1dfsXLjoO-MVOe1_a60_6pmvTkBdDwTQ0KkgkLEZ7l87u92X4jKMzU47X1GihB1SVOsL1oJwU01DEXVmJCW9WuxXKduLuNbVBTvc",
+                    "widthPx": 8368,
+                    "heightPx": 5584,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Grand Hyatt Athens",
+                            "uri": "//maps.google.com/maps/contrib/107328422014445016193",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjU-hEV12c1fnkpThX6DcryLobLcy0un_-8wz9aJm6XcIwX51Uw=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpXvRWo29oRQRfWnibJmlLs4/photos/AUGGfZm4PqilHfazNU6q2IJHVDxjR7omgxQPJWzYVcKB6RTJPGEwHKqyrGwvRn8jGUW0lb-vqNVJEc2yWEeiZgSV07cVbT-BhjA0xtJmRxs-GMlCiNOlRFb_lkO3rm3PeByZdsle8-8h85yv8ADKndWfK2jPrYttpQORuaBY",
+                    "widthPx": 8368,
+                    "heightPx": 5584,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Grand Hyatt Athens",
+                            "uri": "//maps.google.com/maps/contrib/107328422014445016193",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjU-hEV12c1fnkpThX6DcryLobLcy0un_-8wz9aJm6XcIwX51Uw=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpXvRWo29oRQRfWnibJmlLs4/photos/AUGGfZk-V8BwNW2dFmOP4fSE0UB_31JUPgunSutjrRfCCZYCf6tL0AI9G9NUm6AHEF6CjRmjGb88mtUWBkz37MlEtYdslhbt5My7GW4v-LFce6Cw0_yLo_DGvn7vqKaCJjVXP_TkBMcpW-wqARgjQBtr7LhfO2lnKdsmNC2x",
+                    "widthPx": 2500,
+                    "heightPx": 3333,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Grand Hyatt Athens",
+                            "uri": "//maps.google.com/maps/contrib/107328422014445016193",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjU-hEV12c1fnkpThX6DcryLobLcy0un_-8wz9aJm6XcIwX51Uw=s100-p-k-no-mo"
+                        }
+                    ]
                 }
-            }
+            ]
         },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
-        "icon_background_color": "#7B9EB0",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-        "name": "London",
-        "photos": [
-            {
-                "height": 480,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/102888766378357381706\"\u003ESANJIB Das\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZne_4yyF7nAHm9TYBRK57uFb0v5HSfs2nCub-5fWE2dlM_5MBn8-U-cx71XELslVwftIFQhw9XPH0zKc_Esx8pvEQj6Uk-RleB6B7SkgJ1WvUzRaW0p8GViXYeuh-tgHsgfntrrV_yMc33MbtiK3_XPiINoV748DdVBCqUCtbmBijVS",
-                "width": 639
-            }
-        ],
-        "place_id": "ChIJdd4hrwug2EcRmSrV3Vo6llI",
-        "reference": "ChIJdd4hrwug2EcRmSrV3Vo6llI",
-        "scope": "GOOGLE",
-        "types": ["locality", "political"],
-        "vicinity": "London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5084092,
-                "lng": -0.124743
+        {
+            "id": "ChIJz8ZiXAC9oRQRnpA7gVHBxnE",
+            "formattedAddress": "Leof. Andrea Siggrou 89-93, Athina 117 45, Greece",
+            "rating": 4.6,
+            "websiteUri": "https://www.ihg.com/intercontinental/hotels/gb/en/athens/athha/hoteldetail?cm_mmc=GoogleMaps-_-IC-_-GR-_-ATHHA",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 6420,
+            "displayName": {
+                "text": "InterContinental Athenaeum Athens, an IHG Hotel",
+                "languageCode": "en"
             },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5096389302915,
-                    "lng": -0.123722819708498
+            "photos": [
+                {
+                    "name": "places/ChIJz8ZiXAC9oRQRnpA7gVHBxnE/photos/AUGGfZncK88quB4oYwFfAKT47VKvvwUj6UpgR0t_52gq4IUFsywcQ8mZcK1N-ma8wPpk2q9glRVfWPiX8-E1dlYiD0q9nZFB60ynTNIxKiLVE6A99NOWfDPQCJvuBjLSIGVykBo4rHzLrFRl3VOZpsqs47_zoDrziWGq8ua5",
+                    "widthPx": 1000,
+                    "heightPx": 563,
+                    "authorAttributions": [
+                        {
+                            "displayName": "InterContinental Athenaeum Athens, an IHG Hotel",
+                            "uri": "//maps.google.com/maps/contrib/110175755810249142301",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWLxWjVqupymT8gll6PMEVb4cwDtMpzi5YhNkZQPWUlDzylCBg=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5069409697085,
-                    "lng": -0.126420780291502
+                {
+                    "name": "places/ChIJz8ZiXAC9oRQRnpA7gVHBxnE/photos/AUGGfZnicb5dOPSB_axJx0zmbfQ81a-bB6-fMsXuVeAUBwIVN95nw_T3x1uWJqA_sshYZL5U2x7gxWQk32QOXVsK5FJpmt3wwuJ4qsmz90mKdT2mtUn3NCpbmWCMGCxN7olVx9eh5RqxPgGAGtFokhw2qW57Hqy_wzV67oEe",
+                    "widthPx": 2048,
+                    "heightPx": 1490,
+                    "authorAttributions": [
+                        {
+                            "displayName": "InterContinental Athenaeum Athens, an IHG Hotel",
+                            "uri": "//maps.google.com/maps/contrib/110175755810249142301",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWLxWjVqupymT8gll6PMEVb4cwDtMpzi5YhNkZQPWUlDzylCBg=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJz8ZiXAC9oRQRnpA7gVHBxnE/photos/AUGGfZm9gGZB3G_JSBsph9SOfaB5RNJRNG7ZDlcJFAwrvMLo1CcFGq3ia3IlBPfLTgGRIU87pYse-o9_x8arYzI5hA3EMuEPhJHouLS_wxHWruZIkbuPKHjFSeVteeZ1yyPKOiN0av9i2D8w8lNDX-gTCwV5_Jv5X3uFEPZ8",
+                    "widthPx": 2048,
+                    "heightPx": 1152,
+                    "authorAttributions": [
+                        {
+                            "displayName": "InterContinental Athenaeum Athens, an IHG Hotel",
+                            "uri": "//maps.google.com/maps/contrib/110175755810249142301",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWLxWjVqupymT8gll6PMEVb4cwDtMpzi5YhNkZQPWUlDzylCBg=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJz8ZiXAC9oRQRnpA7gVHBxnE/photos/AUGGfZmUI0yVN3si79QEcUniCNodDoGdAdw-9S_5OmLXWh9_Z_NgLqWWPQgqEpTxD_6UUyJwxo1eUduZ7DMUPRfgSjChwy6xOgaMKYG3_izUg_dPwCiTVGY0Px0265JFqbdzGtU8Ad2Knqq7Sfda5-HiVTJ-fpQZU-ltasNQ",
+                    "widthPx": 2048,
+                    "heightPx": 1365,
+                    "authorAttributions": [
+                        {
+                            "displayName": "InterContinental Athenaeum Athens, an IHG Hotel",
+                            "uri": "//maps.google.com/maps/contrib/110175755810249142301",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWLxWjVqupymT8gll6PMEVb4cwDtMpzi5YhNkZQPWUlDzylCBg=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJz8ZiXAC9oRQRnpA7gVHBxnE/photos/AUGGfZm5nBWfT5DuPVbMXbm4d6SRFYHX0yLoJFlqQzTPBP8IFO7bP3IzKF6r8kbERkB9nrDoAl-eHUTahMG__elvdEBbOEfwuXSGaEe8R89VYi5T0IXwtkXZZgXX9JvSN4HqxTbj20AbuWrHCyXUgYTvj2j5jlEpJDh8zvTb",
+                    "widthPx": 2048,
+                    "heightPx": 1490,
+                    "authorAttributions": [
+                        {
+                            "displayName": "InterContinental Athenaeum Athens, an IHG Hotel",
+                            "uri": "//maps.google.com/maps/contrib/110175755810249142301",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWLxWjVqupymT8gll6PMEVb4cwDtMpzi5YhNkZQPWUlDzylCBg=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJz8ZiXAC9oRQRnpA7gVHBxnE/photos/AUGGfZlI0mJtGjB5L95Ea55VW_6MW3CV5xpXJXRJ-Ds7wR9IzNb-zem3IU6H0WaZebBuwCaSptcwQA6F1VUwRHWnrlXGdCJkz7n3-qKvOwpFgxl6sETLpuW26Ocj58-qKVX-l88py-1sHfPRzwW4bGWGfFXwxj2kNbECDnNS",
+                    "widthPx": 2048,
+                    "heightPx": 1152,
+                    "authorAttributions": [
+                        {
+                            "displayName": "InterContinental Athenaeum Athens, an IHG Hotel",
+                            "uri": "//maps.google.com/maps/contrib/110175755810249142301",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWLxWjVqupymT8gll6PMEVb4cwDtMpzi5YhNkZQPWUlDzylCBg=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJz8ZiXAC9oRQRnpA7gVHBxnE/photos/AUGGfZmQDCBiAneMLLxXNakkp34HjdH6d4itYus4s5vc9YcF9qv4MOXvW68jMEpnAtlax_0Ay9qPKfk1TXH6gfwrdpmK4GkETKhG98mvBJoxFX2m2bUBxcfhJP5OyL-rHsinXbuZgbRmBDbE66HdR680XMFetWPboWmWL7d4",
+                    "widthPx": 2048,
+                    "heightPx": 1365,
+                    "authorAttributions": [
+                        {
+                            "displayName": "InterContinental Athenaeum Athens, an IHG Hotel",
+                            "uri": "//maps.google.com/maps/contrib/110175755810249142301",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWLxWjVqupymT8gll6PMEVb4cwDtMpzi5YhNkZQPWUlDzylCBg=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJz8ZiXAC9oRQRnpA7gVHBxnE/photos/AUGGfZkmggwvg4vzuAbuHHFp6b1MkKatSkb5Sz0FtKtTx4sglxIYnPW95rkzk8q34hGxCb1cOSjKj9q5eOd9RzAapskl9crfM1ZZ4aIErAkB-VDOhXFwGhj04nqx6QSlYSLh8u1FIdNtJxi94s8wUUXDtxaF140Az7Mr8CO9",
+                    "widthPx": 2048,
+                    "heightPx": 1463,
+                    "authorAttributions": [
+                        {
+                            "displayName": "InterContinental Athenaeum Athens, an IHG Hotel",
+                            "uri": "//maps.google.com/maps/contrib/110175755810249142301",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWLxWjVqupymT8gll6PMEVb4cwDtMpzi5YhNkZQPWUlDzylCBg=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJz8ZiXAC9oRQRnpA7gVHBxnE/photos/AUGGfZleKxgkPO1tJaYqAd8yly0uBhdczBMS8DMFlpGNxy7MSDATLAe9uaUCPEFZTTTQhuJxSua3PyJk0zQ90IUd3F70uBtDQhNQE84vhvaUVkZ2sGrNGU9gkPAKL46T21bx1M0zRQhJYcClFw1iTV8kWxz7d3Gu-Z3072P0",
+                    "widthPx": 2048,
+                    "heightPx": 1365,
+                    "authorAttributions": [
+                        {
+                            "displayName": "InterContinental Athenaeum Athens, an IHG Hotel",
+                            "uri": "//maps.google.com/maps/contrib/110175755810249142301",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWLxWjVqupymT8gll6PMEVb4cwDtMpzi5YhNkZQPWUlDzylCBg=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJz8ZiXAC9oRQRnpA7gVHBxnE/photos/AUGGfZns8Ed0IQeOC-CxJbwx7nnOEYWwViI0JkdEMHgrumllsiakPGVWjCaBhuoWriksSJa-eZUiVuFC40UqJOk8W2BVkmgVzCN7pXH5HpXnp8ON7sp5T5GP7LeWKSGtQFefV-Imf77RsTJjRwvbgcofg4aLjKUvgQBg4Yo0",
+                    "widthPx": 2048,
+                    "heightPx": 1152,
+                    "authorAttributions": [
+                        {
+                            "displayName": "InterContinental Athenaeum Athens, an IHG Hotel",
+                            "uri": "//maps.google.com/maps/contrib/110175755810249142301",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWLxWjVqupymT8gll6PMEVb4cwDtMpzi5YhNkZQPWUlDzylCBg=s100-p-k-no-mo"
+                        }
+                    ]
                 }
-            }
+            ]
         },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "The Clermont London, Charing Cross",
-        "opening_hours": {
-            "open_now": true
-        },
-        "photos": [
-            {
-                "height": 5665,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/115691370904015137174\"\u003EThe Clermont Hotel, Charing Cross\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZlkGqBtvNvK8SbLhWJxLkXEADpRUSqiGzgQ0V0jLoZ8tuAM92yqacJE29qlANXJ7wYo9VNaBtuVg0klMtJWxaBwRY4WNqyNFsuecOyEvVrPN-drJU6c4jXs8jzC-WW9jWPreCAjlf7IQeD6m545bpZTeIWDiD7nqYKMr60Svl8TgIoR",
-                "width": 8497
-            }
-        ],
-        "place_id": "ChIJZf2Jlc4EdkgRklHks51KYBo",
-        "plus_code": {
-            "compound_code": "GV5G+94 London, UK",
-            "global_code": "9C3XGV5G+94"
-        },
-        "rating": 4.5,
-        "reference": "ChIJZf2Jlc4EdkgRklHks51KYBo",
-        "scope": "GOOGLE",
-        "types": [
-            "bar",
-            "lodging",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "user_ratings_total": 2560,
-        "vicinity": "Strand, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5064603,
-                "lng": -0.1243126
+        {
+            "id": "ChIJpTEzmwCYoRQRK1Jgj9adTik",
+            "formattedAddress": "Leof. Kifisias 43, Athina 115 23, Greece",
+            "rating": 4.1,
+            "websiteUri": "https://president.gr/",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 7102,
+            "displayName": {
+                "text": "President Hotel Athens",
+                "languageCode": "en"
             },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5077216802915,
-                    "lng": -0.122957269708498
+            "photos": [
+                {
+                    "name": "places/ChIJpTEzmwCYoRQRK1Jgj9adTik/photos/AUGGfZlDW2PpJc0j51BDLB3QnfBMkQTO-VNTtpM6V8Agx4HcqjZt0CMkPcAriCq7kUMHQEHUo1CF1jrQ-zvu7_bYo0Bh45c_fAH7TtjsHT8iZqawQuI7JvGM_y5K3fBTKZhkmDcVUeRtFMNBKEg7NPHTcDDiWLhvdzxFSUBa",
+                    "widthPx": 2953,
+                    "heightPx": 1969,
+                    "authorAttributions": [
+                        {
+                            "displayName": "President Hotel Athens",
+                            "uri": "//maps.google.com/maps/contrib/105457511152607428553",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUBAgKdOTiP8fLSt-58G-RyjB3eVBcvoAjEE1ZC_vrcEcoUP5s=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5050237197085,
-                    "lng": -0.125655230291502
+                {
+                    "name": "places/ChIJpTEzmwCYoRQRK1Jgj9adTik/photos/AUGGfZk1jEz0txPzwz2N28Vc2-DPpaPirD9Bq8xDMGxnwgG6NOCxcHpaXcgDlHeUW99ga8lXN8q7qdlznWd3ouqMcaOhqGAVy7TEwMOAPlHjjP7uE9fdHYvO2ptN84iETl3217aqLTQcRpFqNJ4xFeJbSgkB2BYr7WKlYY0J",
+                    "widthPx": 7360,
+                    "heightPx": 4912,
+                    "authorAttributions": [
+                        {
+                            "displayName": "President Hotel Athens",
+                            "uri": "//maps.google.com/maps/contrib/105457511152607428553",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUBAgKdOTiP8fLSt-58G-RyjB3eVBcvoAjEE1ZC_vrcEcoUP5s=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpTEzmwCYoRQRK1Jgj9adTik/photos/AUGGfZnRqte-OOLt7qUaw2jOuj5bfi8vsrrX0e2zJ4Liq6_JndsspEAS9cUUToVNR0fAI4WVthXcI2viGKenRB4QNlZlO3E8Wm74mSpZMCqxpV5SkO8FEEvA5cdnB1S-kjNaOiPenxhn4fbj_7exH5TsDMIWu5avkG-mZSR-",
+                    "widthPx": 3451,
+                    "heightPx": 2126,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Evangelos Skepetaris",
+                            "uri": "//maps.google.com/maps/contrib/100372167041571312999",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUWeFZh0zZri1GmxvTe0IFTGxxIPe0EqMKDRr0Z47Oi4TfHsdM1=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpTEzmwCYoRQRK1Jgj9adTik/photos/AUGGfZnUCbGVQCO3BCDHfBLY6_11wr2oNrUhP8Oe1YVivhk1iIThL3Fj7k5wY5JVJBdgj0XPpEHx8yIKwpWohas1KqwbfHo68bfam_nAze2jwX6pS3b1ng-Lx_z8rrsnpuFjC2EFLquxpO9Rb0lZ2AHqaRK_2pTupcxUv-hF",
+                    "widthPx": 7952,
+                    "heightPx": 5304,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Volker A. Stark",
+                            "uri": "//maps.google.com/maps/contrib/108885319183625242061",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVEOXO4hCEHZEkywk99CRN5KOtAIykoKUv2GeXEsJC-JyIAVFKSzQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpTEzmwCYoRQRK1Jgj9adTik/photos/AUGGfZnb0bBfeYyAH6RlC2COTCEvn67GobX5VHOthJHXIrY3xbKpbKB7mFoK1zfvFHKrxfol_MS7OkVEH2S2ZlIhONhATBsKCQv9RhIGqCxzyJCnZWZwermCzlbBuqYy2ozp7lEI-ZajHRhdb0DbALH5gKJzPILjvrk-ebO-",
+                    "widthPx": 2952,
+                    "heightPx": 2886,
+                    "authorAttributions": [
+                        {
+                            "displayName": "President Hotel Athens",
+                            "uri": "//maps.google.com/maps/contrib/105457511152607428553",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUBAgKdOTiP8fLSt-58G-RyjB3eVBcvoAjEE1ZC_vrcEcoUP5s=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpTEzmwCYoRQRK1Jgj9adTik/photos/AUGGfZmpogtkg35Z_YbBUcOEfaLDlftRBfBi30FCB6ppo3-JBiUZD1FqxMgrNCP8-0gu4d0sdFpwmLypjpo6bYQl0UkC2a7Bu88l49xi5DmrqoZRMu_HcOBLWvryWSu6KUmTDCU-n_Aa9vR37eHzkD1PFysIOjInDFW1cTW1",
+                    "widthPx": 7360,
+                    "heightPx": 4912,
+                    "authorAttributions": [
+                        {
+                            "displayName": "President Hotel Athens",
+                            "uri": "//maps.google.com/maps/contrib/105457511152607428553",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUBAgKdOTiP8fLSt-58G-RyjB3eVBcvoAjEE1ZC_vrcEcoUP5s=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpTEzmwCYoRQRK1Jgj9adTik/photos/AUGGfZlxueV09A-ChV2-pyl1hHjaAVDKHljBLMg6p5oLfrclYorTJM-t4DeQKicdZ8t6QPkQ7dShYJpdAYOQfr3r_QEvX69I3enGFoJg8IRy5_Tn-qp7R5LI1fXMELHVyCjCodsSD91ESSHjFk9pQZQZoTLEQEUnR0dGlyjj",
+                    "widthPx": 7360,
+                    "heightPx": 4912,
+                    "authorAttributions": [
+                        {
+                            "displayName": "President Hotel Athens",
+                            "uri": "//maps.google.com/maps/contrib/105457511152607428553",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUBAgKdOTiP8fLSt-58G-RyjB3eVBcvoAjEE1ZC_vrcEcoUP5s=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpTEzmwCYoRQRK1Jgj9adTik/photos/AUGGfZmy0B5bUIGCTBvPRDH-g63Mn1jHWhojkoGBLNAPdSs6BrpeU6baQpjXIKZt1RXiDF8hmZpfeuNuFSmV49BeIa1AhGJc0h6wBKUCmHyROI1CVxhQ8H_wZNFAtS54uoGCeuV-4vNYMXfA7resuc0eRVyUfODJIvPf3-g6",
+                    "widthPx": 2952,
+                    "heightPx": 1934,
+                    "authorAttributions": [
+                        {
+                            "displayName": "President Hotel Athens",
+                            "uri": "//maps.google.com/maps/contrib/105457511152607428553",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUBAgKdOTiP8fLSt-58G-RyjB3eVBcvoAjEE1ZC_vrcEcoUP5s=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpTEzmwCYoRQRK1Jgj9adTik/photos/AUGGfZmSsHbvEbYzaxAMjimg1d7XCxjL2K1WvtErVbe-4ihDeTFQyAwVURZwVHmZtAsZoZRFGRGK99wGXvPSTdudrbz8PReGCihWfW5OlvAYAU4IxJtD6grHGFwmWJ4grhpYGmGKmE6nW-4tkNjcpdDqmN4VYw9oUGPR4DRK",
+                    "widthPx": 2953,
+                    "heightPx": 1897,
+                    "authorAttributions": [
+                        {
+                            "displayName": "President Hotel Athens",
+                            "uri": "//maps.google.com/maps/contrib/105457511152607428553",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUBAgKdOTiP8fLSt-58G-RyjB3eVBcvoAjEE1ZC_vrcEcoUP5s=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJpTEzmwCYoRQRK1Jgj9adTik/photos/AUGGfZmziDD8REbCQD04o4B2Nh_s0vB3Bg7e2gXfAEQ-2OhvwR_Jfc-A7Gs9oNXA_GB4GQ2B_bHmxhbhHn4rC08mBawTNW7dPmMzaV2At6-swxNPS8e6LOapiDVTp372-ghILMgTizb64u7MxQalPGivzSDitxCTCDcarnQB",
+                    "widthPx": 7089,
+                    "heightPx": 4568,
+                    "authorAttributions": [
+                        {
+                            "displayName": "President Hotel Athens",
+                            "uri": "//maps.google.com/maps/contrib/105457511152607428553",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUBAgKdOTiP8fLSt-58G-RyjB3eVBcvoAjEE1ZC_vrcEcoUP5s=s100-p-k-no-mo"
+                        }
+                    ]
                 }
-            }
+            ]
         },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "Corinthia London",
-        "opening_hours": {
-            "open_now": true
-        },
-        "photos": [
-            {
-                "height": 1181,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/110803740545314797141\"\u003ECorinthia London\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZmN73J9mJ5_0SznnCY7aB8Jvv5xrOyRMGKM00rSvXhjyk1PZaz2w1mpx1j6oQYtXOYQHF44IlRic2OGu_Yw_TMzPvPEkh3VoNDWVnoRYfTmyEVtHtrEGisiv2nuPBiuVfD1fjDKtIRwFlVuF-QeJyOjmyk-rzm3oARfG2hr5R_ECF1C",
-                "width": 1692
-            }
-        ],
-        "place_id": "ChIJ0dU6L88EdkgRSRva6TI0lsY",
-        "plus_code": {
-            "compound_code": "GV4G+H7 London, UK",
-            "global_code": "9C3XGV4G+H7"
-        },
-        "rating": 4.7,
-        "reference": "ChIJ0dU6L88EdkgRSRva6TI0lsY",
-        "scope": "GOOGLE",
-        "types": ["lodging", "point_of_interest", "establishment"],
-        "user_ratings_total": 3283,
-        "vicinity": "Whitehall Place, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5060478,
-                "lng": -0.1241368
+        {
+            "id": "ChIJi3MgokS9oRQRzTougpjMytw",
+            "formattedAddress": "Leof. Vasileos Alexandrou 2, Athina 161 21, Greece",
+            "rating": 4.5,
+            "websiteUri": "https://divanicaravelhotel.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 7411,
+            "displayName": {
+                "text": "Divani Caravel Hotel",
+                "languageCode": "en"
             },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5074082302915,
-                    "lng": -0.122889819708498
+            "photos": [
+                {
+                    "name": "places/ChIJi3MgokS9oRQRzTougpjMytw/photos/AUGGfZmZr_Zs36JWRbjziYyMjTD5NmkZBJF8AnKRJJv-8m9qy3sfyMM9fvYMFhdfLofNpdALhWys6jOxaTjN0XRITsAvotuWgeSrGU6efNvLEw9cCAdPdjSeYF3jri9zLbc8z_phA-pBqVFjVUxHCiObFZKfTuyDaVL12Nu2",
+                    "widthPx": 2652,
+                    "heightPx": 1677,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Divani Caravel Hotel",
+                            "uri": "//maps.google.com/maps/contrib/101890964448961906275",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVYfR2T1kLj-FmitoavIEWj8Wr8UJz-_uEEdmiA6fUGuove8m9Y=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5047102697085,
-                    "lng": -0.125587780291502
+                {
+                    "name": "places/ChIJi3MgokS9oRQRzTougpjMytw/photos/AUGGfZlrB5Cd3_Dmtk2Krse0h3h0RlbOp3Km9QbwjPaTrzPiuRri3br3NK_MepoYiSjPWYyi5d_VSyrpFKPdbUIvctCf1IYjjLBJQIUS5Xe3e8b8tFIIzwztl8f8pvetDq5NTrdNh6cAASFnd--dw6ekJYaV9x28dJYTItA6",
+                    "widthPx": 3500,
+                    "heightPx": 2000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Divani Caravel Hotel",
+                            "uri": "//maps.google.com/maps/contrib/101890964448961906275",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVYfR2T1kLj-FmitoavIEWj8Wr8UJz-_uEEdmiA6fUGuove8m9Y=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJi3MgokS9oRQRzTougpjMytw/photos/AUGGfZmrLB22QAgtMbc-jQNlqvo2ZRJ4TpTZTEEDkEskMDpPsvoIT5mdYV934FJsbgcavINps5oePU_AN4hfBocdh7amjIxzlGj843bQIJc3RnGC9tN0dFo9xh9-fzs4CmY-TwrqISnnTR5dK4Zya-eEe0wy5fc44ZOs04Q",
+                    "widthPx": 4000,
+                    "heightPx": 2252,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Jakob Nickelsen",
+                            "uri": "//maps.google.com/maps/contrib/100129635477544930667",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV0fUoZq6Mn3ymhmRnMBApZBMya9_q4qVwS0KnzzXiMZZ4nncqc=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJi3MgokS9oRQRzTougpjMytw/photos/AUGGfZmxoMFsG2R9vhP9GZcPoN4KnExsBvBh8bzPCe6haVSP4m53FcMZ6Gnz4udDJ9wDwQY2ovPBoJII43Jz9OLbGTGsxoghVLDuOEfQ1nkjBLM9vZJEUIgYco8Xceyg_VUHfVjTOfe1n15XbaqnJV4lwKu7K6DLbrrS_cSN",
+                    "widthPx": 3500,
+                    "heightPx": 2000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Divani Caravel Hotel",
+                            "uri": "//maps.google.com/maps/contrib/101890964448961906275",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVYfR2T1kLj-FmitoavIEWj8Wr8UJz-_uEEdmiA6fUGuove8m9Y=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJi3MgokS9oRQRzTougpjMytw/photos/AUGGfZkuldjjTJmLRCJPSMX35qK-SyTHH-5CQy0F7y-0zf-jXPoMJ9F8yNs39C2sudRKStqGXOmMDnGd8hfaSwyssNnM7PrR5Ac2-7EMW474ixQBsBLfs09qibG1T2hC4iW6gKm5IvkHRRvV97qp14bt7X-ULz7W7E17eq8K",
+                    "widthPx": 3750,
+                    "heightPx": 2500,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Divani Caravel Hotel",
+                            "uri": "//maps.google.com/maps/contrib/101890964448961906275",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVYfR2T1kLj-FmitoavIEWj8Wr8UJz-_uEEdmiA6fUGuove8m9Y=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJi3MgokS9oRQRzTougpjMytw/photos/AUGGfZmT086DXLgy0c1ySI6G7hRybidKa7izQN3U6rRF-sqtev6lMdZB7OzN8O7abautHxydRKsmCdIQBv57ok8ujMTw0nqOe987fpVDE3-N3CDuZ-6jjV_x_Out45k12wvx2BCx0i_7VK_d9t4YrLd5VpMNiHHIXV0tfKNq",
+                    "widthPx": 4324,
+                    "heightPx": 2500,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Divani Caravel Hotel",
+                            "uri": "//maps.google.com/maps/contrib/101890964448961906275",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVYfR2T1kLj-FmitoavIEWj8Wr8UJz-_uEEdmiA6fUGuove8m9Y=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJi3MgokS9oRQRzTougpjMytw/photos/AUGGfZmRiYt4o0ulrRh3J3sUkTKn20gz8l3FzUO-Iv5u6b8fxIdid9Tunh0OtT7mcXPvwXavoQqBxLNp46NGLGk7K5TJVe2pFBIW-j1NX9SQcwHLq14iqkiO9OkkAzL5dU90PK-M_76CdB8hiDaiEtsG35xp9iAYO76J7zOa",
+                    "widthPx": 1920,
+                    "heightPx": 1250,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Divani Caravel Hotel",
+                            "uri": "//maps.google.com/maps/contrib/101890964448961906275",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVYfR2T1kLj-FmitoavIEWj8Wr8UJz-_uEEdmiA6fUGuove8m9Y=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJi3MgokS9oRQRzTougpjMytw/photos/AUGGfZloskZdaZgclPTDYCah7c1N8VV_0TE0zsjLgyvs_yxgICwFvW_6PH2nkJYbU2Q0E2lC-j9KhlP-VooXmXfkNuzh0ckkV5_jvF4NuWcUnQIIyxYQDz50FXvTY3P-QMiMvmS948JZkOeAGWzKGBi1WvzDlhs8R0tjiPue",
+                    "widthPx": 1920,
+                    "heightPx": 1280,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Divani Caravel Hotel",
+                            "uri": "//maps.google.com/maps/contrib/101890964448961906275",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVYfR2T1kLj-FmitoavIEWj8Wr8UJz-_uEEdmiA6fUGuove8m9Y=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJi3MgokS9oRQRzTougpjMytw/photos/AUGGfZn8YENg5TYK9Z_Od-8hHztTKn-sDgJjQTMHpxcXK93HhSZLHmnYMVqCwKVa61yDlIalcu43EdyhxR5pQnY1aGk0SsJPFvAdDDGkadjeN3pwY3DFnmW-9XWTFXUOa76dWmmzdP67FexIablKkJufJ5fLt-4WJT4pOHwu",
+                    "widthPx": 2000,
+                    "heightPx": 2384,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Divani Caravel Hotel",
+                            "uri": "//maps.google.com/maps/contrib/101890964448961906275",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVYfR2T1kLj-FmitoavIEWj8Wr8UJz-_uEEdmiA6fUGuove8m9Y=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJi3MgokS9oRQRzTougpjMytw/photos/AUGGfZmXRg3KeH7S0Hm4UbFOOIkyWwhUs7SL_UJqw4UabnXAmv1RjH5oWmHLvLuVWAEoPxxiyxNpWdX6C5IbRA2HCXvZAs5L-nNpJ7z10Vgkd0CW-6m-9R1gMQYdXxeihCACPsLK7jP6owwiP2w9yO2XMvJhULfWwv0wgngz",
+                    "widthPx": 4080,
+                    "heightPx": 3072,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Captain Jack Scarecrow",
+                            "uri": "//maps.google.com/maps/contrib/113739537299712616293",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVkBNu1_RHc_M8a9E-Ecwelioq1kfm2JTQbJ3-Pd395dw6skYoMsQ=s100-p-k-no-mo"
+                        }
+                    ]
                 }
-            }
+            ]
         },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "The Royal Horseguards Hotel & One Whitehall Place, London",
-        "opening_hours": {
-            "open_now": true
-        },
-        "photos": [
-            {
-                "height": 1245,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/104982377979790317981\"\u003EThe Royal Horseguards Hotel &amp; One Whitehall Place, London\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZk7UUM2EcYnwPL0NrGgG-rgrQnsFKz_iOS6CQUmZWPHwhFWjQEV-Iz4gsQ7YM90Vn8e_wZkCht5V4Ac0v9wywL4UjmUoZ0C_atDq-XDNGy-DnRFCRwpaDBNllmQuwYDdl7EC2KtHaHk1ivhJaJf98L-kNXrGZZmz025nvTXov-ePkxf",
-                "width": 1920
-            }
-        ],
-        "place_id": "ChIJc9zIO88EdkgRtiF_0UhDLZk",
-        "plus_code": {
-            "compound_code": "GV4G+C8 London, UK",
-            "global_code": "9C3XGV4G+C8"
-        },
-        "rating": 4.4,
-        "reference": "ChIJc9zIO88EdkgRtiF_0UhDLZk",
-        "scope": "GOOGLE",
-        "types": [
-            "bar",
-            "lodging",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "user_ratings_total": 2467,
-        "vicinity": "2 Whitehall Court, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5098669,
-                "lng": -0.1297669
+        {
+            "id": "ChIJgSMyRUu9oRQRS9UFR1xmJrE",
+            "formattedAddress": "1 Vasileos Georgiou A, Syntagma Square Str, Athina 105 64, Greece",
+            "rating": 4.8,
+            "websiteUri": "https://www.marriott.com/en-us/hotels/athlc-hotel-grande-bretagne-a-luxury-collection-hotel-athens/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+            "userRatingCount": 5638,
+            "displayName": {
+                "text": "Hotel Grande Bretagne, a Luxury Collection Hotel, Athens",
+                "languageCode": "en"
             },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5113083802915,
-                    "lng": -0.128818869708498
+            "photos": [
+                {
+                    "name": "places/ChIJgSMyRUu9oRQRS9UFR1xmJrE/photos/AUGGfZnn7GwHlchLniavmS-ki6dnhsp1SAQYG8thaZ8P0TmvHIXn7AgGML66XhTD_JGsN_rJQ3sxQvS_X7tskIJrrJOUB2_OZwfQQw-Pt3QwQ8irUWkvWaPMNa115J74DLXiO1iS7Ajj37ur4NnnPjJW8jgkKqLDi65uC3g1",
+                    "widthPx": 480,
+                    "heightPx": 320,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Hotel Grande Bretagne, a Luxury Collection Hotel, Athens",
+                            "uri": "//maps.google.com/maps/contrib/105357792144251075492",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocI8tLkFUhDBA-Ts22WJ_K7ivYdEiFITYFPCvOD30KFMhmoQodE=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5086104197085,
-                    "lng": -0.131516830291502
+                {
+                    "name": "places/ChIJgSMyRUu9oRQRS9UFR1xmJrE/photos/AUGGfZm-wpuThxp3TB4saXcyNucchMINLUaezkONMFE8GyEK5b5bU5gx9n8o8XQw8kZxt2gOiv8TDQ_loHxMCyBoT2PjwlRlkXjMDZVGwgprYP_tthM7BOJRHoP-yy63fPeT3-xseTb6wSyNWlUtOAaWEYSmnMyxu1qrY8gO",
+                    "widthPx": 1440,
+                    "heightPx": 810,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Hotel Grande Bretagne, a Luxury Collection Hotel, Athens",
+                            "uri": "//maps.google.com/maps/contrib/105357792144251075492",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocI8tLkFUhDBA-Ts22WJ_K7ivYdEiFITYFPCvOD30KFMhmoQodE=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJgSMyRUu9oRQRS9UFR1xmJrE/photos/AUGGfZktaM3H3yLDT7CXO5dagagBwjVaudAXCIwmpprSMwCJt77Av8ZGXMMEJ5pAiFk-D1kgrLt0GK8nHsWBSIdk1YX_LHY0lrdb2O_Jitvl9XaQSxLFRp3D3j2Rp8zcQdWU0TKRLrBtiyYm4TlA-dWN59yg9GYKDzEQNYTk",
+                    "widthPx": 4032,
+                    "heightPx": 3024,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Chris Stout (Dr Chris Stout)",
+                            "uri": "//maps.google.com/maps/contrib/106779693614532894853",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjWVYpFQfiOZuPFWaxkjLEwDH2M3ldi_iBz0ZvWLZNacB24jHL31=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJgSMyRUu9oRQRS9UFR1xmJrE/photos/AUGGfZnPXNQ6xbjuG1ptdHDCM28fMJG9WAn-cicipop3aj2JOTDegFpvCzdwxTeBnnZCxJlheTB9BSCXiuCPpRTNzzvnWKeWGTi6j4-MLC0ogJLcLIR2es9iZFcQUDMhmbyLa5PSv8cKgVq26WKJif5WWnuXFPf2wGlx12TR",
+                    "widthPx": 480,
+                    "heightPx": 320,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Hotel Grande Bretagne, a Luxury Collection Hotel, Athens",
+                            "uri": "//maps.google.com/maps/contrib/105357792144251075492",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocI8tLkFUhDBA-Ts22WJ_K7ivYdEiFITYFPCvOD30KFMhmoQodE=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJgSMyRUu9oRQRS9UFR1xmJrE/photos/AUGGfZlyyCI28ampx6m1C1IXadhDHIF6eJak1bUWPlfkT8Kk3aHSOvpH4DFLWRRF-Mu0ZmYV51CPGA0GwiqXAJWWN6kSN67CaYpRNsN_eraP44HLmO0lSlzsHMCS4kiaFfA8W9NiN95luu4v7tVRlihc1uHqqgtMxfP9V490",
+                    "widthPx": 4000,
+                    "heightPx": 3000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Mária Lengyel",
+                            "uri": "//maps.google.com/maps/contrib/107166604917839453042",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXIw_7NNUURg-AtaCTYy_XN3qSVoIgyuPPKtjo5NPylW2ES10zZ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJgSMyRUu9oRQRS9UFR1xmJrE/photos/AUGGfZkAWTeXq90blZFJrJn5MxEXTcje7aAHKkJL5H1LhaL0JuR4TNg8-pzHhtfZ3E9R6R7htKRiv4lbYFi-hgnszOD1wEzkrppxI7tQZj8FyIEM8NeMmYsiG_q-khA7hHyqKL8Vo-OeYv2iJO7LtDY1Lxm6jwvGGdvcahut",
+                    "widthPx": 4624,
+                    "heightPx": 2600,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Rafaella Kyriakou",
+                            "uri": "//maps.google.com/maps/contrib/104408216152525942406",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLdoAax_v6XJY4mH2TeWDCmHhwcZq40VUl_9u0ArpV5Dcib6w=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJgSMyRUu9oRQRS9UFR1xmJrE/photos/AUGGfZmYSZXwT9YVaVlb4B652B5Q7wejORKbPfzIAArF2ckbJ31N5tW2h-5Dajt-0EXRAZoFB0PLTW5gGE0jSE92Lz8UcpMcySwqOB4x13q3s5wTVswOjg1y6oQ1YZIjwDc5uVwSdIqynNfeZHzInVLGkLz0yEVh6dIDAPBJ",
+                    "widthPx": 12000,
+                    "heightPx": 9000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Lisa Hickman",
+                            "uri": "//maps.google.com/maps/contrib/118184212527384239002",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXJJhz8rE3OJDKrzGomnGIte5dm3yRZIF3O2XCBUpjDvnad4uA=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJgSMyRUu9oRQRS9UFR1xmJrE/photos/AUGGfZkdh5Oe6IsxI58gCubt_qhjgq1C8MWYfapCqwdPU6erCDKTa_i7YocixKgAMUlmIeAxj7jAYhMHY4vsX6kNGxkb0C40iSVh3I2zxn5dJwout-tRhxQNeX_dvrj6K3TEi3rYIYDuFVXRt8vFUGLqbdvTl3kuL9q0GssP",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Alexia Papageorgiou",
+                            "uri": "//maps.google.com/maps/contrib/113811236478531245185",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXz0HpdqPylpnUitqYt5eRKPdKqbR-8Y9dkT0BzI_QIo4sYXCbo=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJgSMyRUu9oRQRS9UFR1xmJrE/photos/AUGGfZn8lKdWVFPWhRE0a7MNYOASHMli5-M_Ejl3z8ci1Mf9Er-6nO9OnGT7pMnPAz8khcm0prfuVWXi5lSc8k-y3aUlvtW5vwyBC_G9DCz8YwM-MU7egBo7wpGJgsIU8ls5_9LmvMMVfiYs-lVDB8gPGj0yLwVZ1hVt8Qkk",
+                    "widthPx": 920,
+                    "heightPx": 420,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Στέφανος Σταθούλιας",
+                            "uri": "//maps.google.com/maps/contrib/105200018077887732601",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjX9vLskHveWIRXVnYgji2i_2XpeacrjLhcCsqiVbKzlBqNQY5SF=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJgSMyRUu9oRQRS9UFR1xmJrE/photos/AUGGfZlj4tHifRhWUeY7DZePlCqjT-_L-hcaDFcqHagOote_FSvRFCrzf_AU66ldNhVaBVaYiKOnVMOcYy9u3iAMFoFNXxLr9e-ijAYb2k5EiYfclOTOEhUa2SmCHEET6RslJ4LYhzfKguHTrN6y6CzxsA7dZiUWvrL6Q5jZ",
+                    "widthPx": 4032,
+                    "heightPx": 3024,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Michael W",
+                            "uri": "//maps.google.com/maps/contrib/114402644694102387341",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV-IbcS4p-YHk4CMAy4qQEhflLK-QHqpBKjwF8ACBe9nTckNViS=s100-p-k-no-mo"
+                        }
+                    ]
                 }
-            }
+            ]
         },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "Radisson Blu Hampshire Hotel, London",
-        "photos": [
-            {
-                "height": 1365,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/103398050898135161305\"\u003ERadisson Blu Edwardian Hampshire Hotel, London\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZmVmeenPDanKzpX649jcTgxDboDaF-8E6mtKNzWSQ9Hgs669JXbpnADYJOyROuJG4PXLUXjXM6E5CinvBOA0KuboJV5VhsYnrSKNblM4nOY4mdESOcYMBNCqQKD4lPQiZNxaNahbltVLUk7hyX2NcKsn2f5xuiuUJ9E88QTtgYMua_-",
-                "width": 2048
-            }
-        ],
-        "place_id": "ChIJF-WCA9IEdkgRnhW704RFvCI",
-        "plus_code": {
-            "compound_code": "GV5C+W3 London, UK",
-            "global_code": "9C3XGV5C+W3"
-        },
-        "rating": 4.3,
-        "reference": "ChIJF-WCA9IEdkgRnhW704RFvCI",
-        "scope": "GOOGLE",
-        "types": ["lodging", "point_of_interest", "establishment"],
-        "user_ratings_total": 1051,
-        "vicinity": "31-36 Leicester Square, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5110378,
-                "lng": -0.1302996
+        {
+            "id": "ChIJyzXhtii9oRQRrCIV__IOc9U",
+            "formattedAddress": "Odisseos 1, Athina 104 37, Greece",
+            "rating": 4.3,
+            "websiteUri": "http://www.thestanley.gr/",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 4935,
+            "displayName": {
+                "text": "The Stanley Hotel",
+                "languageCode": "el"
             },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5126366302915,
-                    "lng": -0.128925019708498
+            "photos": [
+                {
+                    "name": "places/ChIJyzXhtii9oRQRrCIV__IOc9U/photos/AUGGfZl8_XNW9LdFdi1fkmxOB3uIzzQ1eplEKd2OVhzVIYXo7BvXfvWYWJ3UaeVOTABOJXd-Q6keBuidOg88Fn8w0LTmjsGJlO4kP0w13Kl_jvrnwbjjVGqcDpqRPXwlYFJ6i-cU6KEUyTQJ1WByzz0reJ0lVo30FgLxC2SA",
+                    "widthPx": 3000,
+                    "heightPx": 2000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "The Stanley Hotel",
+                            "uri": "//maps.google.com/maps/contrib/103084126960458290657",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXKY1ltR8FVzfXOvsKtN3b_Q0DJAZmoFpx9OI3ElZwgRHT_0t8=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5099386697085,
-                    "lng": -0.131622980291502
+                {
+                    "name": "places/ChIJyzXhtii9oRQRrCIV__IOc9U/photos/AUGGfZmW1hjf2lkFDImZMRH0KCBjOZxcXxjHBT8woG5Q8pSU21I6BrehWgOxlaZqBmuSKgvmy3ufZ6e8Cvc00nN9YKebzE8riNsbKlp9OVJN7ZFRhUu0oAMmX_tNC76Upiw8zpWUHuV4qYLRX9s5JYh_8CSMF0SdTW8_DHsz",
+                    "widthPx": 3000,
+                    "heightPx": 2172,
+                    "authorAttributions": [
+                        {
+                            "displayName": "The Stanley Hotel",
+                            "uri": "//maps.google.com/maps/contrib/103084126960458290657",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXKY1ltR8FVzfXOvsKtN3b_Q0DJAZmoFpx9OI3ElZwgRHT_0t8=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJyzXhtii9oRQRrCIV__IOc9U/photos/AUGGfZkUaq3_5wbcFQ-PfP0yPvcH479D94DM2Rk2nVWEoFFBlIqBVMtDCmFmv6NopLndWFe_5trAOSWYvvPCx7RNPmhMvXI8M5itExuMlMH-ZLtfN2jn6rFhtdBBfrJEn4H4CKbdbV_ApbntYK6iqPO1kYbHMjpEirhHvqTh",
+                    "widthPx": 3000,
+                    "heightPx": 2000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "The Stanley Hotel",
+                            "uri": "//maps.google.com/maps/contrib/103084126960458290657",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXKY1ltR8FVzfXOvsKtN3b_Q0DJAZmoFpx9OI3ElZwgRHT_0t8=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJyzXhtii9oRQRrCIV__IOc9U/photos/AUGGfZnXoxTVL0XZkndrd79W6tlANZF-h0349MqUrCwO9E2aEmGk_6T6D_j7ade97lA69CTJ0FSKnTlQ1yznn2FdlSyP279eVchqpKt3fNsYo3B0CNJofDYe9aKGcrIPfBrmsy3uLEuSehHt0Uvr_Bha2nbzl4XZhIxMNdQW",
+                    "widthPx": 3000,
+                    "heightPx": 2000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "The Stanley Hotel",
+                            "uri": "//maps.google.com/maps/contrib/103084126960458290657",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXKY1ltR8FVzfXOvsKtN3b_Q0DJAZmoFpx9OI3ElZwgRHT_0t8=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJyzXhtii9oRQRrCIV__IOc9U/photos/AUGGfZkvWUCBqjhSQxeTrW4YZYqIU933wuSqAzCcdFvO6FLqXu6Q1hJf9wAqfOISlmxGgQPAMvjkeB6xUi033edV8-bNcPmbcqPhzgv-bTXNGGJu10VCLM6StwMWJUa49S1lEGNYKPI0r9lhu_XCoTW7roU8xKtGLBhvRhT2",
+                    "widthPx": 3000,
+                    "heightPx": 2000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "The Stanley Hotel",
+                            "uri": "//maps.google.com/maps/contrib/103084126960458290657",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXKY1ltR8FVzfXOvsKtN3b_Q0DJAZmoFpx9OI3ElZwgRHT_0t8=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJyzXhtii9oRQRrCIV__IOc9U/photos/AUGGfZlqikWzNlEGL9NtDW74PFuwnVXlQcSsu5Q-OnCcrMIVDnc_1BqQNpQZA75Ky67LGHH7iz1TLxkEm9-ROveLdmWZ8fvTAZ5MwylAPs6NOxYlJYEsCvwbr2tnxAwdBWR_FrC3GMZYyp02vFLAJ5XZE5U9rCiQ8WsYOgMB",
+                    "widthPx": 3000,
+                    "heightPx": 2000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "The Stanley Hotel",
+                            "uri": "//maps.google.com/maps/contrib/103084126960458290657",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXKY1ltR8FVzfXOvsKtN3b_Q0DJAZmoFpx9OI3ElZwgRHT_0t8=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJyzXhtii9oRQRrCIV__IOc9U/photos/AUGGfZmwaivV5LpGwRrqp9nT29Ti4NKztUNFbgB1Xvtip_E3cEwO326GYjrBy8TRGFRc3L2iWseoRDy5Z4Q6WjCmaUyHo96L13R6_sOJ8MIZcQ07fXkFA6J204yXWU2s7Eikn9yFcJ9QNFnkAk7FIZ6pnKCP5WF4zFez-a_Y",
+                    "widthPx": 3000,
+                    "heightPx": 2000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "The Stanley Hotel",
+                            "uri": "//maps.google.com/maps/contrib/103084126960458290657",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXKY1ltR8FVzfXOvsKtN3b_Q0DJAZmoFpx9OI3ElZwgRHT_0t8=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJyzXhtii9oRQRrCIV__IOc9U/photos/AUGGfZnIVmwSN8VO52uz037D9rekhWpFARKKfIMxIq0ysXoV0akqOjNoiuZuRErNS3dI-Xfe_wNYpUczJTwzwMHVXdnl3Um89ROfQHcdD2s4RvbfFCFmQfpnujZrHDxVKMIUgNGsPa1Ipw2tj-Mh6C82yR4JgVe71uik_NDf",
+                    "widthPx": 3000,
+                    "heightPx": 2000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "The Stanley Hotel",
+                            "uri": "//maps.google.com/maps/contrib/103084126960458290657",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXKY1ltR8FVzfXOvsKtN3b_Q0DJAZmoFpx9OI3ElZwgRHT_0t8=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJyzXhtii9oRQRrCIV__IOc9U/photos/AUGGfZlbtVde47kVvilTgRPXWbiVYIRUdDi3nrZB6ubM6JwTedwiL4l46zZJsb77C-_2x9Slo3GlPES_jQgbD9CIPaB5IG0wiXupp_W5y8dh7e6K4FBAi15Gtr0g7hin0TW3S1EwJVN8JWSaUYF_UA132m8BAvUm58bFM2XI",
+                    "widthPx": 4032,
+                    "heightPx": 1908,
+                    "authorAttributions": [
+                        {
+                            "displayName": "The Stanley Hotel",
+                            "uri": "//maps.google.com/maps/contrib/103084126960458290657",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXKY1ltR8FVzfXOvsKtN3b_Q0DJAZmoFpx9OI3ElZwgRHT_0t8=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJyzXhtii9oRQRrCIV__IOc9U/photos/AUGGfZnnqwZVeMa_Y8kTqxE9rB_tnGVg8IJkZGY672rStmrbYatu3wmDE8lrGPOjUbtMtxJCoGDmSdsbUi5Fdh7oqO3wpl37Z_ur-sulNpJgbwlUb_a16MYH6QbTG6ts6wZbcbdIhgSXSbtDgyMxdrib5mnBa6N4INyXjwm-",
+                    "widthPx": 2000,
+                    "heightPx": 1332,
+                    "authorAttributions": [
+                        {
+                            "displayName": "The Stanley Hotel",
+                            "uri": "//maps.google.com/maps/contrib/103084126960458290657",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXKY1ltR8FVzfXOvsKtN3b_Q0DJAZmoFpx9OI3ElZwgRHT_0t8=s100-p-k-no-mo"
+                        }
+                    ]
                 }
-            }
+            ]
         },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "Premier Inn London Leicester Square hotel",
-        "photos": [
-            {
-                "height": 2848,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/100671543744203745509\"\u003EPremier Inn London Leicester Square hotel\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZknd3vZht1drmf5B_JdHdeiaCyHN5Uf69HCItY8gkyxDtAGzAEK41Ofs675k9HwyelTlEs248-NcI0XowjTpgp_t-YWX9UfY96-Eew83DFjHAXoiUGthUANKis51XBD3qNbubWebyzopP2Mm4qjVEzLS1MBeFArPiRGlSmZ4oeVT6Im",
-                "width": 4288
-            }
-        ],
-        "place_id": "ChIJJUyxFNIEdkgRajb-0tlYT_0",
-        "plus_code": {
-            "compound_code": "GV69+CV London, UK",
-            "global_code": "9C3XGV69+CV"
-        },
-        "rating": 4.1,
-        "reference": "ChIJJUyxFNIEdkgRajb-0tlYT_0",
-        "scope": "GOOGLE",
-        "types": [
-            "lodging",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "user_ratings_total": 974,
-        "vicinity": "Queens House, 1 Leicester Square, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.510843,
-                "lng": -0.1314287
+        {
+            "id": "ChIJZzdh8qTKoRQRstgu7RAx8Ks",
+            "formattedAddress": "Athanasiou Diakou 28, Athina 117 43, Greece",
+            "rating": 4.3,
+            "websiteUri": "https://www.royalolympic.com/",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 4416,
+            "displayName": {
+                "text": "Royal Olympic Hotel",
+                "languageCode": "el"
             },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5121739802915,
-                    "lng": -0.130212369708498
+            "photos": [
+                {
+                    "name": "places/ChIJZzdh8qTKoRQRstgu7RAx8Ks/photos/AUGGfZlNYzZxcAlIZmK1iI43mqU7xNvq3rkNLAsIPvf2_gBgDEh8GxbktljcU3KbgUGbIp2TFbxLOmmcUHUZpN1XT218Drk9cN3W3SOK7F_JUFrleiI_4fcW2wqaMvCInpZfEuQ7HnmbxEoXwzWjFOvKdG6oVjBjIZ8qoMqO",
+                    "widthPx": 900,
+                    "heightPx": 622,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Royal Olympic Hotel",
+                            "uri": "//maps.google.com/maps/contrib/112299208816532333762",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXGLQm3HoapCG0WcluUfAsgsyFZF0oMnuRuJw7zLWbM-YyKYxQ=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5094760197085,
-                    "lng": -0.132910330291502
+                {
+                    "name": "places/ChIJZzdh8qTKoRQRstgu7RAx8Ks/photos/AUGGfZkXoUmknq-L5r_pXASPd8mSwEh9a_ae7VKqQHG2ZdKBTcWqGqO_OU-FuC09KM7FJLiPCLrrkBIPca_9bROhnPoE2aps2jNxlOx9LCsublW3GqTEDNmqwMuYZr1mOSViqJw6FCG41AUnam_GD3IhoKHv7sxqKZ8UEE10",
+                    "widthPx": 4350,
+                    "heightPx": 2865,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Royal Olympic Hotel",
+                            "uri": "//maps.google.com/maps/contrib/112299208816532333762",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXGLQm3HoapCG0WcluUfAsgsyFZF0oMnuRuJw7zLWbM-YyKYxQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJZzdh8qTKoRQRstgu7RAx8Ks/photos/AUGGfZnu85TEcSjM3chC_WalmgttDfVyCdx0QUzki8WAkjvogmpVIJGB1xTgqYTpgtp2F1Z1Ia29VyWHpKXBxbMXUzI5jLzv4f-7nfCxC5OiUvGtlMFfi93SmqJoi1oPtaoOkGgMKgx8_HoR4a3POvhrMIRbTkWZ6X8Qb8_z",
+                    "widthPx": 4032,
+                    "heightPx": 2268,
+                    "authorAttributions": [
+                        {
+                            "displayName": "ΝΩΝΤΑΣ ΠΑΝΤΟΥΛΑΣ",
+                            "uri": "//maps.google.com/maps/contrib/109012673728892856256",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVLej3U_o5Jm8baGxJQr_LIHStr8avYyvDGh7DPYd_ViHaylryp=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJZzdh8qTKoRQRstgu7RAx8Ks/photos/AUGGfZmeV5gR71maeiXvgbb1_hrrNsta-UEiS0mNTUoXnjQL3nlVds2DhyMDYjqOXJb9f8Yg1DguR2hkH7FWU1iK4q6DRnEHHHVCc6H1tk3EcwfhbtRfSgyCzU5JLTJp5hb3ptDh2VGmTsvx_ZpmhzvXazSEZxZaLWXzgF5V",
+                    "widthPx": 3000,
+                    "heightPx": 4000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ivana Šimunović",
+                            "uri": "//maps.google.com/maps/contrib/117381055114569685660",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocKL3d6S9wBod8Ey-lRoU9SBWceZl7Q8uuvW5MHUIZgIoyXPOw=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJZzdh8qTKoRQRstgu7RAx8Ks/photos/AUGGfZnzc14yBiw69_ZS4Dv0CI93mSXm7UMoHnHvpKGSHEMQJ0psP4L2lF_LzLGmht27X2j-eFo04fSX0cMz4DX2UCntAaY0YKwj-bTMbK3pfX3Zoqi0y1aNNDhnDXcYly06lz_ruwki5dzcJz6w5jjAZszIcOTbGBc90Khw",
+                    "widthPx": 900,
+                    "heightPx": 669,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Royal Olympic Hotel",
+                            "uri": "//maps.google.com/maps/contrib/112299208816532333762",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXGLQm3HoapCG0WcluUfAsgsyFZF0oMnuRuJw7zLWbM-YyKYxQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJZzdh8qTKoRQRstgu7RAx8Ks/photos/AUGGfZkiCefgCTTh7woPFSP_AlU9KaFvJLcfSB_27cZVj8CFCAnKOD3UEnUDZRX_u4tBp4nhjnWYFWh5ov-5YHp9fXg51at8GHvUjqObIZzB-Lq1Td73dpRPb7cD3X3wuwCGzxiz4KkutdgJn4KUTNWVM9zhUNUQyILstIru",
+                    "widthPx": 900,
+                    "heightPx": 599,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Royal Olympic Hotel",
+                            "uri": "//maps.google.com/maps/contrib/112299208816532333762",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXGLQm3HoapCG0WcluUfAsgsyFZF0oMnuRuJw7zLWbM-YyKYxQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJZzdh8qTKoRQRstgu7RAx8Ks/photos/AUGGfZn38g9n6W429hcANv4QjoV2lP61iuPTfnBPB3Yjq8WgaY0zHXvAfchcvQU7JuYW48d9VjlZOpRil66NtMie3y3ysbOVK-ukhY7DEdSH6pfkp9QnPZx2A-Yy6EBFbX5INb5anGd_onYmHmMWg9qx9I1NG1Hpy2jWhMBh",
+                    "widthPx": 900,
+                    "heightPx": 599,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Royal Olympic Hotel",
+                            "uri": "//maps.google.com/maps/contrib/112299208816532333762",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXGLQm3HoapCG0WcluUfAsgsyFZF0oMnuRuJw7zLWbM-YyKYxQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJZzdh8qTKoRQRstgu7RAx8Ks/photos/AUGGfZl5wImQPgh0DG4q6vBWh_4xQZ4QRaSa2vHjkvwsYUHlPOL12byRJzejnokCKBtYxl0uYe7r4Wyo-dmWLt8ooW3nP0Z5N1ndQGhp88aM9hnGdfQhfqCUt7QhdDuOq03SChGx7PLY77sc7nEY12S4Rx1Fn4qeecs4TvKP",
+                    "widthPx": 2048,
+                    "heightPx": 1152,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Royal Olympic Hotel",
+                            "uri": "//maps.google.com/maps/contrib/112299208816532333762",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXGLQm3HoapCG0WcluUfAsgsyFZF0oMnuRuJw7zLWbM-YyKYxQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJZzdh8qTKoRQRstgu7RAx8Ks/photos/AUGGfZnVi0KN5fjB1rRToYd5BO6r6OmZcUf5sr4xeyOuMl5DxXnS4eJb29AFzWOy8YMSuvmK4_EcdVVslLeBr2O4DVPDpSpiOMnQre4NvTMSysMUzSfInGSUC9tVpDy-2MMBujcAXIIh28rqGARUIqg-_lC2IsR3TeyCCkDR",
+                    "widthPx": 900,
+                    "heightPx": 598,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Royal Olympic Hotel",
+                            "uri": "//maps.google.com/maps/contrib/112299208816532333762",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXGLQm3HoapCG0WcluUfAsgsyFZF0oMnuRuJw7zLWbM-YyKYxQ=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJZzdh8qTKoRQRstgu7RAx8Ks/photos/AUGGfZmOUkRX1h801SKcfKfa-X1aDXfWEV-ABJ_gDu5Uy9cEbh7WoK_2r6CAI0Si32m1ZNsh-TAE80NcTohKJ5ylP85J3IZAqAmR4Cr9vNYtADc-Jt8r0q-XX66oarnLL8cfvAz0sJcUfurAvwm1RWw94g5lZjCSfE6ab9BD",
+                    "widthPx": 1024,
+                    "heightPx": 682,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Royal Olympic Hotel",
+                            "uri": "//maps.google.com/maps/contrib/112299208816532333762",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjXGLQm3HoapCG0WcluUfAsgsyFZF0oMnuRuJw7zLWbM-YyKYxQ=s100-p-k-no-mo"
+                        }
+                    ]
                 }
-            }
+            ]
         },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "W London",
-        "photos": [
-            {
-                "height": 320,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/111582798710869861421\"\u003EW London\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZlDf_Zf6XdJ2XSR-MbYBREAsONYojAjm4GATjVhRdCzZT_2imHhg_Ut4UgPZN0PdcGnuXDvYKgMswwsIfx5lIaI9tw17kxdO0DtwEfMmWktFqhL9nBuS2s8NrnMTwCkJ9c7_ro9ujtsnxBtywczooHYuhJy4vDVYoH2-a08JmV0rg49",
-                "width": 480
-            }
-        ],
-        "place_id": "ChIJ24-dOtIEdkgRUdpPyAD1PmI",
-        "plus_code": {
-            "compound_code": "GV69+8C London, UK",
-            "global_code": "9C3XGV69+8C"
-        },
-        "rating": 4.2,
-        "reference": "ChIJ24-dOtIEdkgRUdpPyAD1PmI",
-        "scope": "GOOGLE",
-        "types": ["lodging", "point_of_interest", "establishment"],
-        "user_ratings_total": 1495,
-        "vicinity": "10 Wardour Street, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5101494,
-                "lng": -0.1205205
+        {
+            "id": "ChIJSyLizgS9oRQR2ESu_x0Qhqo",
+            "formattedAddress": "23, Mitropoleos Street, Athina 105 57, Greece",
+            "rating": 4.3,
+            "websiteUri": "https://house.ergonfoods.com/",
+            "businessStatus": "OPERATIONAL",
+            "priceLevel": "PRICE_LEVEL_MODERATE",
+            "userRatingCount": 4886,
+            "displayName": {
+                "text": "ERGON House Athens",
+                "languageCode": "en"
             },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5115776802915,
-                    "lng": -0.119289319708498
+            "photos": [
+                {
+                    "name": "places/ChIJSyLizgS9oRQR2ESu_x0Qhqo/photos/AUGGfZlYISpkjFW2vt45mFH98Ipx3B3MTS9vAt0RTyQVGA7ZXfZQ0F3hN1keC7ZvOSoToAvJ5QkYk04JemhODNOLKV8UWv4ApRU9a5MVHdgwGeRUebK_VLtIvMKgppgkAgbHasXpMpIqng0viBKRyrGnOjsWt_2Gv1FfQLni",
+                    "widthPx": 1200,
+                    "heightPx": 672,
+                    "authorAttributions": [
+                        {
+                            "displayName": "ERGON House Athens",
+                            "uri": "//maps.google.com/maps/contrib/118234898620203665072",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjW76VcJujDEGQZ4I88ydWq5Bf7O7epFi1ytEruso8ABFvRDrwk=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5088797197085,
-                    "lng": -0.121987280291502
+                {
+                    "name": "places/ChIJSyLizgS9oRQR2ESu_x0Qhqo/photos/AUGGfZmMwcdwUwzy3WJj5yggiqnBVDaG2-AamPc_yomfAr_GDDKBNskTsv1AfwR9WOiiGK2SdpdP_R1boE_2PXJ3Xoog9feYizVvsqxY5uZWV3u2tY3HNzFVVzlAFlZE2z_JYeK758wPPne0-vmw7NuURMl1xBfTyOeliJdr",
+                    "widthPx": 4032,
+                    "heightPx": 3024,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Yorgos Kontosfyris",
+                            "uri": "//maps.google.com/maps/contrib/114422005227219629211",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocKU4QmaxQ2xxcPihUuoWwM-2jWoamzg4jAjKUl_9r_MS3Tmhw=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJSyLizgS9oRQR2ESu_x0Qhqo/photos/AUGGfZlbeOzDb14ctMifDCgPRviglvCESNcjVN31aTtFQKl7rtOKG7uZY8zXzythhsPaSuL1vAQXgZe6LdvyysBTIvKADKaSjZzdJEWwhxTkrEpuPNCIn8H1qNMP4jySEpfqOB8aJDaO69IpzapUh4z2lqWxZrcIDioaWzUi",
+                    "widthPx": 9000,
+                    "heightPx": 12000,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Elia Charari",
+                            "uri": "//maps.google.com/maps/contrib/113435248523977434835",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUvR51VCjy0_uoqJg5GlYKucdwf_-av1iXpvhuXqyUoNT0N1GJheA=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJSyLizgS9oRQR2ESu_x0Qhqo/photos/AUGGfZmBS2LCgZ8RTaC_DteLcf9Ci-NL9V2-kSZxd1C9DoWut1H5FKfH0H5Fx_Xbm5_zqkeEg8GBPti61Lho1BB14ub-AVeAKmj1bkIu-Vcbw195tIe30CdVjaH5DlGG9tVHRTy1jbjwP6cQhCSa7orAuxw48mPGiP34840o",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Έφη Κοπιδάκη",
+                            "uri": "//maps.google.com/maps/contrib/111887027329524582290",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUBPCs09V0cibbmLA35RBJB9SyozLhsEeeSiyF55ZgN6wXVOvLW=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJSyLizgS9oRQR2ESu_x0Qhqo/photos/AUGGfZnlFnYk-XPHg3v1zs-6_iY0lm8_FYQBh7u5rJRdcdnZDZ7JiESk7gncWw9g_SNw-I12PeKJyKD0S432wtWyN9rqVSUJLFwbS4f5LM6fHtIUc3LmYLBn2NtlE8Sy_XS_fhjDeSACxEynYec8BMZwChS-CC50NknwRuer",
+                    "widthPx": 4032,
+                    "heightPx": 3024,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Lynn S",
+                            "uri": "//maps.google.com/maps/contrib/103193536983257533418",
+                            "photoUri": "//lh3.googleusercontent.com/a/ACg8ocLRBGV6GiUzranU3DGitRgot2--OR8_D64dgwwtM-9Zp0yXn_I=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJSyLizgS9oRQR2ESu_x0Qhqo/photos/AUGGfZke3rFVjlcRnGmeck9IXhOVSiJrLE_j9BMA4dHy0Dqlo-0QoTKSwBcjwVCDpOIN6ycFl9yRWooeGb7x4bz4gRTQljTsowShm5RAhXWN1mTrfFd0pj_j3RHfLcWqyIppY0Hg1H2WY-P_AIHiNp_XLERMnu3WPeCyn9Mv",
+                    "widthPx": 4032,
+                    "heightPx": 3024,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Μελίνα Παπαδοπουλου",
+                            "uri": "//maps.google.com/maps/contrib/102881459503465448441",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjVK6_m2qyL3YQNKU6uyhf3tyKPeTVrrMplxQvd9KUR0201u9D1T=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJSyLizgS9oRQR2ESu_x0Qhqo/photos/AUGGfZndIXFykizhAproKj2a3tzFmHnWQMCIinWa-HyxeeURI0HKV9xWr8_MJZ5HCt82mYfPL_DUGKyfKr-B0giZhDrDmo3_PU9nTZK7f18Fe9C6PxMhXaPTvhZYPFN1oWhTfrfrB1CICvv1vrGvaxbN_uC83d2USpeZC1Kt",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Anthea Christodoulou",
+                            "uri": "//maps.google.com/maps/contrib/116346175728891386088",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjX0pPfZ_kMyS6DX8Y_6lkzB4e79z47dIEhXkUKNkubtsE5SqbHghw=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJSyLizgS9oRQR2ESu_x0Qhqo/photos/AUGGfZmvFK7Cusm6lCItYaeyy9zeJb7MHX63VOKbP3P-K57GdllRIGQOfNlqF4HbN-wwQtNJqOG5sYTIedqEq3CruU88lMI5xEl8r8QnA7VyA2-TMTQ3GoLMnN6oBAlGiYl4bfljHn4hCRSbx1r_BxBg77EQyoqdaJgb38cm",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "TaTiana de la Fuente",
+                            "uri": "//maps.google.com/maps/contrib/110535574863842939593",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjX_k00EA3ugsT9SSOL0SjC2gt7ooa7vJ09hS_yB_IoDavv6AcmA=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJSyLizgS9oRQR2ESu_x0Qhqo/photos/AUGGfZmp1mJtImi6Nf57UEXalvaTu0RfkWba-4LIwj_PGwvtUCgUZtp5Tk3nTSG-RhkXhuPKaEVnZWEVtnkDbVR-pSw-Ds196aviH3rpu5cKC89lPWMZEpFVTg8lw2RxxMSVyqbtmZQGv4JdZGvW25NABIHa7t2OERkHl_Uu",
+                    "widthPx": 3024,
+                    "heightPx": 4032,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Cliff Hazell",
+                            "uri": "//maps.google.com/maps/contrib/103034923452464588918",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUXHOyJm5A9ITNsULr0XDNjHLofiG0Us5aFDa_BnqJ15M6n6qMD=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJSyLizgS9oRQR2ESu_x0Qhqo/photos/AUGGfZn4uX9CqJLpCReA2YQHl8MjsEchq1CDEtEphmRTJ4DgLw63mRkB7JqunLVe1ngS0pK63St4kQ9R5VIzmduMe9zVNZUXQudQ94-6f04BZpbCpPWGenBphRvhyGRxtxPX_B5q4O7LhF8B-bV3Rnky1xvBElUBc5AkWHR9",
+                    "widthPx": 3072,
+                    "heightPx": 4080,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Derrick Oien",
+                            "uri": "//maps.google.com/maps/contrib/112905790272409268212",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUt7nefsHyf7HH6MqDp2hUFNmxSPDya9uTewzS96auIcbueyK3j_A=s100-p-k-no-mo"
+                        }
+                    ]
                 }
-            }
+            ]
         },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "The Savoy",
-        "photos": [
-            {
-                "height": 600,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/111756005236800162016\"\u003EThe Savoy\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZkCIhQLRTfNAf66w7L038FabiJEvJC9ilAX39OSAMzo_rgPP0CMaSDQ_OmKR7D2kXP7kgHU-cS-2eu-olKSAoM_aZpeLPoX8xpxRnsS9rJhRAvuBuS2aVDwYU6Op6dDTTrJ_oOwUnnP90RMtZVo_3yghmt0o8JZX1G6n08kz0zmT8U",
-                "width": 975
-            }
-        ],
-        "place_id": "ChIJTVquz8sEdkgRKdz7pP3v9BU",
-        "plus_code": {
-            "compound_code": "GV6H+3Q London, UK",
-            "global_code": "9C3XGV6H+3Q"
-        },
-        "rating": 4.7,
-        "reference": "ChIJTVquz8sEdkgRKdz7pP3v9BU",
-        "scope": "GOOGLE",
-        "types": ["lodging", "point_of_interest", "establishment"],
-        "user_ratings_total": 9192,
-        "vicinity": "Strand, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5108923,
-                "lng": -0.120843
+        {
+            "id": "ChIJh8D1fjq9oRQRl1FHzPgUMZE",
+            "formattedAddress": "Panepistimiou 52, Athina 106 78, Greece",
+            "rating": 4.2,
+            "websiteUri": "https://www.titania.gr/",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 6027,
+            "displayName": {
+                "text": "Titania Hotel Athens",
+                "languageCode": "en"
             },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5122259302915,
-                    "lng": -0.119740069708498
+            "photos": [
+                {
+                    "name": "places/ChIJh8D1fjq9oRQRl1FHzPgUMZE/photos/AUGGfZkbOwXzD7KAtIwkcnFiEgZX9zj6H17fheBqFfF4DrXvBqMjY9y-U7Rnbqjkg3KlGkVtCEWsdb1mGPqFJuMr9pQ1yV5M1uwXlKpUWUiLfpRxVoStKPU58Y33YYMShpj3GzWkIL4n2vhU9Zulh13LltjoMjX04rFY7uWo",
+                    "widthPx": 3600,
+                    "heightPx": 2250,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ξενοδοχείο Τιτάνια",
+                            "uri": "//maps.google.com/maps/contrib/113643120880562485211",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV_MuedXvOw7xmtAK61fDGSfh5p5208k2HonW4oOfmR69M7dTwG=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5095279697085,
-                    "lng": -0.122438030291502
+                {
+                    "name": "places/ChIJh8D1fjq9oRQRl1FHzPgUMZE/photos/AUGGfZkYQVIqRURnG6u4iiU9Z1Xko7I-5QgGzDXot2zqq3AQVDPDuFPETIaPH92eIz9PRUDmtG0vwd5Qx44REphR37g0QMukSMrW8v2vv4dcrWuaE_CrjKtXx3z9ernbGPKd860OUpFzvPsin4Xhr4eBoE885u7b_kFmMaZs",
+                    "widthPx": 3600,
+                    "heightPx": 2401,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ξενοδοχείο Τιτάνια",
+                            "uri": "//maps.google.com/maps/contrib/113643120880562485211",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV_MuedXvOw7xmtAK61fDGSfh5p5208k2HonW4oOfmR69M7dTwG=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJh8D1fjq9oRQRl1FHzPgUMZE/photos/AUGGfZnsq5YlLznKBTbFW7mM1Dx4cXgslbC6z8x3t8Hn4o7G-DYF9m-7rUqS6OkcYCW5rvPP-iyfSAnI9VtH2JQcNE8otUoqov3mcK3cF2XrEA7cGXgZhtWWRkDTMPiAoAcR8WoaxiApEnc0-JEA1Nl4R1oBE00OpyL82dal",
+                    "widthPx": 2522,
+                    "heightPx": 3600,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ξενοδοχείο Τιτάνια",
+                            "uri": "//maps.google.com/maps/contrib/113643120880562485211",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV_MuedXvOw7xmtAK61fDGSfh5p5208k2HonW4oOfmR69M7dTwG=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJh8D1fjq9oRQRl1FHzPgUMZE/photos/AUGGfZkwmZdnMgWUhagkSo91mOaOKAZQS3rVqpQLGj9J-pzcvkrEcRmVljlVuxvQlh-qFKMzK7Rwzc4117erZ6BPPwQLgGhZ6IvXjzuLqWA-pY61AF7dHMukw1CVmA2PSx_gzg3YKZVwVCVC4e57VKkyxdgGDiqG-HQSRZRV",
+                    "widthPx": 1366,
+                    "heightPx": 911,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ξενοδοχείο Τιτάνια",
+                            "uri": "//maps.google.com/maps/contrib/113643120880562485211",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV_MuedXvOw7xmtAK61fDGSfh5p5208k2HonW4oOfmR69M7dTwG=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJh8D1fjq9oRQRl1FHzPgUMZE/photos/AUGGfZn7fwPZzFiywe5AQRNelPVmGnC3FGHjJvzxX3eYyqURV2hTGW95itLjwJQ8il0HatUjU6WuYZwcG9Z4LFS2NT2bCHaSV1Q8RnyC6CdDx75jC5ujX63vuC0lD3KS0LW9EXIT9vwGPmKo7aiPxR5GPrk1KUrVQzFx9XLq",
+                    "widthPx": 1366,
+                    "heightPx": 911,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ξενοδοχείο Τιτάνια",
+                            "uri": "//maps.google.com/maps/contrib/113643120880562485211",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV_MuedXvOw7xmtAK61fDGSfh5p5208k2HonW4oOfmR69M7dTwG=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJh8D1fjq9oRQRl1FHzPgUMZE/photos/AUGGfZmcb-IsIjimaoAIcJlAG1U1JbROJa1KyWNCGj3ApaOzlbXVef2tQNpeRpEGZSQ__IhYdDneh7j5ATBI6dNM2-eKvzkj8Xpcq1Ze73hkUVZ07yNhzDkgA9lqXxfq2wwuHluJuutU3ZUuTJPw0pxfTyeqaN-fkEhZRxiW",
+                    "widthPx": 1024,
+                    "heightPx": 683,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ξενοδοχείο Τιτάνια",
+                            "uri": "//maps.google.com/maps/contrib/113643120880562485211",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV_MuedXvOw7xmtAK61fDGSfh5p5208k2HonW4oOfmR69M7dTwG=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJh8D1fjq9oRQRl1FHzPgUMZE/photos/AUGGfZm-wxOcnOfdF35fJgo9qES2w1sqvf4AxdOV6YHI1rmhXDlppp8eCVZ25oU0ZPRieyfCMcNjja6aHCYQ3DJaZhhYTbrg90x41QQjEfrFHvr1bV5yQzk3nJK_q1ZdTnsdOGYwpA6jnYVYybY8xgrdI6eDcgOqmfzeiuY5",
+                    "widthPx": 1366,
+                    "heightPx": 911,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ξενοδοχείο Τιτάνια",
+                            "uri": "//maps.google.com/maps/contrib/113643120880562485211",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV_MuedXvOw7xmtAK61fDGSfh5p5208k2HonW4oOfmR69M7dTwG=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJh8D1fjq9oRQRl1FHzPgUMZE/photos/AUGGfZm947R1Sabe_UFGpaIoiuiUVZvPjOOVmchR_Sgp3iHSJlL2V5JE4XqKX-RQlbc1Y-qamRqTpPSUh36MF_j7B85dwoET3XhXqDltztnrO4wcP2wjE2enJ3CEMC9j89DmFNxsXT7-3dyMiACJi7knj9c0lByFzWiTpf7B",
+                    "widthPx": 1366,
+                    "heightPx": 911,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ξενοδοχείο Τιτάνια",
+                            "uri": "//maps.google.com/maps/contrib/113643120880562485211",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV_MuedXvOw7xmtAK61fDGSfh5p5208k2HonW4oOfmR69M7dTwG=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJh8D1fjq9oRQRl1FHzPgUMZE/photos/AUGGfZlfhxhIlOta6PlpoQRlJs0Lq_2vWcuUAQ4guQbWQ2BKoPhdZOyCLh5BK-UZEU3lOTehhdke3qab1QoFRyjMDuNMwikLvaIsAWemKqF6-JFj6dCcZMHm_xOixuJYLs2scxsOls_0xrSND8PG2SmVVbNIHDr-5MsUfTSc",
+                    "widthPx": 1024,
+                    "heightPx": 683,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ξενοδοχείο Τιτάνια",
+                            "uri": "//maps.google.com/maps/contrib/113643120880562485211",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV_MuedXvOw7xmtAK61fDGSfh5p5208k2HonW4oOfmR69M7dTwG=s100-p-k-no-mo"
+                        }
+                    ]
+                },
+                {
+                    "name": "places/ChIJh8D1fjq9oRQRl1FHzPgUMZE/photos/AUGGfZkhmPdhat2qp1zO_Y3kr_iuucuqLE_Wa5PgZ8RaQ-UIkoJ-NLA6gP13HtpDEXtR12WQNbZBRLOL22ApNvBU5-CaJ1Cp7VFu0MTZt8b0mCFL0aMxL7Z4B5GbC1wOSETdsIIyzOwi4jutugbk3GeEGfxRjLgtZd4JwuJU",
+                    "widthPx": 1366,
+                    "heightPx": 911,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Ξενοδοχείο Τιτάνια",
+                            "uri": "//maps.google.com/maps/contrib/113643120880562485211",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjV_MuedXvOw7xmtAK61fDGSfh5p5208k2HonW4oOfmR69M7dTwG=s100-p-k-no-mo"
+                        }
+                    ]
                 }
-            }
+            ]
         },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "Strand Palace",
-        "opening_hours": {
-            "open_now": true
-        },
-        "photos": [
-            {
-                "height": 3755,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/106211313699521269653\"\u003EStrand Palace\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZmxksR-5Lyg7FUeS_hHYuTzezhHLdv3UkzZFijNFw43K5rFqHRr13arfpPbPK7pN5MqjyP7_biVI8xuurXl-nIkqqs8-w1lX5qTRk_LHp-MFofudSQ6pPouQ2uV0ICqvLOxtqgNhBBtBIUbjr5UU2Jxmu1LHwMe8qCUneUoHlYARh_I",
-                "width": 5632
-            }
-        ],
-        "place_id": "ChIJa7MYyssEdkgRW0GxGFyDvWw",
-        "plus_code": {
-            "compound_code": "GV6H+9M London, UK",
-            "global_code": "9C3XGV6H+9M"
-        },
-        "rating": 4,
-        "reference": "ChIJa7MYyssEdkgRW0GxGFyDvWw",
-        "scope": "GOOGLE",
-        "types": ["lodging", "point_of_interest", "establishment"],
-        "user_ratings_total": 6671,
-        "vicinity": "372 Strand, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5078655,
-                "lng": -0.1378338
+        {
+            "id": "ChIJI50NBCa9oRQRQJcu8OyeXMU",
+            "formattedAddress": "Meg. Alexandrou 2, Athina 104 37, Greece",
+            "rating": 4.4,
+            "websiteUri": "https://www.wyndhamgrandathens.com/",
+            "businessStatus": "OPERATIONAL",
+            "userRatingCount": 4928,
+            "displayName": {
+                "text": "Wyndham Grand Athens",
+                "languageCode": "en"
             },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5092068802915,
-                    "lng": -0.136649569708498
+            "photos": [
+                {
+                    "name": "places/ChIJI50NBCa9oRQRQJcu8OyeXMU/photos/AUGGfZmYr0_2rbWPfr1SIrb6B3LY4hDgpMu8I-d6ela76jfK0VSH1kjwthSsNMM2EQkpoc1lTHAbyOOj-RSYiFbBcVcUmtkS4il-mlw-kF_XKle6EmLFxRWQX8lldQYgmr_Q-SEtMOqDac6oyUQk1Iljkd7m7Z8ZO9g4l3NL",
+                    "widthPx": 715,
+                    "heightPx": 402,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Wyndham Grand Athens",
+                            "uri": "//maps.google.com/maps/contrib/114424937418753501533",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUHTdrPgw_9gsnctke7C16GfzXcd3CHfSef3wuEo_8qHs6OFOs=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5065089197085,
-                    "lng": -0.139347530291502
-                }
-            }
-        },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "The Cavendish London Hotel",
-        "photos": [
-            {
-                "height": 3780,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/100763868416974300458\"\u003EThe Cavendish London Hotel\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZmZgZUduWVlU1PCC5hmAoj7TUxLPKkFPlJfm48CrzhPxZ4jm7WFS1sxxMKnZ5un6kHLtugTc2dziHv8Kk5LUA2-rPwYGSp2fTTSseFQftXhBhEveVkqH9fM_sa09gKrg3gZCRj8rjcMtINUE6QdjSI0AMxTWNlgADd2MO9M-tXgTdmh",
-                "width": 6720
-            }
-        ],
-        "place_id": "ChIJ_S_nWNYEdkgRbwBTLQTISZM",
-        "plus_code": {
-            "compound_code": "GV56+4V London, UK",
-            "global_code": "9C3XGV56+4V"
-        },
-        "rating": 4.4,
-        "reference": "ChIJ_S_nWNYEdkgRbwBTLQTISZM",
-        "scope": "GOOGLE",
-        "types": [
-            "city_hall",
-            "local_government_office",
-            "lodging",
-            "point_of_interest",
-            "establishment"
-        ],
-        "user_ratings_total": 1093,
-        "vicinity": "81 Jermyn Street, St. James's, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5117908,
-                "lng": -0.11934
-            },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5131305302915,
-                    "lng": -0.117821119708498
+                {
+                    "name": "places/ChIJI50NBCa9oRQRQJcu8OyeXMU/photos/AUGGfZnHqs4BhOKalNaFH9R2YXlCGY4lPEyTPF7b4CF0htMrQYQ6FmyZooUOi8LLSiTYX3FttXn32Va6rogEQtze31J3qGl9KXQf_g5U33PYdWL_ctZDyWiISnVco90qYdVSp4LBIxGJgOA1iC3DQdoNL2DpT8SR0hAVT1kU",
+                    "widthPx": 600,
+                    "heightPx": 402,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Wyndham Grand Athens",
+                            "uri": "//maps.google.com/maps/contrib/114424937418753501533",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUHTdrPgw_9gsnctke7C16GfzXcd3CHfSef3wuEo_8qHs6OFOs=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5104325697085,
-                    "lng": -0.120519080291502
-                }
-            }
-        },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "One Aldwych",
-        "opening_hours": {
-            "open_now": true
-        },
-        "photos": [
-            {
-                "height": 3375,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/102856272130151011790\"\u003EOne Aldwych Hotel\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZnQaSEDKV7TIyFYjHuhMFtYHIAfErD2h-e2oAyo1xqjxLgvmfYMhKAbPiFDTujyty6ncJodbRr34YHHXOl7OFurCHorqLr_vHiFstbQ2Cr6QIJITPYSDx1OWwY7AL7-bTVhFwl1cWoRGS8zvItaQ8IQkL_3Jzb3-x3rHoST9QomjLh9",
-                "width": 5315
-            }
-        ],
-        "place_id": "ChIJq5XIW8oEdkgRqmg5RAC_ih8",
-        "plus_code": {
-            "compound_code": "GV6J+P7 London, UK",
-            "global_code": "9C3XGV6J+P7"
-        },
-        "rating": 4.6,
-        "reference": "ChIJq5XIW8oEdkgRqmg5RAC_ih8",
-        "scope": "GOOGLE",
-        "types": [
-            "bar",
-            "spa",
-            "lodging",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "user_ratings_total": 1365,
-        "vicinity": "1 Aldwych, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5145658,
-                "lng": -0.1271199
-            },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5158971802915,
-                    "lng": -0.125652269708498
+                {
+                    "name": "places/ChIJI50NBCa9oRQRQJcu8OyeXMU/photos/AUGGfZnXZOOHel77hst8WYoS9o2Y8ILDOFHlEZ87A50S4-lanFqM8WIOKvSqPiScvXY65mtFDiKHqexpuZqwAK7Xvb30HUSm_qvBPQEfDfxNMwh9q0YnxD6udqgdejQwXCuLHAO6Zx5j6JpcGwWPUTm5-VeUYhdX143B7K83",
+                    "widthPx": 599,
+                    "heightPx": 399,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Wyndham Grand Athens",
+                            "uri": "//maps.google.com/maps/contrib/114424937418753501533",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUHTdrPgw_9gsnctke7C16GfzXcd3CHfSef3wuEo_8qHs6OFOs=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5131992197085,
-                    "lng": -0.128350230291502
-                }
-            }
-        },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "Covent Garden Hotel",
-        "photos": [
-            {
-                "height": 5131,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/103596128011107335827\"\u003ECovent Garden Hotel\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZl83BpZiznLu1NcXRKYuEkPIHdm7QjFWzcoRcKJ-qXH8zPFs5peMEE_cq2HplaZmb4JxeCUrqUBb6vE8g3aCya_ZVKpN5OxF88OWv65xX36T2UlTJONItoehB0b3ckTUXg6xVpwvx9aczk6mTCjNkZmAp6o9LlcfqgKtVO7tvI8E-lg",
-                "width": 5783
-            }
-        ],
-        "place_id": "ChIJe0XrMc0EdkgR73cT3U4ghp4",
-        "plus_code": {
-            "compound_code": "GV7F+R5 London, UK",
-            "global_code": "9C3XGV7F+R5"
-        },
-        "rating": 4.6,
-        "reference": "ChIJe0XrMc0EdkgR73cT3U4ghp4",
-        "scope": "GOOGLE",
-        "types": [
-            "lodging",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "user_ratings_total": 645,
-        "vicinity": "10 Monmouth Street, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5024997,
-                "lng": -0.1180709
-            },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5038297302915,
-                    "lng": -0.116590819708498
+                {
+                    "name": "places/ChIJI50NBCa9oRQRQJcu8OyeXMU/photos/AUGGfZmhnzpFIWSHFaGJWPg5lyrDay-30erVuFSTa6xoQkpK97BRZxFh0u8dZQhJrua5YHqGyQXSHSj7USbUlnVxZ6F3dV9o0HJ6l29809tHoYN6p8c3-_cLfdDRT5WPMKcoGtOi6ddXJKA5sZDoM5eScqvQX7Z1ZYM9FO3p",
+                    "widthPx": 5616,
+                    "heightPx": 3744,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Wyndham Grand Athens",
+                            "uri": "//maps.google.com/maps/contrib/114424937418753501533",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUHTdrPgw_9gsnctke7C16GfzXcd3CHfSef3wuEo_8qHs6OFOs=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5011317697085,
-                    "lng": -0.119288780291502
-                }
-            }
-        },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "Premier Inn London County Hall hotel",
-        "photos": [
-            {
-                "height": 1000,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/108449864746154231104\"\u003EPremier Inn London County Hall hotel\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZlVG19P77EmBGSI4CuHqhhmkGIz1fx1fh-qtdWVRL3GLQ8ZVJtxlpk57aS29H52683tOVfXgV09Iv_87oTPJklqxotddby7N2OWvILBRHK-DR6ftzF7pmaqKwH-L-hxYdUQIGD4Bu_cKWaDI2G7PMEeL5ELGye2Kze8TnhDd4Tr_hlV",
-                "width": 1500
-            }
-        ],
-        "place_id": "ChIJLTMzFXqv2EcRJVvr2rP600M",
-        "plus_code": {
-            "compound_code": "GV2J+XQ London, UK",
-            "global_code": "9C3XGV2J+XQ"
-        },
-        "rating": 4.3,
-        "reference": "ChIJLTMzFXqv2EcRJVvr2rP600M",
-        "scope": "GOOGLE",
-        "types": [
-            "lodging",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "user_ratings_total": 2977,
-        "vicinity": "County Hall, Belvedere Road, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5125403,
-                "lng": -0.1189807
-            },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5138443802915,
-                    "lng": -0.117512569708498
+                {
+                    "name": "places/ChIJI50NBCa9oRQRQJcu8OyeXMU/photos/AUGGfZme8HzmakYILxvV0kQe8E-kaaBkf6QpE9ChboNQ5VJVyLhq0KmCCt3sI76umpdwzFK6xyzxfPwYSmd9-Umtjxah9SJTuTERQ8Tk0kcGwN4ne3B-CczYXJPhfJ-3_BlijuYqM7tkjKGkZUKB8T60VIwhu_M8Wv4i-vmN",
+                    "widthPx": 5472,
+                    "heightPx": 3648,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Wyndham Grand Athens",
+                            "uri": "//maps.google.com/maps/contrib/114424937418753501533",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUHTdrPgw_9gsnctke7C16GfzXcd3CHfSef3wuEo_8qHs6OFOs=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5111464197085,
-                    "lng": -0.120210530291502
-                }
-            }
-        },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "The Waldorf Hilton, London",
-        "photos": [
-            {
-                "height": 1282,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/115819569792734675405\"\u003EThe Waldorf Hilton, London\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZmaQoSK-nUXTzZ0YczTujDmBHy1sGJG6iNR8dmO7fH_xO1Y1vqEP6L2hmXeDhQlDN01TdncNjVLC_jmvXfnj9MWEeMq7yqGEFHT-DFSGmpUy73dQdsTHeJvRvgbQ73R4YWUQj5ekIIWa8DkgLtXd4BnV9dmBVBoF_cO5CmgHKrMFPCF",
-                "width": 1920
-            }
-        ],
-        "place_id": "ChIJQ1OI9coEdkgR33-hA4sRcks",
-        "plus_code": {
-            "compound_code": "GV7J+2C London, UK",
-            "global_code": "9C3XGV7J+2C"
-        },
-        "rating": 4.3,
-        "reference": "ChIJQ1OI9coEdkgR33-hA4sRcks",
-        "scope": "GOOGLE",
-        "types": ["lodging", "point_of_interest", "establishment"],
-        "user_ratings_total": 3598,
-        "vicinity": "Aldwych, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5139885,
-                "lng": -0.1337476
-            },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5153895802915,
-                    "lng": -0.132342419708498
+                {
+                    "name": "places/ChIJI50NBCa9oRQRQJcu8OyeXMU/photos/AUGGfZkft608cJIYXPEoKOTkM59PChOUjh_dY__0oBpQDNqf9-kQZc9_HCqNuecSjgfPTXDRABnx0VN8WvIaLPVzzQeyjwE-E7lvkhKInaZF9dYuElj1rikx0tt3NaNYc0Hfsopdf8a5ualaaUg8PVHzw7FUydxgDP8Dax1y",
+                    "widthPx": 5002,
+                    "heightPx": 3334,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Wyndham Grand Athens",
+                            "uri": "//maps.google.com/maps/contrib/114424937418753501533",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUHTdrPgw_9gsnctke7C16GfzXcd3CHfSef3wuEo_8qHs6OFOs=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5126916197085,
-                    "lng": -0.135040380291502
-                }
-            }
-        },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "The Soho Hotel",
-        "photos": [
-            {
-                "height": 1159,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/112906293084975037529\"\u003EThe Soho Hotel\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZnywSEKEYuKRDFxWeIdntTsAP6OdsTEbYvbNy30fD0iH8vfvDiUs46vOeQUenK6kVt0ZhHFyYDWozXZfXezE_FB5SYG4g5ieg-4d8fdj8tWgc2gJvGC-1P0xfegh4UUc6gvQsURBHzG8lOh9UPBhpEiw2x6exy_zsc_QGH-nstthbsr",
-                "width": 2000
-            }
-        ],
-        "place_id": "ChIJE4E1QdMEdkgRSpJ-bmPNffY",
-        "plus_code": {
-            "compound_code": "GV78+HG London, UK",
-            "global_code": "9C3XGV78+HG"
-        },
-        "rating": 4.6,
-        "reference": "ChIJE4E1QdMEdkgRSpJ-bmPNffY",
-        "scope": "GOOGLE",
-        "types": ["lodging", "point_of_interest", "establishment"],
-        "user_ratings_total": 1427,
-        "vicinity": "Soho Hotel, 4 Richmond Mews, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5010534,
-                "lng": -0.119174
-            },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.50359965,
-                    "lng": -0.11734505
+                {
+                    "name": "places/ChIJI50NBCa9oRQRQJcu8OyeXMU/photos/AUGGfZm_xyubz3VMGkopix9pdSXg-kLJzBhsDIPsKLClh-aezQ_1oNxQEvQjjr2C_2LwiSUs0qD0ivh4ObQmaV4AJ5521cd1iP8HtScqPXb_JcYKegV2N23f-_gLcK6zhnHaJUXK30MZ8jfnaT03OrB7EX6EWvaz_rVzKnLY",
+                    "widthPx": 4550,
+                    "heightPx": 3034,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Wyndham Grand Athens",
+                            "uri": "//maps.google.com/maps/contrib/114424937418753501533",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUHTdrPgw_9gsnctke7C16GfzXcd3CHfSef3wuEo_8qHs6OFOs=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.50003745,
-                    "lng": -0.12024165
-                }
-            }
-        },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "London Marriott Hotel County Hall",
-        "photos": [
-            {
-                "height": 320,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/117527725709759346469\"\u003ELondon Marriott Hotel County Hall\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZk5JU_2hyteiBPjO1Y6ozCfzNjaSbRSF6hKvOPfhZuWAPwF0Jf_o7f7ToBR1DyNGIEe0rzEw_d3mpGY_-j_MmsxFuLSg-cd92mT5HryTLWPHRpnlTaRiWJGbLNMk8pDwdCSJuOHVRecVH9SFfNm8XUGrJ6z1Ie_3m5Y3fGS2WGQUX52",
-                "width": 480
-            }
-        ],
-        "place_id": "ChIJLTMzFXqv2EcRVvwDkIeNh6k",
-        "plus_code": {
-            "compound_code": "GV2J+C8 London, UK",
-            "global_code": "9C3XGV2J+C8"
-        },
-        "rating": 4.4,
-        "reference": "ChIJLTMzFXqv2EcRVvwDkIeNh6k",
-        "scope": "GOOGLE",
-        "types": ["lodging", "point_of_interest", "establishment"],
-        "user_ratings_total": 1498,
-        "vicinity": "County Hall, Westminster Bridge Road, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5118147,
-                "lng": -0.1186952
-            },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5130754302915,
-                    "lng": -0.117453019708498
+                {
+                    "name": "places/ChIJI50NBCa9oRQRQJcu8OyeXMU/photos/AUGGfZk5wJwRJpPy0lJlxgY_HoJVGjGPBeqLP-_pJ6-93yFN0CI8FkooarhCbuQB2-NY2bld67SBzSNa1dlr2cRBDPF8eBHI0YT8fXbsFTWesu6sVWMPMjHb8vo_U6KE6B3NjIw2_BgApeBBLpn8ncOH4XZt9JFAjCVYbp06",
+                    "widthPx": 600,
+                    "heightPx": 400,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Wyndham Grand Athens",
+                            "uri": "//maps.google.com/maps/contrib/114424937418753501533",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUHTdrPgw_9gsnctke7C16GfzXcd3CHfSef3wuEo_8qHs6OFOs=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.5103774697085,
-                    "lng": -0.120150980291502
-                }
-            }
-        },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "ME London",
-        "opening_hours": {
-            "open_now": true
-        },
-        "photos": [
-            {
-                "height": 533,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/112269094023473963434\"\u003EME London\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZn6QjcigI3USRnC9mZCRZ-7m2EjiodeNDmfxRbd4sY1am_Pl4ZWPvMt3F5u491dqzjoFK7ahS7Oao-GtA8OsAOUklb4sGJhTSgeeiELA7UnCxNqY8yGsTpyzUiWYkI3D1InDGQvEibhkGEc96GuiL6nTOwF6hMYz05tjIHewEgsnG0X",
-                "width": 800
-            }
-        ],
-        "place_id": "ChIJ1YZwStYPbUgRZJyqw-hh_Vk",
-        "plus_code": {
-            "compound_code": "GV6J+PG London, UK",
-            "global_code": "9C3XGV6J+PG"
-        },
-        "rating": 4.4,
-        "reference": "ChIJ1YZwStYPbUgRZJyqw-hh_Vk",
-        "scope": "GOOGLE",
-        "types": ["lodging", "point_of_interest", "establishment"],
-        "user_ratings_total": 1815,
-        "vicinity": "Strand, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.4991371,
-                "lng": -0.1344175
-            },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5003094302915,
-                    "lng": -0.133015919708498
+                {
+                    "name": "places/ChIJI50NBCa9oRQRQJcu8OyeXMU/photos/AUGGfZmZQtlRWeGU6C_Kf-HYwOu_whxj0gjUshptyDES71tToa7ab1OpUw07jiVJ9atK-b9yeeryXSx20X0ftgBgk-vvlVI9RNfmiUftKSJgUJvMvvNIZ9VeSNmWLXZlouOoEU4FWp4wG5iMR6JdJR_OXL_qhoR7-Sm48HXW",
+                    "widthPx": 1024,
+                    "heightPx": 683,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Wyndham Grand Athens",
+                            "uri": "//maps.google.com/maps/contrib/114424937418753501533",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUHTdrPgw_9gsnctke7C16GfzXcd3CHfSef3wuEo_8qHs6OFOs=s100-p-k-no-mo"
+                        }
+                    ]
                 },
-                "southwest": {
-                    "lat": 51.4976114697085,
-                    "lng": -0.135713880291502
+                {
+                    "name": "places/ChIJI50NBCa9oRQRQJcu8OyeXMU/photos/AUGGfZmAtjOVAnxMe9EQDB6wfAyPKAIJx-YzOSeaCAn3kO2LvABgtr_bbAlA5Hyx6eRKNHFm0tkRkh3jfsPw-_qRhQJW61SEsNo9oyjodPlY32YJHa_Xf9V0fHOm_G9iCL4po6BlddtcPj8PBO31xPRB9Y-d4K6z8hVMvtVR",
+                    "widthPx": 5472,
+                    "heightPx": 3648,
+                    "authorAttributions": [
+                        {
+                            "displayName": "Wyndham Grand Athens",
+                            "uri": "//maps.google.com/maps/contrib/114424937418753501533",
+                            "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUHTdrPgw_9gsnctke7C16GfzXcd3CHfSef3wuEo_8qHs6OFOs=s100-p-k-no-mo"
+                        }
+                    ]
                 }
-            }
-        },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "St. Ermin's Hotel, Autograph Collection",
-        "photos": [
-            {
-                "height": 320,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/103436890858950792463\"\u003ESt. Ermin&#39;s Hotel, Autograph Collection\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZkZEtcOM2Tnlcm5AlgDSBMSOOjiRAOcFfxQ8wMsvI92VpyMXfYjfWj1qvxcY84CQWjZ--7whjIxZB-QGB6PcWEFDY-GSwmc9PYkKknvrfkZUMpy7NgcZCqduEOwvuXTJUdf5K31rvvQ8TdqLrvbs9rJ-KeG6l7aoYtrjL5XKNdPoVw",
-                "width": 480
-            }
-        ],
-        "place_id": "ChIJ_RmXqN4EdkgRzKAQ29aPpfo",
-        "plus_code": {
-            "compound_code": "FVX8+M6 London, UK",
-            "global_code": "9C3XFVX8+M6"
-        },
-        "rating": 4.6,
-        "reference": "ChIJ_RmXqN4EdkgRzKAQ29aPpfo",
-        "scope": "GOOGLE",
-        "types": ["lodging", "point_of_interest", "establishment"],
-        "user_ratings_total": 2195,
-        "vicinity": "2 Caxton Street, London"
-    },
-    {
-        "business_status": "OPERATIONAL",
-        "geometry": {
-            "location": {
-                "lat": 51.5018864,
-                "lng": -0.1165677
-            },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5032581802915,
-                    "lng": -0.115315869708498
-                },
-                "southwest": {
-                    "lat": 51.5005602197085,
-                    "lng": -0.118013830291502
-                }
-            }
-        },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "icon_background_color": "#909CE1",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-        "name": "Premier Inn London Waterloo (Westminster Bridge) hotel",
-        "photos": [
-            {
-                "height": 2848,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/112781498275979817258\"\u003EPremier Inn London Waterloo (Westminster Bridge) hotel\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZnc7Xp7hcyQKDkFxR3EDskdCkyxHvHO3b9G_yEdbgeoSWKyLjLmguazZmq-CLGB2gPZwiq8jjdu01YCar8A0E49SbxakDfR0cJRV_ng8hgEr_Qu7M0aQjHqoN3zHa-I2v8AYpvn1B6Jpx3_NGGUxRNrblvtBg9SXur75NWQMHiQAMXw",
-                "width": 4288
-            }
-        ],
-        "place_id": "ChIJ_75-fbgEdkgRp4ql6Rq76ao",
-        "plus_code": {
-            "compound_code": "GV2M+Q9 London, UK",
-            "global_code": "9C3XGV2M+Q9"
-        },
-        "rating": 4.1,
-        "reference": "ChIJ_75-fbgEdkgRp4ql6Rq76ao",
-        "scope": "GOOGLE",
-        "types": [
-            "lodging",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-        ],
-        "user_ratings_total": 1998,
-        "vicinity": "85 York Road, London"
-    },
-    {
-        "geometry": {
-            "location": {
-                "lat": 51.4935082,
-                "lng": -0.1178424
-            },
-            "viewport": {
-                "northeast": {
-                    "lat": 51.5098445100814,
-                    "lng": -0.0900331980916214
-                },
-                "southwest": {
-                    "lat": 51.4109846514487,
-                    "lng": -0.151240054532604
-                }
-            }
-        },
-        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
-        "icon_background_color": "#7B9EB0",
-        "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-        "name": "Lambeth",
-        "photos": [
-            {
-                "height": 3274,
-                "html_attributions": [
-                    "\u003Ca href=\"https://maps.google.com/maps/contrib/101829428569930477661\"\u003ETony\u003C/a\u003E"
-                ],
-                "photo_reference": "AUGGfZkT9mwSwVDZj8oV-dvUEcOALXf1pDrdAdnsSWSBpb9zQOjGaSA4hQQ5uMyism98WGdckdnbJ1Cowcilzyz21t70sBGXkFHXqiajynQpue17s5LGA5HUZRjnztE9FiTTClTIh_OTe4bRKnj8vTQywtlrCW7qXE2Yb0V04jj206KE9peC",
-                "width": 2403
-            }
-        ],
-        "place_id": "ChIJHSzWIr8EdkgRcmFNv46Ix90",
-        "reference": "ChIJHSzWIr8EdkgRcmFNv46Ix90",
-        "scope": "GOOGLE",
-        "types": ["sublocality_level_1", "sublocality", "political"],
-        "vicinity": "Lambeth"
-    }
-]
+            ]
+        }
+    ]
+}

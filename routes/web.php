@@ -38,7 +38,7 @@ Route::middleware(['auth'])->group(function () {
 
     // Hotels
     Route::get('/hotels', [HotelController::class, 'search'])->name('hotels.search');
-    Route::get('/hotels/results', [HotelController::class, 'returnTestJson'])->name('hotels.apiRequest');
+    Route::get('/hotels/results', [HotelController::class, 'results'])->name('hotels.apiRequest');
     //Route::get('/hotels/results', [HotelController::class, 'apiRequest'])->name('hotels.apiRequest'); // Disabled to save money from google places api
     Route::get('/hotels/results/{placeId}', [HotelController::class, 'details'])->name('hotels.results');
 

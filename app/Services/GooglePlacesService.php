@@ -13,17 +13,47 @@ class GooglePlacesService
         $this->apiKey = env('GOOGLE_PLACES_API_KEY');
     }
 
-    public function searchPlaces($type, $location, $radius)
+    public function searchNearby($latitude, $longitude, $radius)
     {
-        $url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json';
-        $response = Http::get($url, [
-            'key' => $this->apiKey,
-            'location' => implode(',', $location),
-            'radius' => $radius,
-            'type' => $type
-        ]);
+        $url = 'https://places.googleapis.com/v1/places:searchNearby';
 
-        return $response->json()['results'] ?? [];
+        // Replace with your actual API key
+        $apiKey = $this->apiKey;
+
+        $data = [
+            'includedTypes' => ['hotel'],
+            'maxResultCount' => 10,
+            'locationRestriction' => [
+                'circle' => [
+                    'center' => [
+                        'latitude' => $latitude,
+                        'longitude' => $longitude
+                    ],
+                    'radius' => $radius, // Replace with your desired radius in meters
+                ],
+            ],
+        ];
+
+        $response = Http::withHeaders([
+            'Content-Type' => 'application/json',
+            'X-Goog-Api-Key' => $apiKey,
+            'X-Goog-FieldMask' => ['places.displayName', 'places.formattedAddress', 'places.businessStatus', 'places.id', 'places.priceLevel', 'places.photos', 'places.userRatingCount', 'places.websiteUri', 'places.rating'],
+        ])->post($url, $data);
+
+
+
+        return $response->json();
+    }
+
+    public function getPhotoUrl($photoReference, $maxWidth = 400)
+    {
+        // Base URL for Google Places photo API
+        $baseUrl = "https://maps.googleapis.com/maps/api/place/photo";
+
+        // Replace placeholders with actual values
+        $url = "{$baseUrl}?maxwidth={$maxWidth}&photoreference={$photoReference}&key={$this->apiKey}";
+
+        return $url;
     }
 
     public function getPlaceDetails($placeId)
