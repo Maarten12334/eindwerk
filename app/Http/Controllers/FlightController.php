@@ -26,14 +26,15 @@ class FlightController extends Controller
         if(isset($returnDate)){
             $returnFlights = $this->flightsApiCall($destination, $origin, $returnDate); //Returns list of flights from $destination to $origin on $returnDate if returndate isset
             $returnFlightsData = $returnFlights['data'];
+            $returnAirlineNames = $returnFlights['dictionaries']['carriers']; //Returns list of airline names
         } else {
             $returnFlightsData = false;
         }
         $departureFlightsData = $departureFlights['data'];
 
-        $airlineNames = $departureFlights['dictionaries']['carriers']; //Returns list of airline names
+        $departureAirlineNames = $departureFlights['dictionaries']['carriers']; //Returns list of airline names
 
-        return view('flights.results', compact('returnFlightsData', 'departureFlightsData', 'airlineNames', 'nonStop'));
+        return view('flights.results', compact('returnFlightsData', 'departureFlightsData', 'departureAirlineNames', 'returnAirlineNames','nonStop'));
     }
 
     public Function flightsApiCall($origin, $destination, $departureDate){
