@@ -71,9 +71,15 @@ class HotelController extends Controller
 
     public function results()
     {
-        $hotels = $this->returnTestJson();
-        $images = $this->getPhoto('AUGGfZncK88quB4oYwFfAKT47VKvvwUj6UpgR0t_52gq4IUFsywcQ8mZcK1N-ma8wPpk2q9glRVfWPiX8-E1dlYiD0q9nZFB60ynTNIxKiLVE6A99NOWfDPQCJvuBjLSIGVykBo4rHzLrFRl3VOZpsqs47_zoDrziWGq8ua5');
-        return view('hotels.results', compact('hotels', 'images'));
+        $data = $this->returnTestJson();
+        $places = $data->getData();
+        $hotels = $places->places;
+
+        foreach ($hotels as $hotel) {
+            $photoreference = $hotel->photos[0]->name;
+            $hotel->photoUrl = $this->googlePlaces->getPhotoUrl($photoreference);
+        }
+        return view('hotels.results', compact('hotels'));
     }
 
     public function details(Request $request, $placeId)

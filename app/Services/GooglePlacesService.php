@@ -47,6 +47,14 @@ class GooglePlacesService
 
     public function getPhotoUrl($photoReference, $maxWidth = 400)
     {
+        // Find the position of "photos/" in the URL
+        $pos = strpos($photoReference, 'photos/');
+
+        // If "photos/" is found, return the substring after it
+        if ($pos !== false) {
+            $photoReference = substr($photoReference, $pos + strlen('photos/'));
+        }
+
         // Base URL for Google Places photo API
         $baseUrl = "https://maps.googleapis.com/maps/api/place/photo";
 
