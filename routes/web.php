@@ -54,3 +54,4 @@ Route::middleware(['auth'])->group(function () {
 
         return view('notifications');
     })->name('notifications');
+});
