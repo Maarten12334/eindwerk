@@ -15,13 +15,19 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     @foreach($hotels as $hotel)
                     <a href="{{ $hotel->websiteUri }}" target="_blank">
-                        <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md mb-6">
+                        <div class="h-full bg-white dark:bg-gray-700 rounded-lg shadow-md flex flex-col relative">
+                            <div class="p-4">
+                                <h3 class="text-lg font-bold text-gray-900 dark:text-gray-100">{{ $hotel->displayName->text }}</h3>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">{{ $hotel->formattedAddress }}</p>
+                            </div>
 
-                            <p>{{ $hotel->displayName->text }}</p>
-                            <p>{{ $hotel->formattedAddress }}</p>
-                            <p>rating: {{ $hotel->rating }} out of {{ $hotel->userRatingCount }} ratings</p>
+                            <div class="h-48 overflow-hidden">
+                                <img src="{{ asset('images/hotelImage.jpg') }}" alt="description of myimage" class="h-full w-full object-cover">
+                            </div>
 
-                            <img src="" alt="">
+                            <div class="absolute top-0 right-0 p-4">
+                                <p class="text-xl font-bold text-gray-900 dark:text-gray-100">{{ $hotel->rating }}</p>
+                            </div>
                         </div>
                     </a>
                     @endforeach
