@@ -13,31 +13,22 @@
         <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
             <div class="p-6 text-gray-900 dark:text-gray-100">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="md:pr-3">
-                        <h2 class="text-xl font-bold mb-4 sticky top-0 bg-white dark:bg-gray-800 z-10 p-2">Hotels</h2>
-                        <div class="h-128 overflow-y-auto"> <!-- Adjusted height -->
-                            @foreach($hotels as $hotel)
-                            <a href="{{ $hotel->websiteUri }}">
-                                <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md mb-6">
+                    @foreach($hotels as $hotel)
+                    <a href="{{ $hotel->websiteUri }}" target="_blank">
+                        <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md mb-6">
 
-                                    <p>{{ $hotel->displayName->text }}</p>
-                                    <p>{{ $hotel->formattedAddress }}</p>
-                                    <p>rating: {{ $hotel->rating }} out of {{ $hotel->userRatingCount }} ratings</p>
+                            <p>{{ $hotel->displayName->text }}</p>
+                            <p>{{ $hotel->formattedAddress }}</p>
+                            <p>rating: {{ $hotel->rating }} out of {{ $hotel->userRatingCount }} ratings</p>
 
-                                    <img src="{{ $hotel->photoUrl }}" alt="">
-                                </div>
-                            </a>
-                            @endforeach
+                            <img src="" alt="">
                         </div>
-                    </div>
+                    </a>
+                    @endforeach
                 </div>
             </div>
-
         </div>
     </div>
 </div>
-
-
-
 
 @endsection

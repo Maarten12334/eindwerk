@@ -45,7 +45,7 @@ class HotelController extends Controller
     }*/
 
 
-    public function getPhoto($photoReference)
+    /*public function getPhoto($photoReference)
     {
         $photo = $this->googlePlaces->getPhotoUrl($photoReference);
 
@@ -54,7 +54,8 @@ class HotelController extends Controller
         }
 
         return response()->json(['error' => 'Unable to fetch photo.'], 400);
-    }
+    }*/
+
 
     public function returnTestJson()
     {
@@ -75,10 +76,10 @@ class HotelController extends Controller
         $places = $data->getData();
         $hotels = $places->places;
 
-        foreach ($hotels as $hotel) {
+        /*foreach ($hotels as $hotel) {
             $photoreference = $hotel->photos[0]->name;
             $hotel->photoUrl = $this->googlePlaces->getPhotoUrl($photoreference);
-        }
+        }*/
         return view('hotels.results', compact('hotels'));
     }
 
