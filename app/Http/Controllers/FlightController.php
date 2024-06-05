@@ -23,21 +23,23 @@ class FlightController extends Controller
         $nonStop = $request->input('nonStop');
 
         $departureFlights = $this->flightsApiCall($origin, $destination, $departureDate); //Returns list of flights from $origin to $destination on $departureDate
-        if(isset($returnDate)){
+        if (isset($returnDate)) {
             $returnFlights = $this->flightsApiCall($destination, $origin, $returnDate); //Returns list of flights from $destination to $origin on $returnDate if returndate isset
             $returnFlightsData = $returnFlights['data'];
             $returnAirlineNames = $returnFlights['dictionaries']['carriers']; //Returns list of airline names
         } else {
             $returnFlightsData = false;
+            $returnAirlineNames = false;
         }
         $departureFlightsData = $departureFlights['data'];
 
         $departureAirlineNames = $departureFlights['dictionaries']['carriers']; //Returns list of airline names
 
-        return view('flights.results', compact('returnFlightsData', 'departureFlightsData', 'departureAirlineNames', 'returnAirlineNames','nonStop'));
+        return view('flights.results', compact('returnFlightsData', 'departureFlightsData', 'departureAirlineNames', 'returnAirlineNames', 'nonStop'));
     }
 
-    public Function flightsApiCall($origin, $destination, $departureDate){
+    public function flightsApiCall($origin, $destination, $departureDate)
+    {
 
         $flights = $this->amadeusService->searchFlights($origin, $destination, $departureDate);
         return $flights;
