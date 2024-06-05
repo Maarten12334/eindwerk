@@ -4,7 +4,7 @@
     @endphp
     <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            @foreach ($itinerary[0]['segments'] as $segment)
+            @foreach ($itinerary[0]['segments'] as $segment) 
                 <div class="mb-4 p-4 bg-gray-800 rounded-lg shadow">
                     @php
                         $airlineName = array_key_exists($segment['carrierCode'], $airlineNames)
