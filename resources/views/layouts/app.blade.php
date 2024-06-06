@@ -17,12 +17,13 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-        <livewire:layout.navigation />
-
+    <div>
+        <div class="bg-customMint dark:customMint">
+            <livewire:layout.navigation />
+        </div>
         <!-- Page Heading -->
         @if (isset($header))
-        <header class="bg-white dark:bg-gray-800 shadow">
+        <header class="bg-customMint dark:bg-customMintDark shadow">
             <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                 {{ $header }}
             </div>
@@ -30,10 +31,10 @@
         @endif
 
         <!-- Page Content -->
-        <main>
+        <main class="min-h-screen bg-customLightblue dark:bg-customDarkblue">
             @if (isset($slot))
             {{ $slot }}
-            @endif 
+            @endif
             @yield('content')
         </main>
     </div>
