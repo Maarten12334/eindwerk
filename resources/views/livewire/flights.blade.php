@@ -1,4 +1,4 @@
-<div class="flight">
+<div>
     @php
     $itinerary = $flightSchedule['itineraries'];
     @endphp
@@ -16,27 +16,27 @@
         $arrivalTime = $arrivalDateTime->format('H:i');
         $airlineNameLengthClass = strlen($airlineName) > 15 ? 'text-base' : 'text-lg';
         @endphp
-        <div class="flight-segment mb-4 p-6 bg-white rounded-lg shadow-lg border border-gray-200">
+        <div class="flight-segment mb-4 p-6 bg-primaryGreen rounded-lg shadow-lg border border-gray-200 text-secondaryGreen">
             <div class="flex justify-between items-center mb-4">
                 <div>
-                    <p class="{{ $airlineNameLengthClass }} font-semibold text-gray-900">{{ $airlineName }}</p>
-                    <p class="text-sm text-gray-600">{{ $segment['departure']['iataCode'] }} → {{ $segment['arrival']['iataCode'] }}</p>
+                    <p class="{{ $airlineNameLengthClass }} font-semibold">{{ $airlineName }}</p>
+                    <p class="text-sm text-softWhite">{{ $segment['departure']['iataCode'] }} → {{ $segment['arrival']['iataCode'] }}</p>
                 </div>
                 <div class="text-right">
-                    <p class="text-sm text-gray-600">{{ $departureDate }} - {{ $arrivalDate }}</p>
-                    <p class="text-sm text-gray-600">{{ $departureTime }} - {{ $arrivalTime }}</p>
+                    <p class="text-sm text-softWhite">{{ $departureDate }} - {{ $arrivalDate }}</p>
+                    <p class="text-sm text-softWhite">{{ $departureTime }} - {{ $arrivalTime }}</p>
                 </div>
             </div>
             <div class="flex justify-between items-center">
                 <div>
-                    <p class="text-sm font-medium text-gray-800">Departure</p>
-                    <p class="text-sm text-gray-600">{{ $segment['departure']['iataCode'] }}</p>
-                    <p class="text-sm text-gray-600">{{ $departureDate }} at {{ $departureTime }}</p>
+                    <p class="text-sm font-medium">Departure</p>
+                    <p class="text-sm text-softWhite">{{ $segment['departure']['iataCode'] }}</p>
+                    <p class="text-sm text-softWhite">{{ $departureDate }} at {{ $departureTime }}</p>
                 </div>
                 <div>
-                    <p class="text-sm font-medium text-gray-800">Arrival</p>
-                    <p class="text-sm text-gray-600">{{ $segment['arrival']['iataCode'] }}</p>
-                    <p class="text-sm text-gray-600">{{ $arrivalDate }} at {{ $arrivalTime }}</p>
+                    <p class="text-sm font-medium">Arrival</p>
+                    <p class="text-sm text-softWhite">{{ $segment['arrival']['iataCode'] }}</p>
+                    <p class="text-sm text-softWhite">{{ $arrivalDate }} at {{ $arrivalTime }}</p>
                 </div>
             </div>
         </div>

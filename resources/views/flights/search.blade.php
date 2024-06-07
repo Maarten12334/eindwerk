@@ -8,6 +8,7 @@
     <div class="container mx-auto p-4">
         <form action="{{ route('flights.results') }}" method="GET" onsubmit="return validateDates()">
             <div class="form-group mb-6">
+                <p>Momenteel kunnen enkel steden ingegeven worden in het formaat: Brussel = BRU, Parijs = PAR, Londen = LON, ... </p>
                 <label for="origin" class="block mb-2 dark:text-white">Origin</label>
                 <input type="text" name="origin" id="origin" class="form-control w-full p-2 border border-gray-300 rounded" required>
             </div>
