@@ -43,7 +43,7 @@
         @endforeach
     </div>
     <div class="text-center mt-6">
-        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+        <button class="bg-primaryGreen text-secondaryGreen px-4 py-2 rounded-lg">
             <p class="text-xl font-semibold">Total Price: <span class="font-normal">{{ $flightSchedule['price']['total'] }}</span></p>
         </button>
     </div>

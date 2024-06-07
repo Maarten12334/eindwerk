@@ -18,12 +18,12 @@
 
 <body class="font-sans antialiased">
     <div>
-        <div class="bg-customMint dark:customMint">
+        <div class="bg-primaryGreen dark:customMint">
             <livewire:layout.navigation />
         </div>
         <!-- Page Heading -->
         @if (isset($header))
-        <header class="bg-customMint dark:bg-customMintDark shadow">
+        <header class="bg-secondaryGreen shadow">
             <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                 {{ $header }}
             </div>
@@ -31,7 +31,7 @@
         @endif
 
         <!-- Page Content -->
-        <main class="min-h-screen bg-customLightblue dark:bg-customDarkblue">
+        <main class="min-h-screen bg-softWhite">
             @if (isset($slot))
             {{ $slot }}
             @endif
