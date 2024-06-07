@@ -1,14 +1,14 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-primaryGreen leading-tight">
-            {{ __('Search Hotels by City') }}
+            {{ __('Search for hotels') }}
         </h2>
     </x-slot>
 
     <body>
         <div class="container mx-auto p-4">
-            <h1 class="text-xl font-bold mb-4 dark:text-white">Search for Hotels</h1>
             <form action="{{ route('hotels.apiRequest') }}" method="GET" id="hotelSearchForm">
+                <p>Om mijn google places credits te sparen heb ik een dummyjson gebruikt met hetzelfde formaat als de API, dit is hetzelfde voor de afbeeldingen</p>
                 <div class="form-group mb-6">
                     <label for="city" class="block mb-2 dark:text-white">City:</label>
                     <input type="text" id="city" name="city" class="form-control w-full p-2 border border-gray-300 rounded" required>
