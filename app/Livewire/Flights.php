@@ -15,6 +15,6 @@ class Flights extends Component
 
     public function render()
     {
-        return view('livewire.flights');
+        return view('livewire.flights.flights');
     }
 }
