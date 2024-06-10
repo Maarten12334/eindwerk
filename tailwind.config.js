@@ -19,6 +19,7 @@ export default {
                 secondaryGreen: "#DADDC5",
                 softWhite: "#F1EFEC",
                 white: "#FFFFFF",
+                oliveGreen: "#808000",
             },
         },
     },

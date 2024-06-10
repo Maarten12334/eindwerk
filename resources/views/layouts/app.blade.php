@@ -31,7 +31,7 @@
         @endif
 
         <!-- Page Content -->
-        <main class="min-h-screen bg-softWhite">
+        <main class="min-h-screen bg-secondaryGreen">
             @if (isset($slot))
             {{ $slot }}
             @endif
