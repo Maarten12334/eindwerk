@@ -27,20 +27,18 @@
                                 <div
                                     class="p-6 bg-primaryGreen dark:bg-gray-700 rounded-lg shadow-md {{ $itemsCount > 10 ? 'max-h-96 overflow-y-scroll' : '' }}">
                                     <h5 class="text-lg font-semibold mb-4">{{ $current_date->format('d-m') }}</h5>
-                                    @if ($itemsCount > 0)
-                                        @if ($itemsCount > 5)
-                                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                                @foreach ($items as $item)
-                                                    @livewire('item-actions', ['item' => $item, 'itemsCount' => $itemsCount])
-                                                @endforeach
-                                            </div>
-                                        @else
-                                            <ul class="space-y-2">
-                                                @foreach ($items as $item)
-                                                    @livewire('item-actions', ['item' => $item, 'itemsCount' => $itemsCount])
-                                                @endforeach
-                                            </ul>
-                                        @endif
+                                    @if ($itemsCount > 5)
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                            @foreach ($items as $item)
+                                                @livewire('item-actions', ['item' => $item, 'itemsCount' => $itemsCount])
+                                            @endforeach
+                                        </div>
+                                    @else
+                                        <ul class="space-y-2">
+                                            @foreach ($items as $item)
+                                                @livewire('item-actions', ['item' => $item, 'itemsCount' => $itemsCount])
+                                            @endforeach
+                                        </ul>
                                     @else
                                         <p class="text-secondaryGreen dark:text-gray-400">No items for this date</p>
                                     @endif
