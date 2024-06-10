@@ -21,6 +21,7 @@
                             <div class="w-full md:w-1/2 px-4 mb-6 {{ $counter % 2 == 0 ? 'md:self-start' : 'md:self-end' }}">
                                 @php
                                     $items = $items_by_date[$current_date->format('Y-m-d')] ?? collect();
+                                    $items = $items->sortBy('time');
                                     $itemsCount = $items->count();
                                 @endphp
                                 <div
