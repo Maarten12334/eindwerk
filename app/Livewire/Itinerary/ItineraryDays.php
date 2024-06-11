@@ -14,13 +14,13 @@ class ItineraryDays extends Component
     public $end_date;
     public $items_by_date;
 
-    public $type;
-    public $time;
+    public $type = [];
+    public $time = [];
     public $current_date;
 
     protected $rules = [
-        'type' => 'required|string|max:255',
-        'time' => 'required|date_format:H:i',
+        'type.*' => 'required|string|max:255',
+        'time.*' => 'required|date_format:H:i',
     ];
 
     public function mount(Itinerary $itinerary, $start_date, $end_date, $items_by_date)
@@ -31,27 +31,31 @@ class ItineraryDays extends Component
         $this->items_by_date = collect($items_by_date);
     }
 
-    public function addItem()
+    public function addItem($date)
     {
         $this->validate();
 
         ItineraryItem::create([
             'itinerary_id' => $this->itinerary->id,
-            'date' => $this->current_date,
-            'type' => $this->type,
-            'time' => $this->time,
+            'date' => $date,
+            'type' => $this->type[$date],
+            'time' => $this->time[$date],
         ]);
 
         // Refresh items by date
         $this->items_by_date = $this->itinerary->items()->orderBy('date')->get()->groupBy('date')->toArray();
 
         // Clear the form fields
-        $this->reset(['type', 'time']);
+        unset($this->type[$date], $this->time[$date]);
     }
 
-    public function setCurrentDate($date)
+    public function deleteItem($itemId)
     {
-        $this->current_date = $date;
+        $item = ItineraryItem::findOrFail($itemId);
+        $item->delete();
+
+        // Refresh items by date
+        $this->items_by_date = $this->itinerary->items()->orderBy('date')->get()->groupBy('date')->toArray();
     }
 
     public function render()
