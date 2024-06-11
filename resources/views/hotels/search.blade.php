@@ -22,5 +22,4 @@
         </div>
     </div>
 
-    <script src="{{asset('js/searchFlightDateValidation.js')}}"></script>
 </x-app-layout>
