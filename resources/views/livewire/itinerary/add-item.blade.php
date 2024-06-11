@@ -7,7 +7,7 @@
             @error('type') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
         </div>
         <div class="mb-2">
-            <label for="time" class="block text-sm font-medium text-gray-700">Time</label>
+            <label for="time" class="block text-sm font-medium text-secondaryGreen">Time</label>
             <input type="time" id="time" wire:model="time" step="300" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
             @error('time') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
         </div>
