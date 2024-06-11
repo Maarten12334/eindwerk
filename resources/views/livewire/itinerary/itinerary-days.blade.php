@@ -13,11 +13,12 @@
                 @endphp
                 <div class="space-y-4">
                     @foreach ($items as $item)
-                    @php
-                    $time = \Carbon\Carbon::createFromFormat('H:i:s', $item['time'])->format('H:i');
-                    @endphp
-                    <div class="p-2 bg-white dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-100">
+                    <div class="p-2 bg-white dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-100 flex justify-between items-center">
+                        @php
+                        $time = \Carbon\Carbon::createFromFormat('H:i:s', $item['time'])->format('H:i');
+                        @endphp
                         <span>{{ $item['type'] }}: {{ $time }}</span>
+                        <button wire:click="deleteItem({{ $item['id'] }})" class="ml-4 inline-flex items-center px-3 py-1 bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 active:bg-red-700 disabled:opacity-25 transition">Delete</button>
                     </div>
                     @endforeach
                 </div>

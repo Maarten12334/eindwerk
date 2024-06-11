@@ -49,6 +49,15 @@ class ItineraryDays extends Component
         unset($this->type[$date], $this->time[$date]);
     }
 
+    public function deleteItem($itemId)
+    {
+        $item = ItineraryItem::findOrFail($itemId);
+        $item->delete();
+
+        // Refresh items by date
+        $this->items_by_date = $this->itinerary->items()->orderBy('date')->get()->groupBy('date')->toArray();
+    }
+
     public function render()
     {
         return view('livewire.itinerary.itinerary-days');
