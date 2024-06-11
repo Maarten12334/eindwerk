@@ -13,8 +13,11 @@
                 @endphp
                 <div class="space-y-4">
                     @foreach ($items as $item)
+                    @php
+                    $time = \Carbon\Carbon::createFromFormat('H:i:s', $item['time'])->format('H:i');
+                    @endphp
                     <div class="p-2 bg-white dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-100">
-                        <span>{{ $item['type'] }}: {{ $item['time'] }}</span>
+                        <span>{{ $item['type'] }}: {{ $time }}</span>
                     </div>
                     @endforeach
                 </div>
