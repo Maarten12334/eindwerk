@@ -16,7 +16,7 @@ class SearchFlightButton extends Component
     public function render()
     {
         if (!isset($this->itinerary->flight_id)) {
-            return view('livewire.search-flight-button', ['itinerary' => $this->itinerary]);
+            return view('livewire.flights.search-flight-button', ['itinerary' => $this->itinerary]);
         }
 
         return view('livewire.empty-view'); // Return an empty string or null when flight_id is not set
