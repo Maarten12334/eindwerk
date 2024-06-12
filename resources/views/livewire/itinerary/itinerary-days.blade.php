@@ -11,6 +11,15 @@
                 $items = collect($items_by_date[$current_date->format('Y-m-d')] ?? []);
                 $items = $items->sortBy('time');
                 @endphp
+
+                @foreach ($hotels as $hotel)
+                @if ($current_date->between(Carbon\Carbon::parse($hotel->arrival), Carbon\Carbon::parse($hotel->departure)))
+                <div class="p-2 bg-blue-200 rounded border border-gray-200 text-gray-800 mb-2">
+                    <span>Hotel: {{ $hotel->name }}</span><br>
+                </div>
+                @endif
+                @endforeach
+
                 <div class="space-y-4">
                     @foreach ($items as $item)
                     <div class="p-2 bg-white dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-100 flex justify-between items-center">
