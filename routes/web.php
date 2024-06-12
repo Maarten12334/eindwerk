@@ -10,7 +10,7 @@ use App\Http\Controllers\HotelController;
 
 // Home
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('itineraries.index');
 });
 
 // Authentication routes are provided by Breeze
@@ -19,7 +19,7 @@ require __DIR__ . '/auth.php';
 // Dashboard
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return redirect()->route('itineraries.index');
     })->name('dashboard');
 
     // Flights
