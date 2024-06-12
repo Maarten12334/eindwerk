@@ -3,21 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Itinerary;
 use App\Services\GooglePlacesService;
 use Illuminate\Support\Facades\File;
 
 class HotelController extends Controller
 {
     protected $googlePlaces;
+    public $itinerary;
 
     public function __construct(GooglePlacesService $googlePlaces)
     {
         $this->googlePlaces = $googlePlaces;
     }
 
-    public function search()
+    public function search(Itinerary $itinerary = null)
     {
-        return view('hotels.search');
+        return view('hotels.search', compact('itinerary'));
     }
 
 
@@ -70,17 +72,19 @@ class HotelController extends Controller
         }
     }
 
-    public function results()
+    public function results(Itinerary $itinerary = null, Request $request)
     {
         $data = $this->returnTestJson();
         $places = $data->getData();
         $hotels = $places->places;
+        $checkInDate = $request->input('checkInDate');
+        $checkOutDate = $request->input('checkOutDate');
 
         /*foreach ($hotels as $hotel) {
             $photoreference = $hotel->photos[0]->name;
             $hotel->photoUrl = $this->googlePlaces->getPhotoUrl($photoreference);
         }*/
-        return view('hotels.results', compact('hotels'));
+        return view('hotels.results', compact('hotels', 'itinerary', 'checkInDate', 'checkOutDate'));
     }
 
     public function details(Request $request, $placeId)

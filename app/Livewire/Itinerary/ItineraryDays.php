@@ -6,6 +6,7 @@ use Livewire\Component;
 use Carbon\Carbon;
 use App\Models\Itinerary;
 use App\Models\ItineraryItem;
+use App\Models\Hotels;
 
 class ItineraryDays extends Component
 {

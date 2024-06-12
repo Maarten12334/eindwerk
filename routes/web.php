@@ -35,12 +35,15 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/itineraries/{id}/edit', [ItineraryController::class, 'edit'])->name('itineraries.edit');
     Route::put('/itineraries/{id}', [ItineraryController::class, 'update'])->name('itineraries.update');
     Route::delete('/itineraries/{id}', [ItineraryController::class, 'destroy'])->name('itineraries.destroy');
+    Route::post('/itineraries/{itinerary?}/add-hotel', [ItineraryController::class, 'addHotel'])->name('itinerary.addHotel');
+
 
     // Hotels
-    Route::get('/hotels', [HotelController::class, 'search'])->name('hotels.search');
+    Route::get('/hotels/search/{itinerary?}', [HotelController::class, 'search'])->name('hotels.search');
     Route::get('/hotels/results', [HotelController::class, 'results'])->name('hotels.apiRequest');
     //Route::get('/hotels/results', [HotelController::class, 'apiRequest'])->name('hotels.apiRequest'); // Disabled to save money from google places api
-    Route::get('/hotels/results/{placeId}', [HotelController::class, 'details'])->name('hotels.results');
+    Route::get('/hotels/results/{itinerary?}', [HotelController::class, 'results'])->name('hotels.results');
+
 
 
     // Profile
