@@ -10,6 +10,7 @@ class CreateFlightsTable extends Migration
     {
         Schema::create('flights', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('itinerary_id')->constrained()->onDelete('cascade');
             $table->string('carrier_code');
             $table->string('origin');
             $table->string('destination');
@@ -18,6 +19,7 @@ class CreateFlightsTable extends Migration
             $table->decimal('price', 8, 2);
             $table->string('currency', 3);
             $table->timestamps();
+            $table->boolean('return_flight')->default(false);
         });
     }
 
