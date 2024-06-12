@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Itinerary;
+use App\Models\Hotel;
 use Carbon\Carbon;
 
 
@@ -18,6 +19,24 @@ class ItineraryController extends Controller
     public function create()
     {
         return view('itineraries.create');
+    }
+
+    public function addHotel(Request $request, Itinerary $itinerary)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'arrival' => 'required|date',
+            'departure' => 'required|date|after_or_equal:arrival',
+        ]);
+
+        Hotel::create([
+            'itinerary_id' => $itinerary->id,
+            'name' => $request->input('name'),
+            'arrival' => $request->input('arrival'),
+            'departure' => $request->input('departure'),
+        ]);
+
+        return redirect()->route('itineraries.show', $itinerary)->with('success', 'Hotel added to itinerary!');
     }
 
     public function store(Request $request)

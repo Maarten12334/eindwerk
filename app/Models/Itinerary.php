@@ -21,4 +21,9 @@ class Itinerary extends Model
     {
         return $this->hasMany(ItineraryItem::class);
     }
+
+    public function hotels()
+    {
+        return $this->hasMany(Hotel::class);
+    }
 }

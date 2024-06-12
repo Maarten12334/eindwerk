@@ -6,6 +6,7 @@ use Livewire\Component;
 use Carbon\Carbon;
 use App\Models\Itinerary;
 use App\Models\ItineraryItem;
+use App\Models\Hotel;
 
 class ItineraryDays extends Component
 {
@@ -13,10 +14,10 @@ class ItineraryDays extends Component
     public $start_date;
     public $end_date;
     public $items_by_date;
+    public $hotels;
 
     public $type = [];
     public $time = [];
-    public $current_date;
 
     protected $rules = [
         'type.*' => 'required|string|max:255',
@@ -29,6 +30,7 @@ class ItineraryDays extends Component
         $this->start_date = Carbon::parse($start_date);
         $this->end_date = Carbon::parse($end_date);
         $this->items_by_date = collect($items_by_date);
+        $this->hotels = $this->itinerary->hotels()->get();
     }
 
     public function addItem($date)
