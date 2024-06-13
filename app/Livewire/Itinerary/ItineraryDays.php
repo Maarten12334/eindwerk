@@ -49,6 +49,9 @@ class ItineraryDays extends Component
 
         // Clear the form fields
         unset($this->type[$date], $this->time[$date]);
+
+        // Notify the browser to reset the form
+        $this->dispatch('item-added', ['date' => $date]);
     }
 
     public function deleteItem($itemId)
