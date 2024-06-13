@@ -17,9 +17,6 @@ class GooglePlacesService
     {
         $url = 'https://places.googleapis.com/v1/places:searchNearby';
 
-        // Replace with your actual API key
-        $apiKey = $this->apiKey;
-
         $data = [
             'includedTypes' => ['hotel'],
             'maxResultCount' => 10,
@@ -29,36 +26,28 @@ class GooglePlacesService
                         'latitude' => $latitude,
                         'longitude' => $longitude
                     ],
-                    'radius' => $radius, // Replace with your desired radius in meters
+                    'radius' => $radius,
                 ],
             ],
         ];
 
         $response = Http::withHeaders([
             'Content-Type' => 'application/json',
-            'X-Goog-Api-Key' => $apiKey,
+            'X-Goog-Api-Key' => $this->apiKey,
             'X-Goog-FieldMask' => ['places.displayName', 'places.formattedAddress', 'places.businessStatus', 'places.id', 'places.priceLevel', 'places.photos', 'places.userRatingCount', 'places.websiteUri', 'places.rating'],
         ])->post($url, $data);
-
-
 
         return $response->json();
     }
 
     public function getPhotoUrl($photoReference, $maxWidth = 400)
     {
-        // Find the position of "photos/" in the URL
         $pos = strpos($photoReference, 'photos/');
-
-        // If "photos/" is found, return the substring after it
         if ($pos !== false) {
             $photoReference = substr($photoReference, $pos + strlen('photos/'));
         }
 
-        // Base URL for Google Places photo API
         $baseUrl = "https://maps.googleapis.com/maps/api/place/photo";
-
-        // Replace placeholders with actual values
         $url = "{$baseUrl}?maxwidth={$maxWidth}&photoreference={$photoReference}&key={$this->apiKey}";
 
         return $url;
@@ -88,6 +77,18 @@ class GooglePlacesService
             return [$location['lat'], $location['lng']];
         }
 
+        return null;
+    }
+
+    public function searchHotelsByCity($city, $radius)
+    {
+        $coordinates = $this->getCoordinatesFromCity($city);
+        if ($coordinates) {
+            $latitude = $coordinates[0];
+            $longitude = $coordinates[1];
+            $results = $this->searchNearby($latitude, $longitude, $radius);
+            return ['places' => $results];
+        }
         return null;
     }
 }
