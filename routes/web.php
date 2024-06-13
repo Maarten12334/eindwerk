@@ -40,8 +40,8 @@ Route::middleware(['auth'])->group(function () {
 
     // Hotels
     Route::get('/hotels/search/{itinerary?}', [HotelController::class, 'search'])->name('hotels.search');
-    Route::get('/hotels/results', [HotelController::class, 'results'])->name('hotels.apiRequest');
-    //Route::get('/hotels/results', [HotelController::class, 'apiRequest'])->name('hotels.apiRequest'); // Disabled to save money from google places api
+    //Route::get('/hotels/results', [HotelController::class, 'results'])->name('hotels.apiRequest');
+    Route::get('/hotels/results', [HotelController::class, 'results'])->name('hotels.apiRequest'); // Disabled to save money from google places api
     Route::get('/hotels/results/{itinerary?}', [HotelController::class, 'results'])->name('hotels.results');
 
 

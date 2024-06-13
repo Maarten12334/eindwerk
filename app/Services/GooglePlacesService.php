@@ -17,19 +17,18 @@ class GooglePlacesService
     {
         $url = 'https://places.googleapis.com/v1/places:searchNearby';
 
-        // Replace with your actual API key
         $apiKey = $this->apiKey;
 
         $data = [
             'includedTypes' => ['hotel'],
-            'maxResultCount' => 10,
+            'maxResultCount' => 20,
             'locationRestriction' => [
                 'circle' => [
                     'center' => [
                         'latitude' => $latitude,
                         'longitude' => $longitude
                     ],
-                    'radius' => $radius, // Replace with your desired radius in meters
+                    'radius' => $radius,
                 ],
             ],
         ];
@@ -44,6 +43,35 @@ class GooglePlacesService
 
         return $response->json();
     }
+
+    public function googlePlacesCall($city, $radius)
+    {
+        $coordinates = $this->getCoordinatesFromCity($city);
+        if (!$coordinates) {
+            return ['error' => 'Unable to get coordinates.'];
+        }
+
+        $latitude = $coordinates[0];
+        $longitude = $coordinates[1];
+
+        $results = $this->searchNearby($latitude, $longitude, $radius);
+
+        if (isset($results['error'])) {
+            return $results;
+        }
+
+        $places = $results['places'] ?? [];
+
+        foreach ($places as &$place) {
+            $photoReference = $place['photos'][0]['name'] ?? null;
+            if ($photoReference) {
+                $place['photoUrl'] = $this->getPhotoUrl($photoReference);
+            }
+        }
+
+        return $places;
+    }
+
 
     public function getPhotoUrl($photoReference, $maxWidth = 400)
     {
