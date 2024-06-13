@@ -1,4 +1,5 @@
 <div>
+    @if ($flightSchedule)
     @php
     $itinerary = $flightSchedule['itineraries'];
     @endphp
@@ -47,4 +48,7 @@
             <p class="text-xl font-semibold">Total Price: <span class="font-normal">{{ $flightSchedule['price']['total'] }}</span></p>
         </button>
     </div>
+    @else
+    <p>No flight schedule available.</p>
+    @endif
 </div>

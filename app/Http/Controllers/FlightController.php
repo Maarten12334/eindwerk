@@ -22,30 +22,29 @@ class FlightController extends Controller
         $returnDate = $request->input('returnDate', '2024-12-25');
         $nonStop = $request->input('nonStop');
 
-        $departureFlights = $this->flightsApiCall($origin, $destination, $departureDate); //Returns list of flights from $origin to $destination on $departureDate
-        if (isset($returnDate)) {
-            $returnFlights = $this->flightsApiCall($destination, $origin, $returnDate); //Returns list of flights from $destination to $origin on $returnDate if returndate isset
-            $returnFlightsData = $returnFlights['data'];
-            $returnAirlineNames = $returnFlights['dictionaries']['carriers']; //Returns list of airline names
-        } else {
-            $returnFlightsData = false;
-            $returnAirlineNames = false;
-        }
-        $departureFlightsData = $departureFlights['data'];
+        // Call the AmadeusService to fetch flight data
+        $flights = $this->amadeusService->searchFlights($origin, $destination, $departureDate, $returnDate);
 
-        $departureAirlineNames = $departureFlights['dictionaries']['carriers']; //Returns list of airline names
+        if (isset($flights['error'])) {
+            // Handle the error (e.g., display an error message)
+            return view('flights.results', [
+                'error' => $flights['error'],
+                'departureFlightsData' => null,
+                'departureAirlineNames' => null,
+                'returnFlightsData' => null,
+                'returnAirlineNames' => null,
+                'nonStop' => $nonStop
+            ]);
+        }
+
+        $departureFlightsData = $flights['departureFlights']['data'] ?? [];
+        $departureAirlineNames = $flights['departureFlights']['dictionaries']['carriers'] ?? [];
+
+        $returnFlightsData = $flights['returnFlights']['data'] ?? [];
+        $returnAirlineNames = $flights['returnFlights']['dictionaries']['carriers'] ?? [];
 
         return view('flights.results', compact('returnFlightsData', 'departureFlightsData', 'departureAirlineNames', 'returnAirlineNames', 'nonStop'));
     }
-
-    public function flightsApiCall($origin, $destination, $departureDate)
-    {
-
-        $flights = $this->amadeusService->searchFlights($origin, $destination, $departureDate);
-        return $flights;
-    }
-
-
 
     public function search()
     {
