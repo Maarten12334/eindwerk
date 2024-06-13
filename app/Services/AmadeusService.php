@@ -18,38 +18,73 @@ class AmadeusService
 
     public function getAccessToken()
     {
-        $apiKey = config('services.amadeus.key');
-        $apiSecret = config('services.amadeus.secret');
+        try {
+            $apiKey = config('services.amadeus.key');
+            $apiSecret = config('services.amadeus.secret');
 
-        $response = $this->client->post($this->baseUri . '/v1/security/oauth2/token', [
-            'form_params' => [
-                'grant_type' => 'client_credentials',
-                'client_id' => $apiKey,
-                'client_secret' => $apiSecret,
-            ],
-        ]);
+            $response = $this->client->post($this->baseUri . '/v1/security/oauth2/token', [
+                'form_params' => [
+                    'grant_type' => 'client_credentials',
+                    'client_id' => $apiKey,
+                    'client_secret' => $apiSecret,
+                ],
+            ]);
 
-        $data = json_decode($response->getBody()->getContents(), true);
-        return $data['access_token'];
+            $data = json_decode($response->getBody()->getContents(), true);
+            return $data['access_token'];
+        } catch (RequestException $e) {
+            // Log the error or handle it as necessary
+            return null;
+        }
     }
 
-    public function searchFlights($origin, $destination, $departureDate)
+    public function searchFlights($origin, $destination, $departureDate, $returnDate = null)
     {
         $accessToken = $this->getAccessToken();
+        if (!$accessToken) {
+            return [
+                'error' => 'Unable to retrieve access token.',
+                'departureFlights' => null,
+                'returnFlights' => null,
+            ];
+        }
 
-        $response = $this->client->get($this->baseUri . '/v2/shopping/flight-offers', [
-            'headers' => [
-                'Authorization' => 'Bearer ' . $accessToken,
-            ],
-            'query' => [
-                'originLocationCode' => $origin,
-                'destinationLocationCode' => $destination,
-                'departureDate' => $departureDate,
-                'adults' => 1,
-                'max' => 10,
-            ],
-        ]);
+        // Search for departure flights
+        $departureFlights = $this->fetchFlights($origin, $destination, $departureDate, $accessToken);
 
-        return json_decode($response->getBody()->getContents(), true);
+        // Search for return flights if returnDate is provided
+        $returnFlights = $returnDate ? $this->fetchFlights($destination, $origin, $returnDate, $accessToken) : null;
+
+        return [
+            'departureFlights' => $departureFlights,
+            'returnFlights' => $returnFlights,
+        ];
+    }
+
+    private function fetchFlights($origin, $destination, $date, $accessToken)
+    {
+        try {
+            $response = $this->client->get($this->baseUri . '/v2/shopping/flight-offers', [
+                'headers' => [
+                    'Authorization' => 'Bearer ' . $accessToken,
+                ],
+                'query' => [
+                    'originLocationCode' => $origin,
+                    'destinationLocationCode' => $destination,
+                    'departureDate' => $date,
+                    'adults' => 1,
+                    'max' => 10,
+                ],
+            ]);
+
+            return json_decode($response->getBody()->getContents(), true);
+        } catch (RequestException $e) {
+            // Log the error or handle it as necessary
+            return [
+                'error' => 'Unable to fetch flights.',
+                'data' => [],
+                'dictionaries' => ['carriers' => []],
+            ];
+        }
     }
 }

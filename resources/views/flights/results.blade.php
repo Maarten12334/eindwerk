@@ -8,8 +8,13 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
+                    @if (isset($error))
+                    <div class="bg-red-500 text-black p-4 rounded-lg">
+                        <p>Unable to fetch flights</p>
+                    </div>
+                    @else
                     @if ($returnFlightsData)
-                    <!-- Check if a returnflight is given -->
+                    <!-- Check if a return flight is given -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="md:pr-3">
                             @livewire('show-flights', ['departureFlightsData' => $departureFlightsData, 'airlineNames' => $departureAirlineNames, 'nonStop' => $nonStop])
@@ -24,6 +29,7 @@
                             @livewire('show-flights', ['departureFlightsData' => $departureFlightsData, 'airlineNames' => $departureAirlineNames, 'nonStop' => $nonStop])
                         </div>
                     </div>
+                    @endif
                     @endif
                 </div>
             </div>
