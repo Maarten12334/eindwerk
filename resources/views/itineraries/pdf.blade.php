@@ -71,7 +71,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($items as $item)
+                @foreach (collect($items)->sortBy('time') as $item)
                 <tr>
                     <td>{{ $item['type'] }}</td>
                     <td>{{ \Carbon\Carbon::createFromFormat('H:i:s', $item['time'])->format('H:i') }}</td>
