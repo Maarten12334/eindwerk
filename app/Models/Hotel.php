@@ -12,6 +12,7 @@ class Hotel extends Model
     protected $fillable = [
         'itinerary_id',
         'name',
+        'address',
         'arrival',
         'departure',
     ];
