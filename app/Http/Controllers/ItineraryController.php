@@ -102,6 +102,7 @@ class ItineraryController extends Controller
         $hotels = $itinerary->hotels; // Retrieve the associated hotels
 
         $pdf = Pdf::loadView('itineraries.pdf', compact('itinerary', 'start_date', 'end_date', 'items_by_date', 'hotels'));
-        return $pdf->download('itinerary.pdf');
+        $fileName = $itinerary->name . '.pdf'; // Create the file name using the itinerary name
+        return $pdf->download($fileName);
     }
 }
