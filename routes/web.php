@@ -43,6 +43,8 @@ Route::middleware(['auth'])->group(function () {
     //Route::get('/hotels/results', [HotelController::class, 'results'])->name('hotels.apiRequest');
     Route::get('/hotels/results', [HotelController::class, 'results'])->name('hotels.apiRequest'); // Disabled to save money from google places api
     Route::get('/hotels/results/{itinerary?}', [HotelController::class, 'results'])->name('hotels.results');
+    Route::delete('/hotels/{hotel}', [HotelController::class, 'destroy'])->name('hotels.destroy');
+
 
 
 

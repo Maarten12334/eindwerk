@@ -13,7 +13,14 @@
                     <h5 class="text-lg font-semibold">{{ $current_date->format('d-m') }}</h5>
                     @foreach ($hotels as $hotel)
                     @if ($current_date->between(Carbon\Carbon::parse($hotel->arrival), Carbon\Carbon::parse($hotel->departure)))
-                    <span class="bg-oliveGreen text-secondaryGreen rounded px-2 py-1">{{ $hotel->name }}</span>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-oliveGreen text-secondaryGreen rounded px-2 py-1">{{ $hotel->name }}</span>
+                        <form action="{{ route('hotels.destroy', $hotel->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this hotel?');">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="bg-red-500 text-white rounded px-2 py-1">Delete</button>
+                        </form>
+                    </div>
                     @endif
                     @endforeach
                 </div>

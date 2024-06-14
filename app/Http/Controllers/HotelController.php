@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Itinerary;
+use App\Models\Hotel; // Make sure to import the Hotel model
 use App\Services\GooglePlacesService;
 use Illuminate\Support\Facades\File;
 
@@ -22,19 +23,6 @@ class HotelController extends Controller
         return view('hotels.search', compact('itinerary'));
     }
 
-    /* public function returnTestJson()
-    {
-        $path = storage_path('testingHotels.json');
-        if (File::exists($path)) {
-            $content = File::get($path);
-            $data = json_decode($content, true);
-
-            return response()->json($data);
-        } else {
-            return response()->json(['error' => 'File not found.'], 404);
-        }
-    }*/
-
     public function results(Itinerary $itinerary = null, Request $request)
     {
         $city = $request->input('city');
@@ -52,5 +40,13 @@ class HotelController extends Controller
     {
         $placeDetails = $this->googlePlaces->getPlaceDetails($placeId);
         return response()->json($placeDetails);
+    }
+
+    public function destroy($id)
+    {
+        $hotel = Hotel::findOrFail($id);
+        $hotel->delete();
+
+        return redirect()->back()->with('success', 'Hotel deleted successfully.');
     }
 }
