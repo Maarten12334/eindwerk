@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Livewire;
-use App\Models\ItineraryItem;
 
+use App\Models\ItineraryItem;
 use Livewire\Component;
 
 class ItemActions extends Component
@@ -37,7 +37,6 @@ class ItemActions extends Component
     {
         $item = ItineraryItem::findOrFail($itemId);
         $item->delete();
-
     }
 
     public function render()
