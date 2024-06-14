@@ -46,6 +46,16 @@
             const checkInDate = document.getElementById('checkInDate');
             const checkOutDate = document.getElementById('checkOutDate');
 
+            @if($itinerary)
+            const itineraryDeparture = new Date("{{ $itinerary->departure }}");
+            const itineraryReturn = new Date("{{ $itinerary->return }}");
+
+            // Setting the min and max attributes for the date inputs
+            checkInDate.min = itineraryDeparture.toISOString().split('T')[0];
+            checkInDate.max = itineraryReturn.toISOString().split('T')[0];
+            checkOutDate.min = itineraryDeparture.toISOString().split('T')[0];
+            checkOutDate.max = itineraryReturn.toISOString().split('T')[0];
+
             function validateDates() {
                 console.log("Check-in Date:", checkInDate.value);
                 console.log("Check-out Date:", checkOutDate.value);
@@ -66,6 +76,7 @@
             checkOutDate.addEventListener('focus', validateDates);
             checkInDate.addEventListener('change', validateDates);
             checkOutDate.addEventListener('change', validateDates);
+            @endif
         });
     </script>
 </x-app-layout>

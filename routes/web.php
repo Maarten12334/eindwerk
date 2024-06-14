@@ -48,7 +48,6 @@ Route::middleware(['auth'])->group(function () {
 
     // Profile
     Route::get('/profile', function () {
-        // Assuming you have a profile controller and view
         return view('profile');
     })->name('profile');
 
