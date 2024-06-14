@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Itinerary;
 use App\Models\Hotel;
 use Carbon\Carbon;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class ItineraryController extends Controller
 {
@@ -91,5 +92,16 @@ class ItineraryController extends Controller
         $itinerary->delete();
 
         return redirect()->route('itineraries.index');
+    }
+
+    public function downloadPDF(Itinerary $itinerary)
+    {
+        $hotels = $itinerary->hotels; // Assuming you have a relationship defined
+        $start_date = $itinerary->start_date;
+        $end_date = $itinerary->end_date;
+        $items_by_date = []; // Populate this with your itinerary items
+
+        $pdf = Pdf::loadView('itineraries.pdf', compact('itinerary', 'hotels', 'start_date', 'end_date', 'items_by_date'));
+        return $pdf->download('itinerary.pdf');
     }
 }
