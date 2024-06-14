@@ -27,6 +27,7 @@ class ItineraryController extends Controller
             'name' => 'required|string|max:255',
             'arrival' => 'required|date',
             'departure' => 'required|date|after_or_equal:arrival',
+            'address' => 'required|string|max:255',
         ]);
 
         Hotel::create([
@@ -39,6 +40,7 @@ class ItineraryController extends Controller
 
         return redirect()->route('itineraries.show', $itinerary)->with('success', 'Hotel added to itinerary!');
     }
+
 
     public function store(Request $request)
     {
