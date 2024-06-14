@@ -25,19 +25,18 @@
         </div>
         <!-- Page Heading -->
         @if (isset($header))
-        <header class="bg-secondaryGreen shadow">
+        <header class="bg-primaryGreen shadow-lg">
             <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                {{ $header }}
+                <h1 class="text-3xl font-semibold text-secondaryGreen">
+                    {{ $header }}
+                </h1>
             </div>
         </header>
         @endif
 
         <!-- Page Content -->
-        <main class="min-h-screen bg-secondaryGreen">
-            @if (isset($slot))
+        <main class="min-h-screen bg-softWhite">
             {{ $slot }}
-            @endif
-            @yield('content')
         </main>
     </div>
 </body>
