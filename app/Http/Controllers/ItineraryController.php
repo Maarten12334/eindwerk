@@ -7,7 +7,6 @@ use App\Models\Itinerary;
 use App\Models\Hotel;
 use Carbon\Carbon;
 
-
 class ItineraryController extends Controller
 {
     public function index()
@@ -63,7 +62,6 @@ class ItineraryController extends Controller
 
         return view('itineraries.show', compact('itinerary', 'start_date', 'end_date', 'items_by_date'));
     }
-
 
     public function edit($id)
     {

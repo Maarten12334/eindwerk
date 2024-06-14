@@ -25,6 +25,7 @@
                                         <th class="py-2 px-4 border-b border-gray-200 dark:border-gray-700">Departure</th>
                                         <th class="py-2 px-4 border-b border-gray-200 dark:border-gray-700">Return</th>
                                         <th class="py-2 px-4 border-b border-gray-200 dark:border-gray-700">Flight ID</th>
+                                        <th class="py-2 px-4 border-b border-gray-200 dark:border-gray-700">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -38,6 +39,14 @@
                                         <td class="py-2 px-4 border-b border-gray-200 dark:border-gray-700">{{ $itinerary->departure }}</td>
                                         <td class="py-2 px-4 border-b border-gray-200 dark:border-gray-700">{{ $itinerary->return }}</td>
                                         <td class="py-2 px-4 border-b border-gray-200 dark:border-gray-700">{{ $itinerary->flight_id }}</td>
+                                        <td class="py-2 px-4 border-b border-gray-200 dark:border-gray-700">
+                                            <a href="{{ route('itineraries.edit', $itinerary->id) }}" class="text-yellow-500 hover:underline">Edit</a>
+                                            <form action="{{ route('itineraries.destroy', $itinerary->id) }}" method="POST" style="display:inline;">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="text-red-500 hover:underline">Delete</button>
+                                            </form>
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </tbody>
@@ -54,7 +63,9 @@
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
             <div class="p-6 text-gray-900 dark:text-gray-100">
-                <a href="{{ route('itineraries.create') }}"><button class="btn btn-primary bg-blue-500 text-white py-2 px-4 rounded">Create itinerary</button></a>
+                <a href="{{ route('itineraries.create') }}">
+                    <button class="btn btn-primary bg-blue-500 text-white py-2 px-4 rounded">Create itinerary</button>
+                </a>
             </div>
         </div>
     </div>

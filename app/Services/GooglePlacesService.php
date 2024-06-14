@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use Illuminate\Support\Facades\Http;
+use Exception;
 
 class GooglePlacesService
 {
@@ -15,79 +16,130 @@ class GooglePlacesService
 
     public function searchNearby($latitude, $longitude, $radius)
     {
-        $url = 'https://places.googleapis.com/v1/places:searchNearby';
+        try {
+            $url = 'https://places.googleapis.com/v1/places:searchNearby';
 
-        // Replace with your actual API key
-        $apiKey = $this->apiKey;
-
-        $data = [
-            'includedTypes' => ['hotel'],
-            'maxResultCount' => 10,
-            'locationRestriction' => [
-                'circle' => [
-                    'center' => [
-                        'latitude' => $latitude,
-                        'longitude' => $longitude
+            $data = [
+                'includedTypes' => ['hotel'],
+                'maxResultCount' => 2,
+                'locationRestriction' => [
+                    'circle' => [
+                        'center' => [
+                            'latitude' => $latitude,
+                            'longitude' => $longitude,
+                        ],
+                        'radius' => $radius,
                     ],
-                    'radius' => $radius, // Replace with your desired radius in meters
                 ],
-            ],
-        ];
+            ];
 
-        $response = Http::withHeaders([
-            'Content-Type' => 'application/json',
-            'X-Goog-Api-Key' => $apiKey,
-            'X-Goog-FieldMask' => ['places.displayName', 'places.formattedAddress', 'places.businessStatus', 'places.id', 'places.priceLevel', 'places.photos', 'places.userRatingCount', 'places.websiteUri', 'places.rating'],
-        ])->post($url, $data);
+            $response = Http::withHeaders([
+                'Content-Type' => 'application/json',
+                'X-Goog-Api-Key' => $this->apiKey,
+                'X-Goog-FieldMask' => ['places.displayName', 'places.formattedAddress', 'places.businessStatus', 'places.id', 'places.priceLevel', 'places.photos', 'places.userRatingCount', 'places.websiteUri', 'places.rating'],
+            ])->post($url, $data);
 
+            if ($response->successful()) {
+                return $response->json();
+            } else {
+                throw new Exception('Failed to fetch nearby places.');
+            }
+        } catch (Exception $e) {
+            return ['error' => $e->getMessage()];
+        }
+    }
 
+    public function googlePlacesCall($city, $radius)
+    {
+        try {
+            $coordinates = $this->getCoordinatesFromCity($city);
+            if (!$coordinates) {
+                throw new Exception('Unable to get coordinates.');
+            }
 
-        return $response->json();
+            $latitude = $coordinates[0];
+            $longitude = $coordinates[1];
+
+            $results = $this->searchNearby($latitude, $longitude, $radius);
+
+            if (isset($results['error'])) {
+                return $results;
+            }
+
+            $places = $results['places'] ?? [];
+
+            foreach ($places as &$place) {
+                $photoReference = $place['photos'][0]['name'] ?? null;
+                if ($photoReference) {
+                    $place['photoUrl'] = $this->getPhotoUrl($photoReference);
+                }
+            }
+
+            return $places;
+        } catch (Exception $e) {
+            return ['error' => $e->getMessage()];
+        }
     }
 
     public function getPhotoUrl($photoReference, $maxWidth = 400)
     {
-        // Find the position of "photos/" in the URL
-        $pos = strpos($photoReference, 'photos/');
+        try {
+            // Find the position of "photos/" in the URL
+            $pos = strpos($photoReference, 'photos/');
 
-        // If "photos/" is found, return the substring after it
-        if ($pos !== false) {
-            $photoReference = substr($photoReference, $pos + strlen('photos/'));
+            // If "photos/" is found, return the substring after it
+            if ($pos !== false) {
+                $photoReference = substr($photoReference, $pos + strlen('photos/'));
+            }
+
+            // Base URL for Google Places photo API
+            $baseUrl = "https://maps.googleapis.com/maps/api/place/photo";
+
+            // Replace placeholders with actual values
+            $url = "{$baseUrl}?maxwidth={$maxWidth}&photoreference={$photoReference}&key={$this->apiKey}";
+
+            return $url;
+        } catch (Exception $e) {
+            return null;
         }
-
-        // Base URL for Google Places photo API
-        $baseUrl = "https://maps.googleapis.com/maps/api/place/photo";
-
-        // Replace placeholders with actual values
-        $url = "{$baseUrl}?maxwidth={$maxWidth}&photoreference={$photoReference}&key={$this->apiKey}";
-
-        return $url;
     }
 
     public function getPlaceDetails($placeId)
     {
-        $url = 'https://maps.googleapis.com/maps/api/place/details/json';
-        $response = Http::get($url, [
-            'key' => $this->apiKey,
-            'place_id' => $placeId
-        ]);
+        try {
+            $url = 'https://maps.googleapis.com/maps/api/place/details/json';
+            $response = Http::get($url, [
+                'key' => $this->apiKey,
+                'place_id' => $placeId,
+            ]);
 
-        return $response->json()['result'] ?? [];
+            if ($response->successful()) {
+                return $response->json()['result'] ?? [];
+            } else {
+                throw new Exception('Failed to fetch place details.');
+            }
+        } catch (Exception $e) {
+            return ['error' => $e->getMessage()];
+        }
     }
 
     public function getCoordinatesFromCity($city)
     {
-        $url = 'https://maps.googleapis.com/maps/api/geocode/json';
-        $response = Http::get($url, [
-            'key' => $this->apiKey,
-            'address' => $city
-        ]);
+        try {
+            $url = 'https://maps.googleapis.com/maps/api/geocode/json';
+            $response = Http::get($url, [
+                'key' => $this->apiKey,
+                'address' => $city,
+            ]);
 
-        if ($response->successful() && !empty($response->json()['results'])) {
-            $location = $response->json()['results'][0]['geometry']['location'];
-            return [$location['lat'], $location['lng']];
+            if ($response->successful() && !empty($response->json()['results'])) {
+                $location = $response->json()['results'][0]['geometry']['location'];
+                return [$location['lat'], $location['lng']];
+            } else {
+                throw new Exception('Failed to fetch coordinates.');
+            }
+        } catch (Exception $e) {
+            return null;
         }
-
-        return null;
     }
 }
