@@ -6,8 +6,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TravelController;
 use App\Http\Controllers\HotelController;
 
-
-
 // Home
 Route::get('/', function () {
     return redirect()->route('itineraries.index');
