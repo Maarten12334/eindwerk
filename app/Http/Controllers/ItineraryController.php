@@ -96,12 +96,12 @@ class ItineraryController extends Controller
 
     public function downloadPDF(Itinerary $itinerary)
     {
-        $hotels = $itinerary->hotels; // Assuming you have a relationship defined
-        $start_date = $itinerary->start_date;
-        $end_date = $itinerary->end_date;
-        $items_by_date = []; // Populate this with your itinerary items
+        $start_date = Carbon::parse($itinerary->departure);
+        $end_date = Carbon::parse($itinerary->return);
+        $items_by_date = $itinerary->items()->orderBy('date')->get()->groupBy('date')->toArray();
+        $hotels = $itinerary->hotels; // Retrieve the associated hotels
 
-        $pdf = Pdf::loadView('itineraries.pdf', compact('itinerary', 'hotels', 'start_date', 'end_date', 'items_by_date'));
+        $pdf = Pdf::loadView('itineraries.pdf', compact('itinerary', 'start_date', 'end_date', 'items_by_date', 'hotels'));
         return $pdf->download('itinerary.pdf');
     }
 }
