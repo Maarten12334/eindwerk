@@ -24,6 +24,7 @@
                 <a href="{{ route('itineraries.edit', $itinerary->id) }}" class="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 ml-4 rounded">Edit itinerary</a>
                 <a href="{{ route('hotels.search', $itinerary) }}" class="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 ml-4 rounded">Zoek een hotel</a>
                 @livewire('SearchFlightButton', ['itinerary' => $itinerary])
+                <a href="{{ route('itineraries.pdf', $itinerary) }}" class="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 ml-4 rounded">Download PDF</a>
             </div>
         </div>
     </div>

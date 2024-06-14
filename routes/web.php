@@ -36,7 +36,7 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/itineraries/{id}', [ItineraryController::class, 'update'])->name('itineraries.update');
     Route::delete('/itineraries/{id}', [ItineraryController::class, 'destroy'])->name('itineraries.destroy');
     Route::post('/itineraries/{itinerary?}/add-hotel', [ItineraryController::class, 'addHotel'])->name('itinerary.addHotel');
-
+    Route::get('/itineraries/{itinerary}/pdf', [ItineraryController::class, 'downloadPDF'])->name('itineraries.pdf');
 
     // Hotels
     Route::get('/hotels/search/{itinerary?}', [HotelController::class, 'search'])->name('hotels.search');
