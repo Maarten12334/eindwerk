@@ -16,6 +16,7 @@ return new class extends Migration
             // $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignId('itinerary_id')->constrained()->onDelete('cascade');
             $table->string('name');
+            $table->string('address');
             $table->date('arrival');
             $table->date('departure');
             $table->timestamps();

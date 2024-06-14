@@ -49,14 +49,18 @@
                                     <input type="hidden" name="name" value="{{ $hotel['displayName']['text'] }}">
                                     @endif
 
+                                    @if(isset($hotel['formattedAddress'])) <!-- Corrected field name -->
+                                    <input type="hidden" name="address" value="{{ $hotel['formattedAddress'] }}">
+                                    @endif
+
                                     <input type="hidden" name="arrival" value="{{ $checkInDate }}">
                                     <input type="hidden" name="departure" value="{{ $checkOutDate }}">
 
                                     <button type="submit" class="btn bg-green-500 text-white px-4 py-2 rounded">Add to Itinerary</button>
 
-                                    @if ($errors->has('name'))
+                                    @if ($errors->has('address'))
                                     <div class="text-red-500 mt-2">
-                                        {{ $errors->first('name') }}
+                                        {{ $errors->first('address') }}
                                     </div>
                                     @endif
                                 </form>

@@ -31,6 +31,7 @@ class ItineraryController extends Controller
         Hotel::create([
             'itinerary_id' => $itinerary->id,
             'name' => $request->input('name'),
+            'address' => $request->input('address'),
             'arrival' => $request->input('arrival'),
             'departure' => $request->input('departure'),
         ]);
