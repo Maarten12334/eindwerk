@@ -3,25 +3,25 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use Livewire\Attributes\Lazy;
 use App\Services\GooglePlacesService;
 
-
-#[Lazy]
 class HotelList extends Component
 {
-    protected $googlePlaces;
     public $city;
     public $radius;
     public $itinerary;
     public $checkInDate;
     public $checkOutDate;
+    protected $googlePlaces;
 
-    public function mount(GooglePlacesService $googlePlaces, $city, $radius)
+    public function mount(GooglePlacesService $googlePlaces, $city, $radius, $itinerary, $checkInDate, $checkOutDate)
     {
         $this->googlePlaces = $googlePlaces;
         $this->city = $city;
         $this->radius = $radius;
+        $this->itinerary = $itinerary;
+        $this->checkInDate = $checkInDate;
+        $this->checkOutDate = $checkOutDate;
     }
 
     public function render()

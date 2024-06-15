@@ -100,7 +100,7 @@ class GooglePlacesService
 
             return $url;
         } catch (Exception $e) {
-            return null;
+            return $e;
         }
     }
 
