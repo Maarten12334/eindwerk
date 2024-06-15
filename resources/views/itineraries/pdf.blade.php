@@ -39,6 +39,17 @@
             margin-bottom: 20px;
         }
 
+        .date-header {
+            padding: 10px;
+            background-color: #283A2C;
+            color: #DADDC5;
+            border-radius: 8px;
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
         .items-table th,
         .items-table td {
             border: 1px solid #e5e7eb;
@@ -87,6 +98,13 @@
             font-style: italic;
             color: #808000;
         }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #DADDC5;
+            margin: 20px 0;
+        }
     </style>
 </head>
 
@@ -109,7 +127,7 @@
 
     @foreach ($items_by_date as $date => $items)
     <div class="section @if(!$loop->first) page-break @endif">
-        <h4 class="text-xl font-semibold mb-4">{{ \Carbon\Carbon::parse($date)->format('d-m-Y') }}</h4>
+        <div class="date-header">{{ \Carbon\Carbon::parse($date)->format('d-m-Y') }}</div>
 
         @foreach (collect($items)->sortBy('time') as $item)
         <div class="item-entry">
@@ -117,6 +135,10 @@
             <p class="item-time">{{ \Carbon\Carbon::createFromFormat('H:i:s', $item['time'])->format('H:i') }}</p>
         </div>
         @endforeach
+
+        @if(!$loop->last)
+        <hr>
+        @endif
     </div>
     @endforeach
 </body>
