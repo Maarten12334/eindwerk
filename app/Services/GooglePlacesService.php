@@ -21,7 +21,7 @@ class GooglePlacesService
 
             $data = [
                 'includedTypes' => ['hotel'],
-                'maxResultCount' => 2,
+                'maxResultCount' => 20,
                 'locationRestriction' => [
                     'circle' => [
                         'center' => [
@@ -100,7 +100,7 @@ class GooglePlacesService
 
             return $url;
         } catch (Exception $e) {
-            return null;
+            return $e;
         }
     }
 
