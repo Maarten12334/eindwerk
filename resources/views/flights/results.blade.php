@@ -16,23 +16,23 @@
                 <p>Unable to fetch flights</p>
             </div>
             @else
-            @if ($returnFlightsData)
+            @if ($returnDate)
             <!-- Check if a return flight is given -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="md:pr-3">
                     <h2 class="text-xl font-bold mb-4 sticky top-0 bg-softWhite bg-opacity-50 dark:bg-gray-800 z-10 p-2">Departure Flights</h2>
-                    @livewire('show-flights', ['departureFlightsData' => $departureFlightsData, 'airlineNames' => $departureAirlineNames, 'nonStop' => $nonStop])
+                    @livewire('show-flights', ['origin' => $origin, 'destination' => $destination, 'departureDate' => $departureDate, 'returnDate' => $returnDate, 'nonStop' => $nonStop])
                 </div>
                 <div class="md:pl-3">
                     <h2 class="text-xl font-bold mb-4 sticky top-0 bg-softWhite bg-opacity-50 dark:bg-gray-800 z-10 p-2">Return Flights</h2>
-                    @livewire('show-flights', ['departureFlightsData' => $returnFlightsData, 'airlineNames' => $returnAirlineNames, 'nonStop' => $nonStop])
+                    @livewire('show-flights', ['origin' => $origin, 'destination' => $destination, 'departureDate' => $departureDate, 'returnDate' => $returnDate, 'nonStop' => $nonStop])
                 </div>
             </div>
             @else
             <div class="grid grid-cols-1 justify-center">
                 <div class="md:mx-auto">
                     <h2 class="text-xl font-bold mb-4 sticky top-0 bg-softWhite bg-opacity-50 dark:bg-gray-800 z-10 p-2">Departure Flights</h2>
-                    @livewire('show-flights', ['departureFlightsData' => $departureFlightsData, 'airlineNames' => $departureAirlineNames, 'nonStop' => $nonStop])
+                    @livewire('show-flights', ['origin' => $origin, 'destination' => $destination, 'departureDate' => $departureDate, 'returnDate' => $returnDate, 'nonStop' => $nonStop])
                 </div>
             </div>
             @endif
