@@ -8,7 +8,7 @@
         $dateFormatted = $current_date->format('Y-m-d');
         @endphp
         <div class="w-full md:w-1/2 px-4 mb-6">
-            <div class="p-6 bg-primaryGreen dark:bg-gray-700 rounded-lg shadow-md">
+            <div class="p-6 bg-primaryGreen bg-opacity-70 dark:bg-gray-700 rounded-lg shadow-md">
                 <div class="flex justify-between items-center mb-4">
                     <h5 class="text-lg font-semibold">{{ $current_date->format('d-m') }}</h5>
                     @foreach ($hotels as $hotel)
