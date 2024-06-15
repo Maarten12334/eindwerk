@@ -18,7 +18,9 @@
                         <form action="{{ route('hotels.destroy', $hotel->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this hotel?');">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="bg-red-500 text-white rounded px-2 py-1">Delete</button>
+                            <button type="submit" class="text-red-500 hover:text-red-700">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
                         </form>
                     </div>
                     @endif
@@ -28,16 +30,20 @@
                 $items = collect($items_by_date[$dateFormatted] ?? []);
                 $items = $items->sortBy('time');
                 @endphp
-                <div class="space-y-4">
-                    @foreach ($items as $item)
-                    <div class="p-2 bg-white dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-100 flex justify-between items-center">
-                        @php
-                        $time = \Carbon\Carbon::createFromFormat('H:i:s', $item['time'])->format('H:i');
-                        @endphp
-                        <span>{{ $item['type'] }}: {{ $time }}</span>
-                        <button wire:click="deleteItem({{ $item['id'] }})" class="ml-4 inline-flex items-center px-3 py-1 bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 active:bg-red-700 disabled:opacity-25 transition">Delete</button>
+                <div class="bg-secondaryGreen rounded-lg p-4">
+                    <div class="space-y-4 day-container" style="height: 300px; overflow-y: auto;">
+                        @foreach ($items as $item)
+                        <div class="p-2 bg-white dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-100 flex justify-between items-center">
+                            @php
+                            $time = \Carbon\Carbon::createFromFormat('H:i:s', $item['time'])->format('H:i');
+                            @endphp
+                            <span>{{ $item['type'] }}: {{ $time }}</span>
+                            <button wire:click="deleteItem({{ $item['id'] }})" class="ml-4 text-red-500 hover:text-red-700">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </div>
+                        @endforeach
                     </div>
-                    @endforeach
                 </div>
                 <div class="mt-4">
                     <button @click="openForm = openForm === '{{ $dateFormatted }}' ? null : '{{ $dateFormatted }}'" x-show="openForm !== '{{ $dateFormatted }}'" class="inline-flex items-center px-4 py-2 bg-oliveGreen border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-green-700 focus:outline-none focus:border-green-700 focus:ring focus:ring-green-200 active:bg-green-700 disabled:opacity-25 transition">
