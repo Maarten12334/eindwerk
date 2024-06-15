@@ -98,7 +98,7 @@
 
     <div class="hotels-list">
         <h2 class="text-2xl font-semibold mb-4">Hotels</h2>
-        @foreach ($hotels as $hotel)
+        @foreach ($hotels->sortBy('arrival') as $hotel)
         <div class="hotel-item">
             <h3 class="text-xl font-medium">{{ $hotel->name }}</h3>
             <p class="text-gray-600">Check-in: {{ \Carbon\Carbon::parse($hotel->arrival)->format('d-m-Y') }} - Check-out: {{ \Carbon\Carbon::parse($hotel->departure)->format('d-m-Y') }}</p>
@@ -109,7 +109,7 @@
 
     @foreach ($items_by_date as $date => $items)
     <div class="section @if(!$loop->first) page-break @endif">
-        <h4 class="text-2xl font-semibold mb-4">{{ \Carbon\Carbon::parse($date)->format('d-m-Y') }}</h4>
+        <h4 class="text-xl font-semibold mb-4">{{ \Carbon\Carbon::parse($date)->format('d-m-Y') }}</h4>
 
         @foreach (collect($items)->sortBy('time') as $item)
         <div class="item-entry">
