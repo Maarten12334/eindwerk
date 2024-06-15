@@ -4,7 +4,9 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Services\GooglePlacesService;
+use Livewire\Attributes\Lazy;
 
+#[Lazy]
 class HotelList extends Component
 {
     public $city;

@@ -18,7 +18,7 @@
             </div>
 
             <div class="h-48 overflow-hidden">
-                <img src="{{ $hotel['photoUrl'] ?? asset('images/hotelImage.jpg') }}" alt="Hotel Image" class="h-full w-full object-cover">
+                <img src="{{ $hotel['photoUrl'] ?? asset('images/noImageFound.jpg') }}" alt="Hotel Image" class="h-full w-full object-cover">
             </div>
 
             <div class="p-4 flex justify-between items-center">
