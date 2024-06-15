@@ -51,7 +51,7 @@
             @endif
             <div class="text-right">
                 <a href="{{ route('itineraries.create') }}">
-                    <button class="btn btn-primary bg-primaryGreen text-white py-2 px-4 rounded">Create Itinerary</button>
+                    <button class="btn btn-primary bg-oliveGreen text-white py-2 px-4 rounded">Create Itinerary</button>
                 </a>
             </div>
         </div>
