@@ -10,8 +10,8 @@
     </x-slot>
 
     <div class="py-16 relative bg-cover bg-center" style="background-image: url('{{ asset('images/airport.jpg') }}')">
-        <div class="container mx-auto p-4  relative bg-white bg-opacity-90 rounded shadow-lg">
-            <form action="{{ route('flights.results') }}" method="GET" onsubmit="return validateDates()">
+        <div class="container mx-auto p-4 relative bg-white bg-opacity-90 rounded shadow-lg" x-data="dateValidation()">
+            <form action="{{ route('flights.results') }}" method="GET" x-on:submit="return validateDates()">
                 <div class="form-group mb-6">
                     <p>Momenteel kunnen enkel steden ingegeven worden in het formaat: Brussel = BRU, Parijs = PAR, Londen = LON, ... </p>
                     <label for="origin" class="block mb-2 dark:text-white">Origin</label>
@@ -25,11 +25,11 @@
                     <div class="flex space-x-4">
                         <div class="flex-shrink-0">
                             <label for="departureDate" class="block mb-2 dark:text-white">Departure Date</label>
-                            <input type="date" name="departureDate" id="departureDate" class="form-control w-auto p-2 border border-gray-300 rounded" required>
+                            <input type="date" name="departureDate" id="departureDate" class="form-control w-auto p-2 border border-gray-300 rounded" required x-on:change="validateDates" x-on:focus="validateDates" x-init="initializeDate($el)">
                         </div>
                         <div class="flex-shrink-0">
                             <label for="returnDate" class="block mb-2 dark:text-white">Return Date (optional)</label>
-                            <input type="date" name="returnDate" id="returnDate" class="form-control w-auto p-2 border border-gray-300 rounded">
+                            <input type="date" name="returnDate" id="returnDate" class="form-control w-auto p-2 border border-gray-300 rounded" x-on:change="validateDates" x-on:focus="validateDates" x-init="initializeDate($el)">
                         </div>
                     </div>
                     <div class="flex items-center ml-4">
@@ -43,4 +43,5 @@
     </div>
 
     <script src="{{asset('js/searchFlightDateValidation.js')}}"></script>
+
 </x-app-layout>

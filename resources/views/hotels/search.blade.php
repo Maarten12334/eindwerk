@@ -14,7 +14,7 @@
 
     <div class="py-16 relative bg-cover bg-center" style="background-image: url('{{ asset('images/hotel.jpg') }}')">
         <!-- First form container -->
-        <div class="container mx-auto p-4 relative bg-white bg-opacity-90 rounded shadow-lg mb-8">
+        <div class="container mx-auto p-4 relative bg-white bg-opacity-90 rounded shadow-lg mb-8" x-data="dateValidation({{ json_encode($itinerary->departure ?? null) }}, {{ json_encode($itinerary->return ?? null) }})">
             <form action="{{ route('hotels.results', $itinerary) }}" method="GET" id="hotelSearchForm">
                 @if($itinerary)
                 <input type="hidden" name="itinerary_id" value="{{ $itinerary->id }}">
@@ -33,12 +33,12 @@
                 <div class="form-group mb-6 flex space-x-4">
                     <div>
                         <label for="checkInDate" class="block mb-2 dark:text-white">Check-in Date:</label>
-                        <input type="date" id="checkInDate" name="checkInDate" class="form-control w-full p-2 border border-gray-300 rounded" value="{{ $itinerary->start_date ?? '' }}" required>
+                        <input type="date" id="checkInDate" name="checkInDate" class="form-control w-full p-2 border border-gray-300 rounded" value="{{ $itinerary->start_date ?? '' }}" required x-on:change="validateDates" x-on:focus="validateDates" x-init="initializeDate($el)">
                     </div>
 
                     <div>
                         <label for="checkOutDate" class="block mb-2 dark:text-white">Check-out Date:</label>
-                        <input type="date" id="checkOutDate" name="checkOutDate" class="form-control w-full p-2 border border-gray-300 rounded" value="{{ $itinerary->end_date ?? '' }}" required>
+                        <input type="date" id="checkOutDate" name="checkOutDate" class="form-control w-full p-2 border border-gray-300 rounded" value="{{ $itinerary->end_date ?? '' }}" required x-on:change="validateDates" x-on:focus="validateDates" x-init="initializeDate($el)">
                     </div>
                 </div>
 
@@ -48,7 +48,7 @@
 
         @if($itinerary)
         <!-- Second form container -->
-        <div class="container mx-auto p-4 relative bg-white bg-opacity-90 rounded shadow-lg mt-8">
+        <div class="container mx-auto p-4 relative bg-white bg-opacity-90 rounded shadow-lg mt-8" x-data="dateValidation({{ json_encode($itinerary->departure ?? null) }}, {{ json_encode($itinerary->return ?? null) }})">
             <!-- Form to add a hotel manually -->
             <form action="{{ route('itinerary.addHotel', $itinerary->id) }}" method="POST">
                 @csrf
@@ -64,12 +64,12 @@
                 <div class="form-group mb-6 flex space-x-4">
                     <div>
                         <label for="arrival" class="block mb-2 dark:text-white">Check-in Date:</label>
-                        <input type="date" id="arrival" name="arrival" class="form-control w-full p-2 border border-gray-300 rounded" required>
+                        <input type="date" id="arrival" name="arrival" class="form-control w-full p-2 border border-gray-300 rounded" required x-on:change="validateDates" x-on:focus="validateDates" x-init="initializeDate($el)">
                     </div>
 
                     <div>
                         <label for="departure" class="block mb-2 dark:text-white">Check-out Date:</label>
-                        <input type="date" id="departure" name="departure" class="form-control w-full p-2 border border-gray-300 rounded" required>
+                        <input type="date" id="departure" name="departure" class="form-control w-full p-2 border border-gray-300 rounded" required x-on:change="validateDates" x-on:focus="validateDates" x-init="initializeDate($el)">
                     </div>
                 </div>
 
@@ -84,62 +84,6 @@
         @endif
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const checkInDate = document.getElementById('checkInDate');
-            const checkOutDate = document.getElementById('checkOutDate');
-            const manualCheckInDate = document.getElementById('arrival');
-            const manualCheckOutDate = document.getElementById('departure');
+    <script src="{{asset('js/searchHotelDateValidation.js')}}"></script>
 
-            @if($itinerary)
-            const itineraryDeparture = new Date("{{ $itinerary->departure }}");
-            const itineraryReturn = new Date("{{ $itinerary->return }}");
-
-            // Setting the min and max attributes for the date inputs
-            checkInDate.min = itineraryDeparture.toISOString().split('T')[0];
-            checkInDate.max = itineraryReturn.toISOString().split('T')[0];
-            checkOutDate.min = itineraryDeparture.toISOString().split('T')[0];
-            checkOutDate.max = itineraryReturn.toISOString().split('T')[0];
-
-            manualCheckInDate.min = itineraryDeparture.toISOString().split('T')[0];
-            manualCheckInDate.max = itineraryReturn.toISOString().split('T')[0];
-            manualCheckOutDate.min = itineraryDeparture.toISOString().split('T')[0];
-            manualCheckOutDate.max = itineraryReturn.toISOString().split('T')[0];
-
-            function validateDates() {
-                if (checkInDate.value && checkOutDate.value) {
-                    const checkIn = new Date(checkInDate.value);
-                    const checkOut = new Date(checkOutDate.value);
-                    const oneDay = 24 * 60 * 60 * 1000;
-
-                    if (checkOut <= checkIn) {
-                        alert("Check-out date must be at least one day after the check-in date.");
-                        checkOutDate.value = new Date(checkIn.getTime() + oneDay).toISOString().split('T')[0];
-                    }
-                }
-
-                if (manualCheckInDate.value && manualCheckOutDate.value) {
-                    const checkIn = new Date(manualCheckInDate.value);
-                    const checkOut = new Date(manualCheckOutDate.value);
-                    const oneDay = 24 * 60 * 60 * 1000;
-
-                    if (checkOut <= checkIn) {
-                        alert("Check-out date must be at least one day after the check-in date.");
-                        manualCheckOutDate.value = new Date(checkIn.getTime() + oneDay).toISOString().split('T')[0];
-                    }
-                }
-            }
-
-            checkInDate.addEventListener('focus', validateDates);
-            checkOutDate.addEventListener('focus', validateDates);
-            checkInDate.addEventListener('change', validateDates);
-            checkOutDate.addEventListener('change', validateDates);
-
-            manualCheckInDate.addEventListener('focus', validateDates);
-            manualCheckOutDate.addEventListener('focus', validateDates);
-            manualCheckInDate.addEventListener('change', validateDates);
-            manualCheckOutDate.addEventListener('change', validateDates);
-            @endif
-        });
-    </script>
 </x-app-layout>

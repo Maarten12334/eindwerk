@@ -1,33 +1,22 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const departureDateInput = document.getElementById("departureDate");
-    const returnDateInput = document.getElementById("returnDate");
+document.addEventListener("alpine:init", () => {
+    Alpine.data("dateValidation", () => ({
+        initializeDate(element) {
+            const today = new Date().toISOString().split("T")[0];
+            element.setAttribute("min", today);
+        },
+        validateDates() {
+            const departureDateInput = document.getElementById("departureDate");
+            const returnDateInput = document.getElementById("returnDate");
+            const departureDate = departureDateInput.value;
+            const returnDate = returnDateInput.value;
 
-    // Set minimum date for departure and return dates
-    const today = new Date().toISOString().split("T")[0];
-    departureDateInput.setAttribute("min", today);
-    returnDateInput.setAttribute("min", today);
+            // Ensure return date is later than departure date
+            if (returnDate && returnDate < departureDate) {
+                alert("Return date must be later than departure date.");
+                returnDateInput.value = "";
+            }
 
-    // Ensure return date is later than departure date
-    departureDateInput.addEventListener("change", function() {
-        returnDateInput.setAttribute("min", this.value);
-    });
-
-    returnDateInput.addEventListener("change", function() {
-        if (this.value < departureDateInput.value) {
-            alert("Return date must be later than departure date.");
-            this.value = "";
-        }
-    });
+            return true;
+        },
+    }));
 });
-
-function validateDates() {
-    const departureDate = document.getElementById("departureDate").value;
-    const returnDate = document.getElementById("returnDate").value;
-
-    if (returnDate && returnDate < departureDate) {
-        alert("Return date must be later than departure date.");
-        return false;
-    }
-
-    return true;
-}
