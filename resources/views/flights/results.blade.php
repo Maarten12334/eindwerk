@@ -33,10 +33,10 @@
                 <div class="md:pl-3">
                     <h2 class="text-xl font-bold mb-4 sticky top-0 bg-softWhite bg-opacity-50 dark:bg-gray-800 z-10 p-2">Terugvluchten</h2>
                     @livewire('flights.show-flights', [
-                    'origin' => $origin,
-                    'destination' => $destination,
-                    'departureDate' => $departureDate,
-                    'returnDate' => $returnDate,
+                    'origin' => $destination,
+                    'destination' => $origin,
+                    'departureDate' => $returnDate,
+                    'returnDate' => $departureDate,
                     'nonStop' => $nonStop
                     ])
                 </div>

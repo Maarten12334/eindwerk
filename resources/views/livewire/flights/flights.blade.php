@@ -45,10 +45,10 @@
     </div>
     <div class="text-center mt-6">
         <button class="bg-primaryGreen text-secondaryGreen px-4 py-2 rounded-lg">
-            <p class="text-xl font-semibold">Total Price: <span class="font-normal">{{ $flightSchedule['price']['total'] }}</span></p>
+            <p class="text-xl font-semibold">Totale prijs: <span class="font-normal">{{ $flightSchedule['price']['total'] }}</span></p>
         </button>
     </div>
     @else
-    <p>No flight schedule available.</p>
+    <p>Geen vluchtschema gevonden.</p>
     @endif
 </div>
