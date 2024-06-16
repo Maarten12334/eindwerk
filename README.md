@@ -1,19 +1,17 @@
 # Holiday Hero
 
-## Table of Contents
+## Inhoudsopgave
 
--   [Description](#description)
--   [Installation](#installation)
+-   [Beschrijving](#beschrijving)
+-   [Installatie](#installatie)
 -   [Features](#features)
 -   [Toekomstige features](#toekomstige-features)
--   [License](#license)
--   [Contact](#contact)
 
-## Description
+## Beschrijving
 
 Deze applicatie is gemaakt om snel en eenvoudig een reisschema samen te stellen. Gebruikers kunnen een account aanmaken via laravel/breeze. Hierna kunnen ze een reisschema maken en per dag hotels en activiteiten toevoegen.
 
-## Installation
+## Installatie
 
 Stap voor stap instructies
 
@@ -38,7 +36,7 @@ php artisan serve
 -   Zoek vluchten via de amadeus api
 -   Download een reisschema als pdf
 
-## toekomstige-features
+## Toekomstige-features
 
 -   Vluchten koppelen aan een reisschema
 -   Hotels zoeken met de bookings API
