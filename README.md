@@ -24,7 +24,11 @@ composer install
 npm install
 npm run dev
 cp .env.example .env
+```
+
 .env amdeusapi en google places api keys toevoegen.
+
+```bash
 php artisan key:generate
 php artisan serve
 ```
