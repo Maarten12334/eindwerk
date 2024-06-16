@@ -31,13 +31,13 @@ new class extends Component
                 <!-- Navigation Links -->
                 <div id="test" class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('itineraries.index')" :active="request()->routeIs('itineraries.index')" wire:navigate>
-                        {{ __('Itinerary') }}
+                        {{ __('Reizen') }}
                     </x-nav-link>
                     <x-nav-link :href="route('flights.search')" :active="request()->routeIs('flights.search')" wire:navigate>
-                        {{ __('Search Flights') }}
+                        {{ __('Zoek vluchten') }}
                     </x-nav-link>
                     <x-nav-link :href="route('hotels.search')" :active="request()->routeIs('hotels.search')" wire:navigate>
-                        {{ __('Search Hotels') }}
+                        {{ __('Zoek hotels') }}
                     </x-nav-link>
                 </div>
             </div>

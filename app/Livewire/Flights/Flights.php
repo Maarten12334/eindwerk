@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Flights;
 
 use Livewire\Component;
-use App\Services\AmadeusService;
 
 class Flights extends Component
 {

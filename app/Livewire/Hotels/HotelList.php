@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Hotels;
 
 use Livewire\Component;
 use App\Services\GooglePlacesService;
