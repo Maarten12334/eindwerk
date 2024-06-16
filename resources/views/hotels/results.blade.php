@@ -14,7 +14,7 @@
             @if($itinerary && $itinerary->id)
             <h4 class="mb-4 text-2xl font-bold text-primaryGreen">{{ $itinerary->name }}</h4>
             @endif
-            @livewire('HotelList', ['city' => $city, 'radius' => $radius, 'itinerary' => $itinerary, 'checkInDate' => $checkInDate, 'checkOutDate' => $checkOutDate])
+            @livewire('Hotels.HotelList', ['city' => $city, 'radius' => $radius, 'itinerary' => $itinerary, 'checkInDate' => $checkInDate, 'checkOutDate' => $checkOutDate])
         </div>
     </div>
 </x-app-layout>

@@ -23,7 +23,7 @@
 
             <div class="p-4 flex justify-between items-center">
                 @if(isset($hotel['websiteUri']))
-                <a href="{{ $hotel['websiteUri'] }}" target="_blank" class="btn bg-blue-500 text-white px-4 py-2 rounded">Visit Website</a>
+                <a href="{{ $hotel['websiteUri'] }}" target="_blank" class="btn bg-blue-500 text-white px-4 py-2 rounded">Website</a>
                 @endif
 
                 @if($itinerary && $itinerary->id)
@@ -41,7 +41,7 @@
                     <input type="hidden" name="arrival" value="{{ $checkInDate }}">
                     <input type="hidden" name="departure" value="{{ $checkOutDate }}">
 
-                    <button type="submit" class="btn bg-green-500 text-white px-4 py-2 rounded">Add to Itinerary</button>
+                    <button type="submit" class="btn bg-green-500 text-white px-4 py-2 rounded">Aan reisschema toevoegen</button>
 
                     @if ($errors->has('address'))
                     <div class="text-red-500 mt-2">
