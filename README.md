@@ -26,10 +26,12 @@ npm run dev
 cp .env.example .env
 ```
 
-.env amdeusapi en google places api keys toevoegen.
+.env amdeusapi en google places api keys toevoegen
+.env database instellen
 
 ```bash
 php artisan key:generate
+php artisan migrate
 php artisan serve
 ```
 
