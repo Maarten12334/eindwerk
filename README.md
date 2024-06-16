@@ -1,5 +1,7 @@
 # Holiday Hero
 
+![Projectafbeelding](public/images/logo.png)
+
 ## Inhoudsopgave
 
 -   [Beschrijving](#beschrijving)
