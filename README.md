@@ -22,7 +22,7 @@ git clone https://github.com/Maarten12334/eindwerk
 cd eindwerk
 composer install
 npm install
-npm run dev
+npm run build
 cp .env.example .env
 ```
 
