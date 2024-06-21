@@ -11,10 +11,11 @@
             <div class="p-6 bg-primaryGreen bg-opacity-70 dark:bg-gray-700 rounded-lg shadow-md">
                 <div class="flex justify-between items-center mb-4">
                     <h5 class="text-lg font-semibold">{{ $current_date->format('d-m') }}</h5>
-                    @foreach ($hotels as $hotel)
+                    @foreach ($itinerary->hotels as $hotel)
                     @if ($current_date->between(Carbon\Carbon::parse($hotel->arrival), Carbon\Carbon::parse($hotel->departure)))
                     <div class="flex items-center space-x-2">
                         <span class="bg-oliveGreen text-secondaryGreen rounded px-2 py-1">{{ $hotel->name }}</span>
+                        @if (!$visit)
                         <form action="{{ route('hotels.destroy', $hotel->id) }}" method="POST" onsubmit="return confirm('Weet je zeker dat je dit hotel wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.');">
                             @csrf
                             @method('DELETE')
@@ -22,6 +23,7 @@
                                 <i class="fas fa-trash-alt"></i>
                             </button>
                         </form>
+                        @endif
                     </div>
                     @endif
                     @endforeach
@@ -38,13 +40,16 @@
                             $time = \Carbon\Carbon::createFromFormat('H:i:s', $item['time'])->format('H:i');
                             @endphp
                             <span>{{ $item['type'] }}: {{ $time }}</span>
+                            @if (!$visit)
                             <button wire:click="deleteItem({{ $item['id'] }})" class="ml-4 text-red-500 hover:text-red-700">
                                 <i class="fas fa-trash-alt"></i>
                             </button>
+                            @endif
                         </div>
                         @endforeach
                     </div>
                 </div>
+                @if (!$visit)
                 <div class="mt-4">
                     <button @click="openForm = openForm === '{{ $dateFormatted }}' ? null : '{{ $dateFormatted }}'" x-show="openForm !== '{{ $dateFormatted }}'" class="inline-flex items-center px-4 py-2 bg-oliveGreen border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-green-700 focus:outline-none focus:border-green-700 focus:ring focus:ring-green-200 active:bg-green-700 disabled:opacity-25 transition">
                         Voeg een activiteit toe
@@ -72,6 +77,7 @@
                         </div>
                     </form>
                 </div>
+                @endif
             </div>
         </div>
         @php
