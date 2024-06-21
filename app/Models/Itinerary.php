@@ -15,6 +15,7 @@ class Itinerary extends Model
         'return',
         'flight_id',
         'user_id',
+        'random_key',
     ];
 
     public function items()
