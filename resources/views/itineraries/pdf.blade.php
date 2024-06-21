@@ -141,6 +141,11 @@
         @endif
     </div>
     @endforeach
+
+    <div class="qr-code">
+        <h2 class="text-2xl font-semibold mb-4">Scan the QR code to view your itinerary online:</h2>
+        <img src="data:image/svg+xml;base64,{{ $qrCode }}" alt="QR Code">
+    </div>
 </body>
 
 </html>
