@@ -53,3 +53,5 @@ Route::middleware(['auth'])->group(function () {
         return view('notifications');
     })->name('notifications');
 });
+
+Route::get('/{random_key}', [ItineraryController::class, 'visit'])->name('visit');

@@ -14,6 +14,7 @@
             @if($itinerary && $itinerary->id)
             <h4 class="mb-4 text-2xl font-bold text-primaryGreen">{{ $itinerary->name }}</h4>
             @endif
+            <h2 class="mb-4 text-2xl font-bold text-primaryGreen">Deze hotels zijn beschikbaar in: {{ $city }}</h2>
             @livewire('Hotels.HotelList', ['city' => $city, 'radius' => $radius, 'itinerary' => $itinerary, 'checkInDate' => $checkInDate, 'checkOutDate' => $checkOutDate])
         </div>
     </div>

@@ -125,22 +125,43 @@
         @endforeach
     </div>
 
-    @foreach ($items_by_date as $date => $items)
-    <div class="section @if(!$loop->first) page-break @endif">
-        <div class="date-header">{{ \Carbon\Carbon::parse($date)->format('d-m-Y') }}</div>
+    @php
+    $current_date = $start_date->copy();
+    @endphp
+    @while ($current_date->lte($end_date))
+    @php
+    $dateFormatted = $current_date->format('d-m-Y');
+    $items = $items_by_date[$current_date->toDateString()] ?? [];
+    $isLastDay = $current_date->isSameDay($end_date);
+    @endphp
+    <div class="section @if(!$current_date->isSameDay($start_date)) page-break @endif">
+        <div class="date-header">{{ $dateFormatted }}</div>
 
+        @if(count($items) > 0)
         @foreach (collect($items)->sortBy('time') as $item)
         <div class="item-entry">
-            <p class="item-type">{{ $item['type'] }}</p>
-            <p class="item-time">{{ \Carbon\Carbon::createFromFormat('H:i:s', $item['time'])->format('H:i') }}</p>
+            <p class="item-type">{{ $item['type'] }} <span class="item-time">{{ \Carbon\Carbon::createFromFormat('H:i:s', $item['time'])->format('H:i') }}</span></p>
         </div>
         @endforeach
+        @else
+        <p class="text-center text-gray-500">Geen items voor deze dag</p>
+        @endif
 
-        @if(!$loop->last)
+        @if(!$isLastDay)
         <hr>
         @endif
     </div>
-    @endforeach
+    @php
+    $current_date->addDay();
+    @endphp
+    @endwhile
+
+    <div class="qr-code text-center mt-6">
+        <h2 class="text-2xl font-semibold mb-4">Scan de QR code om uw reisplan online te zien:</h2>
+        <img src="data:image/svg+xml;base64,{{ $qrCode }}" alt="QR Code">
+        <p class="mt-2 text-lg">Of deel deze link met uw vrienden/familie:</p>
+        <p class=" text-lg"><a href="{{ $url }}" target="_blank">{{ $url }}</a></p>
+    </div>
 </body>
 
 </html>

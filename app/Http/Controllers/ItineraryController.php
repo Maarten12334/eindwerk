@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Itinerary;
 use App\Models\Hotel;
 use Carbon\Carbon;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 use Barryvdh\DomPDF\Facade\Pdf;
 
 class ItineraryController extends Controller
@@ -103,8 +104,23 @@ class ItineraryController extends Controller
         $items_by_date = $itinerary->items()->orderBy('date')->get()->groupBy('date')->toArray();
         $hotels = $itinerary->hotels; // Retrieve the associated hotels
 
-        $pdf = Pdf::loadView('itineraries.pdf', compact('itinerary', 'start_date', 'end_date', 'items_by_date', 'hotels'));
+        // Generate the URL and QR code
+        $url = route('visit', $itinerary->random_key); // Use the correct route name and random key
+        $qrCode = base64_encode(QrCode::format('svg')->size(200)->generate($url));
+
+        // Pass the QR code and URL to the view
+        $pdf = Pdf::loadView('itineraries.pdf', compact('itinerary', 'start_date', 'end_date', 'items_by_date', 'hotels', 'qrCode', 'url'));
         $fileName = $itinerary->name . '.pdf'; // Create the file name using the itinerary name
         return $pdf->download($fileName);
+    }
+
+    public function visit($random_key)
+    {
+        $itinerary = Itinerary::where('random_key', $random_key)->firstOrFail();
+        $start_date = Carbon::parse($itinerary->departure);
+        $end_date = Carbon::parse($itinerary->return);
+        $items_by_date = $itinerary->items()->orderBy('date')->get()->groupBy('date')->toArray();
+
+        return view('itineraries.visit', compact('itinerary', 'start_date', 'end_date', 'items_by_date'));
     }
 }

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Itinerary extends Model
 {
@@ -15,6 +16,7 @@ class Itinerary extends Model
         'return',
         'flight_id',
         'user_id',
+        'random_key',
     ];
 
     public function items()
@@ -25,5 +27,14 @@ class Itinerary extends Model
     public function hotels()
     {
         return $this->hasMany(Hotel::class);
+    }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($itinerary) {
+            $itinerary->random_key = Str::random(16);
+        });
     }
 }

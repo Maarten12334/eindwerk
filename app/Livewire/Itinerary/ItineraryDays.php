@@ -8,6 +8,7 @@ use App\Models\Itinerary;
 use App\Models\ItineraryItem;
 use App\Models\Hotel;
 
+
 class ItineraryDays extends Component
 {
     public $itinerary;
@@ -15,22 +16,25 @@ class ItineraryDays extends Component
     public $end_date;
     public $items_by_date;
     public $hotels;
+    public $visit;
 
     public $type = [];
     public $time = [];
 
+    //used for valdating dates
     protected $rules = [
         'type.*' => 'required|string|max:255',
         'time.*' => 'required|date_format:H:i',
     ];
 
-    public function mount(Itinerary $itinerary, $start_date, $end_date, $items_by_date)
+    public function mount(Itinerary $itinerary, $start_date, $end_date, $items_by_date, $visit)
     {
         $this->itinerary = $itinerary;
         $this->start_date = Carbon::parse($start_date);
         $this->end_date = Carbon::parse($end_date);
         $this->items_by_date = collect($items_by_date);
         $this->hotels = $this->itinerary->hotels()->get();
+        $this->visit = $visit;
     }
 
     public function addItem($date)
