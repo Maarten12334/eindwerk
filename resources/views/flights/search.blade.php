@@ -14,11 +14,11 @@
             <form action="{{ route('flights.results') }}" method="GET" x-on:submit="return validateDates()">
                 <div class="form-group mb-6">
                     <p>Momenteel kunnen enkel steden ingegeven worden in het formaat: Brussel = BRU, Parijs = PAR, Londen = LON, ... </p>
-                    <label for="origin" class="block mb-2 dark:text-white">Origin</label>
+                    <label for="origin" class="block mb-2 dark:text-white">Vertrek</label>
                     <input type="text" name="origin" id="origin" class="form-control w-full p-2 border border-gray-300 rounded" required>
                 </div>
                 <div class="form-group mb-6">
-                    <label for="destination" class="block mb-2 dark:text-white">Destination</label>
+                    <label for="destination" class="block mb-2 dark:text-white">Bestemming</label>
                     <input type="text" name="destination" id="destination" class="form-control w-full p-2 border border-gray-300 rounded" required>
                 </div>
                 <div class="form-group mb-6 flex space-x-4 items-center">

@@ -143,7 +143,7 @@
     @endforeach
 
     <div class="qr-code text-center mt-6">
-        <h2 class="text-2xl font-semibold mb-4">Scan the QR code om uw reisplan online te zien:</h2>
+        <h2 class="text-2xl font-semibold mb-4">Scan de QR code om uw reisplan online te zien:</h2>
         <img src="data:image/svg+xml;base64,{{ $qrCode }}" alt="QR Code">
         <p class="mt-2 text-lg">Of deel deze link met uw vrienden/familie:</p>
         <p class=" text-lg"><a href="{{ $url }}" target="_blank">{{ $url }}</a></p>
