@@ -2,10 +2,12 @@
     <div class="flex flex-wrap -mx-4">
         @php
         $current_date = $start_date->copy();
+        Carbon\Carbon::setLocale('nl'); // Set the locale to Dutch
         @endphp
         @while ($current_date->lte($end_date))
         @php
         $dateFormatted = $current_date->format('Y-m-d');
+        $dayName = ucfirst($current_date->translatedFormat('l')); // Get the day name in Dutch
         $hotelsCheckOut = $itinerary->hotels->filter(function($hotel) use ($current_date) {
         return $current_date->isSameDay(Carbon\Carbon::parse($hotel->departure));
         });
@@ -21,7 +23,7 @@
         <div class="w-full md:w-1/2 px-4 mb-4">
             <div class="p-6 bg-primaryGreen bg-opacity-70 dark:bg-gray-700 rounded-lg shadow-md">
                 <div class="flex justify-between items-center mb-2">
-                    <h5 class="text-lg font-semibold">{{ $current_date->format('d-m') }}</h5>
+                    <h5 class="text-lg font-semibold">{{ $dayName }}, {{ $current_date->format('d-m') }}</h5>
                 </div>
                 {{-- Display hotels with check-out --}}
                 @foreach ($hotelsCheckOut as $hotel)

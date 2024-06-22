@@ -8,6 +8,7 @@ use App\Models\Itinerary;
 use App\Models\ItineraryItem;
 use App\Models\Hotel;
 
+
 class ItineraryDays extends Component
 {
     public $itinerary;
@@ -20,6 +21,7 @@ class ItineraryDays extends Component
     public $type = [];
     public $time = [];
 
+    //used for valdating dates
     protected $rules = [
         'type.*' => 'required|string|max:255',
         'time.*' => 'required|date_format:H:i',
