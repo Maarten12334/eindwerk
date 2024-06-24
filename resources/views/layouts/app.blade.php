@@ -36,7 +36,7 @@
         @endif
 
         <!-- Page Content -->
-        <main class="min-h-screen bg-softWhite">
+        <main class="min-h-screen bg-primaryGreen">
             {{ $slot }}
         </main>
     </div>

@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Models\Itinerary;
 use App\Models\Hotel;
 
-
 class HotelController extends Controller
 {
     public $itinerary;

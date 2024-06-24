@@ -6,8 +6,6 @@ use Illuminate\Http\Request;
 
 class FlightController extends Controller
 {
-
-
     public function results(Request $request)
     {
         $origin = $request->input('origin', 'LON');
