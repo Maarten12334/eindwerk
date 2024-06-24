@@ -8,7 +8,6 @@ use App\Models\Itinerary;
 use App\Models\ItineraryItem;
 use App\Models\Hotel;
 
-
 class ItineraryDays extends Component
 {
     public $itinerary;
