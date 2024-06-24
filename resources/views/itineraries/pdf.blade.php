@@ -144,7 +144,7 @@
         </div>
         @endforeach
         @else
-        <p class="text-center text-gray-500">Geen items voor deze dag</p>
+        <p class="text-center text-gray-500"></p>
         @endif
 
         @if(!$isLastDay)
