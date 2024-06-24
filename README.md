@@ -43,10 +43,10 @@ php artisan serve
 -   Voeg hotels toe aan een reisschema
 -   Zoek vluchten via de amadeus api
 -   Download een reisschema als pdf
+-   Via een qr code op de pdf-file online het reisschema bekijken
 
 ## Toekomstige-features
 
 -   Vluchten koppelen aan een reisschema
 -   Hotels zoeken met de bookings API
 -   Hotels filteren op basis van prijs, faciliteiten,...
--   Via een qr code op de pdf-file online het reisschema bekijken
