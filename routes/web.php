@@ -55,3 +55,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/{random_key}', [ItineraryController::class, 'visit'])->name('visit');
+
+Route::get('/{any}', function () {
+    return view('app'); // Make sure this Blade view includes your app's entry point.
+})->where('any', '.*');

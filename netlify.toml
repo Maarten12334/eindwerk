@@ -7,5 +7,6 @@
 
 [[redirects]]
   from = "/*"
-  to = "itineraries.index"
+  to = "/index.php"
   status = 200
+
